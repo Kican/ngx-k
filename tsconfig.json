@@ -17,7 +17,33 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@ngx-k/core": [
+        "dist/ngx-k/core"
+      ],
+      "@ngx-k/core/*": [
+        "dist/ngx-k/core/*"
+      ],
+      "@ngx-k/form-builder": [
+        "dist/ngx-k/form-builder"
+      ],
+      "@ngx-k/form-builder/*": [
+        "dist/ngx-k/form-builder/*"
+      ],
+      "@ngx-k/form-builder-bs4": [
+        "dist/ngx-k/form-builder-bs4"
+      ],
+      "@ngx-k/form-builder-bs4/*": [
+        "dist/ngx-k/form-builder-bs4/*"
+      ],
+      "@ngx-k/data-table": [
+        "dist/ngx-k/data-table"
+      ],
+      "@ngx-k/data-table/*": [
+        "dist/ngx-k/data-table/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
