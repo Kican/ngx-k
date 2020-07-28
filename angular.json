@@ -49,5 +49,8 @@
 		"@schematics/angular:component": {
 			"style": "scss"
 		}
+	},
+	"cli": {
+		"analytics": "e3dc6cc2-e064-41c2-93a8-ba7858a143bc"
 	}
 }

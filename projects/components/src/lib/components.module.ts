@@ -1,12 +1,12 @@
 import {NgModule} from '@angular/core';
-import {ButtonModule} from './modules/button/button.module';
+import {KButtonModule} from './modules/button/k-button.module';
 
 
 @NgModule({
 	declarations: [],
 	imports: [],
 	exports: [
-		ButtonModule
+		KButtonModule
 	]
 })
 export class ComponentsModule {

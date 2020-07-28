@@ -3,4 +3,4 @@
  */
 
 export * as KComponentsModule from './lib/components.module';
-export * as KButtonsModule from './lib/modules/button/button.module';
+export * as KButtonsModule from './lib/modules/button/k-button.module';
