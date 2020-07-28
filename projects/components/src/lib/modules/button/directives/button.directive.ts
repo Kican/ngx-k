@@ -1,6 +1,6 @@
 import {Directive, HostBinding, Input} from '@angular/core';
-import {SizeType} from '@models/size-type';
-import {ColorType} from '@models/color-type';
+import {ColorType} from '../models/color-type';
+import {SizeType} from '../models/size-type';
 
 @Directive({
 	selector: '[kButton]'
@@ -8,10 +8,10 @@ import {ColorType} from '@models/color-type';
 export class ButtonDirective {
 
 	@Input()
-	color: ColorType;
+	color: ColorType = 'default';
 
 	@Input()
-	size: SizeType;
+	size: SizeType = 'md';
 
 	@Input()
 	isLink: boolean;

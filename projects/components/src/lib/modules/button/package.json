@@ -1,0 +1,13 @@
+{
+	"name": "button",
+	"version": "0.0.1",
+	"description": "Kican Components",
+	"private": true,
+	"dependencies": {},
+	"ngPackage": {
+		"lib": {
+			"entryFile": "public-api.ts"
+		},
+		"dest": "../../../dist/buttons"
+	}
+}

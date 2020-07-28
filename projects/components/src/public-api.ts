@@ -2,5 +2,7 @@
  * Public API Surface of components
  */
 
-export * as KComponentsModule from './lib/components.module';
-export * as KButtonsModule from './lib/modules/button/k-button.module';
+export * from './lib/k-components.module';
+
+import {KButtonModule, ButtonDirective} from './lib/modules/button';
+export {KButtonModule, ButtonDirective};

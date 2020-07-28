@@ -9,5 +9,5 @@ import {KButtonModule} from './modules/button/k-button.module';
 		KButtonModule
 	]
 })
-export class ComponentsModule {
+export class KComponentsModule {
 }
