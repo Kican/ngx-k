@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {KButtonModule} from './modules/button/k-button.module';
+import {KButtonModule} from './modules/button';
 
 
 @NgModule({

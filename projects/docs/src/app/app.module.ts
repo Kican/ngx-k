@@ -3,8 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {KComponentsModule} from 'k-components';
-import {KButtonModule} from 'k-components/src/lib/modules/button';
+import {KButtonModule, KComponentsModule} from 'k-components';
 
 @NgModule({
 	declarations: [
