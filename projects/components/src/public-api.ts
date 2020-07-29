@@ -26,3 +26,6 @@ export {
 	AlertHeadingDirective,
 	AlertLinkDirective
 };
+
+import {BadgeModule, BadgeDirective} from './lib/modules/badge';
+export {BadgeModule, BadgeDirective};

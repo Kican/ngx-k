@@ -5,11 +5,13 @@
 	<div class="mb-2"></div>
 
 	<div *kAlertDismiss kAlert [color]="'primary'">
-		<div kAlertHeading>Hello Everyone</div>
-		<a href="#" kAlertLink>an example link</a>
-		<button kAlertDismissBtn type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span kAlertHeading>Hello Everyone</span>
+		<button kAlertDismissBtn type="button" class="close" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		</button>
 	</div>
+
+	<h5><span kBadge [color]="'warning'" [isPill]="true">Hey!</span></h5>
+	<h5><span kBadge [color]="'primary'" [isPill]="false">Hey!</span></h5>
 
 </div>

@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {KButtonModule} from './modules/button';
 import {KAlertModule} from './modules/alert';
+import {BadgeModule} from './modules/badge';
 
 
 @NgModule({
@@ -8,7 +9,8 @@ import {KAlertModule} from './modules/alert';
 	imports: [],
 	exports: [
 		KButtonModule,
-		KAlertModule
+		KAlertModule,
+		BadgeModule
 	]
 })
 export class KComponentsModule {
