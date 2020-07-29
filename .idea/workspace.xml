@@ -35,9 +35,8 @@
     <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/k-components.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/src/lib/k-components.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/modules/button/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/src/lib/modules/button/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/modules/button/directives/button.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/src/lib/modules/button/directives/button.directive.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +120,7 @@
       <workItem from="1594446429855" duration="567000" />
       <workItem from="1595923509058" duration="747000" />
       <workItem from="1595924350931" duration="10226000" />
-      <workItem from="1596002172252" duration="1089000" />
+      <workItem from="1596002172252" duration="2072000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -158,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595938397975</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="reimport button module with shorter path">
+      <created>1596003802260</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596003802260</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +194,8 @@
     <MESSAGE value="create components library" />
     <MESSAGE value="fix button module ~&#10;- use directive instead component for button&#10;- create some global types for size and color&#10;- set paths in tsconfig for models to have shorter import statements" />
     <MESSAGE value="try to use ng-packagr as library builder but we need some work . ." />
-    <option name="LAST_COMMIT_MESSAGE" value="try to use ng-packagr as library builder but we need some work . ." />
+    <MESSAGE value="reimport button module with shorter path" />
+    <option name="LAST_COMMIT_MESSAGE" value="reimport button module with shorter path" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1093" y="443" key="#com.intellij.ide.util.MemberChooser" timestamp="1595933567118">
@@ -200,34 +207,42 @@
     </state>
     <state x="698" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594404337137" />
     <state x="931" y="374" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1595924557607" />
-    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1595938397751">
+    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1596003802092">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1595938397751" />
-    <state width="2539" height="419" key="GridCell.Tab.0.bottom" timestamp="1596003726712">
+    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1596003802092" />
+    <state x="183" y="133" key="DiffContextDialog" timestamp="1596003766335">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="183" y="133" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596003766335" />
+    <state width="2539" height="419" key="GridCell.Tab.0.bottom" timestamp="1596004405622">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="2539" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1596003726712" />
-    <state width="2539" height="419" key="GridCell.Tab.0.center" timestamp="1596003726711">
+    <state width="2539" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1596004405622" />
+    <state width="2539" height="419" key="GridCell.Tab.0.center" timestamp="1596004405620">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="2539" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1596003726711" />
-    <state width="2539" height="419" key="GridCell.Tab.0.left" timestamp="1596003726710">
+    <state width="2539" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1596004405620" />
+    <state width="2539" height="419" key="GridCell.Tab.0.left" timestamp="1596004405619">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="2539" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1596003726710" />
-    <state width="2539" height="419" key="GridCell.Tab.0.right" timestamp="1596003726711">
+    <state width="2539" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1596004405619" />
+    <state width="2539" height="419" key="GridCell.Tab.0.right" timestamp="1596004405621">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="2539" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1596003726711" />
-    <state x="880" y="456" key="Vcs.Push.Dialog.v2" timestamp="1595938399227">
+    <state width="2539" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1596004405621" />
+    <state x="1132" y="634" key="VCS.ChangelistChooser" timestamp="1596004239845">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1595938399227" />
+    <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
+    <state x="880" y="456" key="Vcs.Push.Dialog.v2" timestamp="1596003803571">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596003803571" />
     <state x="1070" y="637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596002175235">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -238,9 +253,9 @@
     <state x="665" y="332" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1594446665389" />
     <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1594404843801" />
     <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1595924568030" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1596002540652">
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1596004436093">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1596002540652" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1596004436093" />
   </component>
 </project>

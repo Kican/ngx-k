@@ -1,4 +1,4 @@
-import {Directive, HostBinding, Input} from '@angular/core';
+import {Directive, ElementRef, HostBinding, Input, Renderer2} from '@angular/core';
 import {ColorType} from '../models/color-type';
 import {SizeType} from '../models/size-type';
 
@@ -31,5 +31,18 @@ export class ButtonDirective {
 			this.isOutline ? `btn-outline-${this.color}` : `btn-${this.color}`,
 			this.isLink ? 'btn-link' : ``,
 		].filter(Boolean).join(' ');
+	}
+
+	constructor(private el: ElementRef<HTMLElement>, private renderer: Renderer2) {
+		this.setRoleAttributeIfRequired();
+	}
+
+	private setRoleAttributeIfRequired(): void {
+		if (this.selector !== 'button')
+			this.renderer.setAttribute(this.el.nativeElement, 'role', 'button');
+	}
+
+	private get selector(): string {
+		return this.el.nativeElement.tagName;
 	}
 }
