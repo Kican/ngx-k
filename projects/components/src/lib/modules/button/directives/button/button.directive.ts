@@ -1,6 +1,6 @@
 import {Directive, ElementRef, HostBinding, Input, Renderer2} from '@angular/core';
-import {ColorType} from '../models/color-type';
-import {SizeType} from '../models/size-type';
+import {ColorType} from '../../models/color-type';
+import {SizeType} from '../../models/size-type';
 
 @Directive({
 	selector: '[kButton]'

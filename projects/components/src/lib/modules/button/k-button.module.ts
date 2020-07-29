@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {ButtonDirective} from './directives/button.directive';
+import {ButtonDirective} from './directives/button/button.directive';
 
 @NgModule({
 	declarations: [
@@ -8,9 +7,6 @@ import {ButtonDirective} from './directives/button.directive';
 	],
 	exports: [
 		ButtonDirective,
-	],
-	imports: [
-		CommonModule
 	]
 })
 export class KButtonModule {

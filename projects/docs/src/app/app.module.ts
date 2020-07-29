@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {KButtonModule, KComponentsModule} from 'k-components';
+import {KComponentsModule} from 'k-components';
 
 @NgModule({
 	declarations: [
@@ -13,7 +13,6 @@ import {KButtonModule, KComponentsModule} from 'k-components';
 		BrowserModule,
 		AppRoutingModule,
 		KComponentsModule,
-		KButtonModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
