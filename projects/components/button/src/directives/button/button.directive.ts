@@ -1,6 +1,5 @@
 import {Directive, ElementRef, HostBinding, Input, Renderer2} from '@angular/core';
-import {ColorType} from '../../models/color-type';
-import {SizeType} from '../../models/size-type';
+import {ColorType, SizeType} from 'ngx-k-components/core/models';
 
 @Directive({
 	selector: '[kButton]'
@@ -37,12 +36,13 @@ export class ButtonDirective {
 		this.setRoleAttributeIfRequired();
 	}
 
-	private setRoleAttributeIfRequired(): void {
-		if (this.selector !== 'button')
-			this.renderer.setAttribute(this.el.nativeElement, 'role', 'button');
-	}
-
 	private get selector(): string {
 		return this.el.nativeElement.tagName;
+	}
+
+	private setRoleAttributeIfRequired(): void {
+		if (this.selector !== 'button') {
+			this.renderer.setAttribute(this.el.nativeElement, 'role', 'button');
+		}
 	}
 }

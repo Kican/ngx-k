@@ -1,0 +1,16 @@
+{
+	"name": "ngx-k-components/button",
+	"version": "0.0.1",
+	"peerDependencies": {
+		"@angular/common": "^10.0.3",
+		"@angular/core": "^10.0.3",
+		"k-components/core/models": "0.0.1"
+	},
+	"ngPackage": {
+		"$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
+		"lib": {
+			"entryFile": "src/public-api.ts"
+		},
+		"dest": "../../../dist/button"
+	}
+}

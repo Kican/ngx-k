@@ -25,7 +25,7 @@
 		"bootstrap": "^4.5.0"
 	},
 	"optionalDependencies": {
-		"k-components": "file:dist/components"
+		"ngx-k-components": "file:dist/components"
 	},
 	"devDependencies": {
 		"@angular-devkit/build-angular": "~0.1000.2",

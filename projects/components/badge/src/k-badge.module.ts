@@ -10,5 +10,5 @@ import {BadgeDirective} from './directives/badge/badge.directive';
 		BadgeDirective
 	]
 })
-export class BadgeModule {
+export class KBadgeModule {
 }

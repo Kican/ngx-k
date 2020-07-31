@@ -1,16 +1,19 @@
 import {NgModule} from '@angular/core';
-import {KButtonModule} from './modules/button';
-import {KAlertModule} from './modules/alert';
-import {BadgeModule} from './modules/badge';
-
+import {KAlertModule} from 'ngx-k-components/alert';
+import {KBadgeModule} from 'ngx-k-components/badge';
+import {KButtonModule} from 'ngx-k-components/button';
 
 @NgModule({
 	declarations: [],
-	imports: [],
-	exports: [
-		KButtonModule,
+	imports: [
 		KAlertModule,
-		BadgeModule
+		KBadgeModule,
+		KButtonModule
+	],
+	exports: [
+		KAlertModule,
+		KBadgeModule,
+		KButtonModule
 	]
 })
 export class KComponentsModule {

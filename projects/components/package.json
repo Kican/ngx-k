@@ -1,10 +1,13 @@
 {
-	"name": "k-components",
+	"name": "ngx-k-components",
 	"version": "0.0.1",
 	"description": "Kican Components",
 	"peerDependencies": {
 		"@angular/common": "^10.0.3",
-		"@angular/core": "^10.0.3"
+		"@angular/core": "^10.0.3",
+		"ngx-k-components/alert": "0.0.1",
+		"ngx-k-components/badge": "0.0.1",
+		"ngx-k-components/button": "0.0.1"
 	},
 	"dependencies": {
 		"tslib": "^2.0.0"

@@ -3,7 +3,10 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {KComponentsModule} from 'k-components';
+import {KButtonModule} from 'ngx-k-components/button';
+import {KAlertModule} from 'ngx-k-components/alert';
+import {KBadgeModule} from 'ngx-k-components/badge';
+import {KComponentsModule} from 'ngx-k-components';
 
 @NgModule({
 	declarations: [
@@ -12,7 +15,7 @@ import {KComponentsModule} from 'k-components';
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
-		KComponentsModule,
+		KComponentsModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
