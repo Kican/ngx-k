@@ -1,30 +1,72 @@
-<div class="container p-5">
+<k-sidebar-container #sidebar
+					 class="custom-container"
+					 initialState="opened"
+					 [mode]="'push'"
+					 [hasBackdrop]="true"
+					 [fixed]="true"
+					 [closeOnBackdropClick]="true">
+	<k-sidebar class="custom-sidebar">Sidebar content</k-sidebar>
 
-	<div kButton [color]="'danger'" [isOutline]="false" [size]="'md'">Submit</div>
+	<k-sidebar-content>
 
-	<div class="mb-2"></div>
+		<div class="container-fluid p-5">
 
-	<div *kAlertDismiss kAlert [color]="'primary'">
-		<span kAlertHeading>Hello Everyone</span>
-		<button kAlertDismissBtn type="button" class="close" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-	</div>
+			<label>Mode:</label>
+			<select [(ngModel)]="sidebar.mode">
+				<option value="push">Push</option>
+				<option value="over">Over</option>
+				<option value="side">Side</option>
+			</select>
 
-	<h5><span kBadge [color]="'warning'" [isPill]="true">Hey!</span></h5>
-	<h5><span kBadge [color]="'primary'" [isPill]="false">Hey!</span></h5>
+			<br>
 
-	<div class="mb-2"></div>
+			<label>Fixed:</label>
+			<input type="checkbox" [(ngModel)]="sidebar.fixed">
 
-	<k-card>
-		<k-card-header>teste header</k-card-header>
-		<k-card-body>
-			<h5 kCardTitle>Title</h5>
-			<h5 kCardSubtitle>Subtitle</h5>
-			<p kCardText>salam be hame :D</p>
-			<a href="#" kCardLink>teste card link</a>
-		</k-card-body>
-		<k-card-footer>teste footer</k-card-footer>
-	</k-card>
+			<br>
 
-</div>
+			<label>Has Backdrop:</label>
+			<input type="checkbox" [(ngModel)]="sidebar.hasBackdrop">
+
+			<br>
+
+			<label>Close On Backdrop Click:</label>
+			<input type="checkbox" [(ngModel)]="sidebar.closeOnBackdropClick">
+
+			<br>
+
+			<button (click)="sidebar.toggle()" kButton [color]="'info'">toggle</button>
+
+			<div kButton [color]="'danger'" [isOutline]="false" [size]="'md'">Submit</div>
+
+			<div class="mb-2"></div>
+
+			<div *kAlertDismiss kAlert [color]="'primary'">
+				<span kAlertHeading>Hello Everyone</span>
+				<button kAlertDismissBtn type="button" class="close" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+
+			<h5><span kBadge [color]="'warning'" [isPill]="true">Hey!</span></h5>
+			<h5><span kBadge [color]="'primary'" [isPill]="false">Hey!</span></h5>
+
+			<div class="mb-2"></div>
+
+			<k-card>
+				<k-card-header>teste header</k-card-header>
+				<k-card-body>
+					<h5 kCardTitle>Title</h5>
+					<h5 kCardSubtitle>Subtitle</h5>
+					<p kCardText>salam be hame :D</p>
+					<a href="#" kCardLink>teste card link</a>
+				</k-card-body>
+				<k-card-footer>teste footer</k-card-footer>
+			</k-card>
+
+		</div>
+
+	</k-sidebar-content>
+
+</k-sidebar-container>
+

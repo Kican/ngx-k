@@ -1,0 +1,50 @@
+@import "../../core/scss/src/mixin/direction";
+
+@mixin k-sidebar(
+	$sidebar-width: 230px,
+	$transition: .3s cubic-bezier(.25,.1,.25,1),
+	$backdrop-alpha: .6
+) {
+
+	.k-sidebar-container {
+		display: block;
+		position: relative;
+	}
+
+	.k-sidebar {
+		background-color: white;
+		z-index: 1;
+		height: 100%;
+		width: $sidebar-width;
+		@include transform-translate(-$sidebar-width - 20, 0);
+		transition: $transition;
+		box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+
+		&.opened {
+			@include transform-translate(0, 0);
+		}
+	}
+
+	.k-sidebar-content {
+		display: block;
+		transition: $transition;
+
+		&.side {
+			@include transform-translate($sidebar-width, 0);
+		}
+
+		&.pushed {
+			@include padding-left($sidebar-width);
+		}
+	}
+
+	.k-backdrop {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, $backdrop-alpha);
+		transition: $transition;
+	}
+
+}

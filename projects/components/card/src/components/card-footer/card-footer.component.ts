@@ -1,9 +1,10 @@
-import {Component, HostBinding} from '@angular/core';
+import {ChangeDetectionStrategy, Component, HostBinding} from '@angular/core';
 
 @Component({
 	selector: 'k-card-footer',
 	templateUrl: './card-footer.component.html',
-	styleUrls: ['./card-footer.component.scss']
+	styleUrls: ['./card-footer.component.scss'],
+	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardFooterComponent {
 

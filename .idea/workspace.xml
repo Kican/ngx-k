@@ -33,20 +33,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/projects/components/alert/tsconfig.lib.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/alert/tsconfig.lib.prod.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/alert/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/card/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/card/src/k-card.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/card/src/public-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/core/scss/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/core/scss/src/mixin/direction.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/scss/sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/back-drop/back-drop.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/back-drop/back-drop.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/back-drop/back-drop.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/back-drop/back-drop.component.unit.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-container/sidebar-container.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-container/sidebar-container.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-container/sidebar-container.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar-content/sidebar-content.directive.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar-content/sidebar-content.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar-content/sidebar-content.directive.unit.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar/sidebar.directive.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar/sidebar.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar/sidebar.directive.unit.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/k-sidebar.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/models/sidebar-mode.enum.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/models/sidebar-status.enum.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/models/sidebar.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/public-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar.service.unit.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/alert/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/alert/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/badge/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/badge/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/button/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/button/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/k-components.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/src/lib/k-components.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/card/src/components/card-body/card-body.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/card/src/components/card-body/card-body.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/card/src/components/card-footer/card-footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/card/src/components/card-footer/card-footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/card/src/components/card-header/card-header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/card/src/components/card-header/card-header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/ng-package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/ng-package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +76,7 @@
       <list>
         <option value="package.json" />
         <option value="TypeScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -82,7 +101,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/components/alert" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/components/core/scss/src" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -93,16 +113,19 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/projects/components/alert" />
-      <recent name="$PROJECT_DIR$/projects/components/src/lib/modules/button" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/components/core/scss/src" />
+      <recent name="$PROJECT_DIR$/projects/components/sidebar" />
       <recent name="$PROJECT_DIR$/projects/components/card/src/components" />
       <recent name="$PROJECT_DIR$/projects/components/card/src" />
       <recent name="$PROJECT_DIR$/projects/components/src/lib/modules/button/directives/button" />
-      <recent name="$PROJECT_DIR$/projects/components/src/lib/modules/alert/directives/alert" />
-      <recent name="$PROJECT_DIR$/projects/components/src/lib/modules/button/models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/components/core/scss/src" />
+      <recent name="$PROJECT_DIR$/projects/components/core/scss" />
+      <recent name="$PROJECT_DIR$/projects/components/sidebar" />
+      <recent name="$PROJECT_DIR$/projects/components/sidebar/src" />
+      <recent name="$PROJECT_DIR$/projects/components/alert" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
@@ -136,7 +159,8 @@
       <workItem from="1595923509058" duration="747000" />
       <workItem from="1595924350931" duration="10226000" />
       <workItem from="1596002172252" duration="9859000" />
-      <workItem from="1596261704417" duration="3656000" />
+      <workItem from="1596261704417" duration="6193000" />
+      <workItem from="1596270927808" duration="4138000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -201,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596262224926</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="card implementation">
+      <created>1596267620606</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596267620606</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +266,8 @@
     <MESSAGE value="set role attribute when directive assigned to other tags" />
     <MESSAGE value="alert directives" />
     <MESSAGE value="move methods from ctor to ngOnInit" />
-    <option name="LAST_COMMIT_MESSAGE" value="move methods from ctor to ngOnInit" />
+    <MESSAGE value="card implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="card implementation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1093" y="443" key="#com.intellij.ide.util.MemberChooser" timestamp="1596262085394">
@@ -247,34 +279,34 @@
     </state>
     <state x="698" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594404337137" />
     <state x="931" y="374" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1595924557607" />
-    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1596262224686">
+    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1596267620457">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1596262224686" />
+    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1596267620457" />
     <state x="183" y="133" key="DiffContextDialog" timestamp="1596003766335">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="183" y="133" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596003766335" />
-    <state width="2539" height="419" key="GridCell.Tab.0.bottom" timestamp="1596265231384">
+    <state width="2539" height="419" key="GridCell.Tab.0.bottom" timestamp="1596278380772">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="2539" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1596265231384" />
-    <state width="2539" height="419" key="GridCell.Tab.0.center" timestamp="1596265231383">
+    <state width="2539" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1596278380772" />
+    <state width="2539" height="419" key="GridCell.Tab.0.center" timestamp="1596278380771">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="2539" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1596265231383" />
-    <state width="2539" height="419" key="GridCell.Tab.0.left" timestamp="1596265231382">
+    <state width="2539" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1596278380771" />
+    <state width="2539" height="419" key="GridCell.Tab.0.left" timestamp="1596278380770">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="2539" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1596265231382" />
-    <state width="2539" height="419" key="GridCell.Tab.0.right" timestamp="1596265231384">
+    <state width="2539" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1596278380770" />
+    <state width="2539" height="419" key="GridCell.Tab.0.right" timestamp="1596278380772">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="2539" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1596265231384" />
+    <state width="2539" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1596278380772" />
     <state x="1132" y="634" key="VCS.ChangelistChooser" timestamp="1596004239845">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -293,9 +325,9 @@
     <state x="665" y="332" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1594446665389" />
     <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1594404843801" />
     <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1596265126360" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1596264208174">
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1596279620388">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1596264208174" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1596279620388" />
   </component>
 </project>

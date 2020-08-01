@@ -7,6 +7,8 @@ import {KButtonModule} from 'ngx-k-components/button';
 import {KAlertModule} from 'ngx-k-components/alert';
 import {KBadgeModule} from 'ngx-k-components/badge';
 import {KCardModule} from 'ngx-k-components/card';
+import {KSidebarModule} from 'ngx-k-components/sidebar';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
 	declarations: [
@@ -15,10 +17,13 @@ import {KCardModule} from 'ngx-k-components/card';
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
+		FormsModule,
+		ReactiveFormsModule,
 		KButtonModule,
 		KAlertModule,
 		KBadgeModule,
-		KCardModule
+		KCardModule,
+		KSidebarModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
