@@ -20,4 +20,5 @@ export class BadgeDirective {
 			this.isPill ? 'badge-pill' : ''
 		].filter(Boolean).join(' ');
 	}
+
 }

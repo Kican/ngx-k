@@ -1,28 +1,36 @@
-import {Directive, TemplateRef, ViewContainerRef} from '@angular/core';
+import {Directive, OnInit, TemplateRef, ViewContainerRef} from '@angular/core';
 import {AlertDismissService} from '../../services/alert-dismiss.service';
 
 @Directive({
 	selector: '[kAlertDismiss]',
 	providers: [AlertDismissService]
 })
-export class AlertDismissDirective {
+export class AlertDismissDirective implements OnInit {
 
 	constructor(
 		private templateRef: TemplateRef<any>,
 		private viewContainerRef: ViewContainerRef,
 		private alertDismissService: AlertDismissService
 	) {
+	}
+
+	ngOnInit(): void {
 		this.createView();
-		this.alertDismissService.dismiss$.subscribe(() => {
-			this.dismissAlert();
-		});
+		this.listenToDismissBtn();
 	}
 
 	private createView(): void {
 		this.viewContainerRef.createEmbeddedView(this.templateRef);
 	}
 
+	private listenToDismissBtn(): void {
+		this.alertDismissService.dismiss$.subscribe(() => {
+			this.dismissAlert();
+		});
+	}
+
 	dismissAlert(): void {
 		this.viewContainerRef.clear();
 	}
+
 }

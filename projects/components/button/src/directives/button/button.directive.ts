@@ -1,10 +1,10 @@
-import {Directive, ElementRef, HostBinding, Input, Renderer2} from '@angular/core';
+import {Directive, ElementRef, HostBinding, Input, OnInit, Renderer2} from '@angular/core';
 import {ColorType, SizeType} from 'ngx-k-components/core/models';
 
 @Directive({
 	selector: '[kButton]'
 })
-export class ButtonDirective {
+export class ButtonDirective implements OnInit {
 
 	@Input()
 	color: ColorType = 'default';
@@ -33,11 +33,10 @@ export class ButtonDirective {
 	}
 
 	constructor(private el: ElementRef<HTMLElement>, private renderer: Renderer2) {
-		this.setRoleAttributeIfRequired();
 	}
 
-	private get selector(): string {
-		return this.el.nativeElement.tagName;
+	ngOnInit(): void {
+		this.setRoleAttributeIfRequired();
 	}
 
 	private setRoleAttributeIfRequired(): void {
@@ -45,4 +44,9 @@ export class ButtonDirective {
 			this.renderer.setAttribute(this.el.nativeElement, 'role', 'button');
 		}
 	}
+
+	private get selector(): string {
+		return this.el.nativeElement.tagName;
+	}
+
 }
