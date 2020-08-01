@@ -6,7 +6,7 @@ import {AppComponent} from './app.component';
 import {KButtonModule} from 'ngx-k-components/button';
 import {KAlertModule} from 'ngx-k-components/alert';
 import {KBadgeModule} from 'ngx-k-components/badge';
-import {KComponentsModule} from 'ngx-k-components';
+import {KCardModule} from 'ngx-k-components/card';
 
 @NgModule({
 	declarations: [
@@ -15,7 +15,10 @@ import {KComponentsModule} from 'ngx-k-components';
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
-		KComponentsModule
+		KButtonModule,
+		KAlertModule,
+		KBadgeModule,
+		KCardModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
