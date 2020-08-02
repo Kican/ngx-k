@@ -5,7 +5,34 @@
 					 [hasBackdrop]="true"
 					 [fixed]="true"
 					 [closeOnBackdropClick]="true">
-	<k-sidebar class="custom-sidebar">Sidebar content</k-sidebar>
+	<k-sidebar class="custom-sidebar">
+		<k-sidebar-header>
+			<div class="d-flex align-items-center">
+				<img class="ml-3" src="./assets/img/kican-logo.png" alt="logo" width="30">
+				<h5 class="font-weight-bold p-3 mt-2 text-muted">Kican Panel</h5>
+			</div>
+		</k-sidebar-header>
+		<k-sidebar-group [title]="'Menu'">
+			<ul k-sidebar-items-container>
+				<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Dashboard'" [iconClass]="'mdi mdi-delete'"></a></li>
+				<li><a [routerLink]="'/orders'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Orders'" [iconClass]="'mdi mdi-pencil'" [badge]="99"></a></li>
+				<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Customers'" [iconClass]="'mdi mdi-account'"></a></li>
+			</ul>
+		</k-sidebar-group>
+		<k-sidebar-group [title]="'Setting'">
+			<ul k-sidebar-items-container>
+				<li><a [routerLink]="'/account'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Account'" [iconClass]="'mdi mdi-account-box-multiple'"></a></li>
+				<li><a [routerLink]="'/profile'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Profile'" [iconClass]="'mdi mdi-face-profile'"></a></li>
+				<li k-sidebar-dropdown-item [label]="'Theming'" [iconClass]="'mdi mdi-palette'">
+					<ul k-sidebar-items-container>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Colors'" [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Grids'" [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Menus'" [iconClass]="'mdi mdi-account'"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</k-sidebar-group>
+	</k-sidebar>
 
 	<k-sidebar-content>
 

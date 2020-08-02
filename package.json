@@ -22,7 +22,8 @@
 		"rxjs": "~6.5.5",
 		"tslib": "^2.0.0",
 		"zone.js": "~0.10.3",
-		"bootstrap": "^4.5.0"
+		"bootstrap": "^4.5.0",
+		"@mdi/font": "^5.4.55"
 	},
 	"optionalDependencies": {
 		"ngx-k-components": "file:dist/components"

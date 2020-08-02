@@ -1,0 +1,7 @@
+@import "variable";
+
+@mixin sidebar-single-item() {
+	.sidebar-single-item {
+		padding: $item-padding;
+	}
+}

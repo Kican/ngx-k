@@ -1,0 +1,52 @@
+@import "../../core/scss/src/variables/color";
+@import "../../core/scss/src/mixin/direction";
+@import "variable";
+
+@mixin sidebar-item($radius: 5px) {
+	.sidebar-item {
+		display: block;
+		margin-bottom: 3px;
+		text-decoration: none;
+		transition: $transition;
+		border-radius: $radius;
+
+		i {
+			font-size: 1.2em;
+			@include margin-right(10px);
+			color: map-get($colors, 'secondary');
+		}
+
+		span {
+			color: black;
+			font-weight: 500;
+		}
+
+		&.active {
+			background-color: map-get($colors, 'primary');
+
+			span {
+				color: white;
+			}
+
+			i {
+				color: $icon-color;
+			}
+		}
+
+		&:hover, &:visited, &:link, &:active {
+			text-decoration: none;
+		}
+
+		&:not(.active):hover {
+			background-color: $hover-color;
+		}
+
+		.sidebar-badge {
+			color: white;
+			background-color: map_get($colors, 'primary');
+			padding: 4px 6px;
+			border-radius: $radius;
+			font-size: .8em;
+		}
+	}
+}

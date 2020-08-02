@@ -46,7 +46,7 @@ export class ButtonDirective implements OnInit {
 	}
 
 	private get selector(): string {
-		return this.el.nativeElement.tagName;
+		return this.el.nativeElement.tagName.toLowerCase();
 	}
 
 }

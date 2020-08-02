@@ -1,9 +1,15 @@
 @import "../../core/scss/src/mixin/direction";
+@import "../../core/scss/src/variables/color";
+@import "sidebar-item";
+@import "sidebar-dropdown-item";
+@import "sidebar-single-item";
 
 @mixin k-sidebar(
-	$sidebar-width: 230px,
+	$sidebar-width: 260px,
 	$transition: .3s cubic-bezier(.25,.1,.25,1),
-	$backdrop-alpha: .6
+	$shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1),
+	$backdrop-alpha: .6,
+	$radius: 5px
 ) {
 
 	.k-sidebar-container {
@@ -18,11 +24,15 @@
 		width: $sidebar-width;
 		@include transform-translate(-$sidebar-width - 20, 0);
 		transition: $transition;
-		box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+		box-shadow: $shadow;
 
 		&.opened {
 			@include transform-translate(0, 0);
 		}
+
+		@include sidebar-item($radius);
+		@include sidebar-dropdown-item();
+		@include sidebar-single-item();
 	}
 
 	.k-sidebar-content {
@@ -46,5 +56,4 @@
 		background-color: rgba(0, 0, 0, $backdrop-alpha);
 		transition: $transition;
 	}
-
 }

@@ -15,6 +15,24 @@
 	}
 }
 
+@mixin margin-left($value) {
+	margin-left: $value;
+
+	body[dir='rtl'] & {
+		margin-left: 0;
+		margin-right: $value;
+	}
+}
+
+@mixin margin-right($value) {
+	margin-right: $value;
+
+	body[dir='rtl'] & {
+		margin-right: 0;
+		margin-left: $value;
+	}
+}
+
 @mixin transform-translate($x, $y) {
 	transform: translate($x, $y);
 
