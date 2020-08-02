@@ -2,8 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~@mdi/font/css/materialdesignicons.min.css";
 
-@import "~ngx-k-components/sidebar/scss/sidebar";
-
+//@import "~ngx-k-components/sidebar/scss/sidebar";
 @import "../ngx-k/projects/components/sidebar/scss/sidebar";
 @include k-sidebar();
 

@@ -8,7 +8,7 @@ import {KAlertModule} from 'ngx-k-components/alert';
 import {KBadgeModule} from 'ngx-k-components/badge';
 import {KCardModule} from 'ngx-k-components/card';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {KSidebarModule} from "../../../components/sidebar/src/k-sidebar.module";
+import {KSidebarModule} from 'ngx-k-components/sidebar';
 
 @NgModule({
 	declarations: [
