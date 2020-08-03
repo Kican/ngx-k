@@ -46,6 +46,10 @@ export class SidebarContainerComponent implements OnInit {
 		return this.sidebarService.closeOnBackdropClick;
 	}
 
+	get status(): SidebarStatus {
+		return this.sidebarService.status;
+	}
+
 	@HostBinding('class')
 	sidebarContainer = 'k-sidebar-container';
 

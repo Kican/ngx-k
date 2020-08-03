@@ -1,7 +1,3 @@
-/*
- * Public API Surface of sidebar
- */
-
 export * from './k-sidebar.module';
 export * from './components/sidebar-container/sidebar-container.component';
 export * from './components/sidebar-header/sidebar-header.component';

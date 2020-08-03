@@ -12,20 +12,100 @@
 		</k-sidebar-header>
 		<k-sidebar-group [title]="'Menu'">
 			<ul k-sidebar-items-container>
-				<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Dashboard'" [iconClass]="'mdi mdi-delete'"></a></li>
-				<li><a [routerLink]="'/orders'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Orders'" [iconClass]="'mdi mdi-pencil'" [badge]="99"></a></li>
-				<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Customers'" [iconClass]="'mdi mdi-account'"></a></li>
+				<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Dashboard'"
+					   [iconClass]="'mdi mdi-delete'"></a></li>
+				<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Orders'"
+					   [iconClass]="'mdi mdi-pencil'" [badge]="99"></a></li>
+				<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Customers'"
+					   [iconClass]="'mdi mdi-account'"></a></li>
 			</ul>
 		</k-sidebar-group>
 		<k-sidebar-group [title]="'Setting'">
 			<ul k-sidebar-items-container>
-				<li><a [routerLink]="'/account'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Account'" [iconClass]="'mdi mdi-account-box-multiple'"></a></li>
-				<li><a [routerLink]="'/profile'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Profile'" [iconClass]="'mdi mdi-face-profile'"></a></li>
+				<li><a [routerLink]="'/account'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Account'"
+					   [iconClass]="'mdi mdi-account-box-multiple'"></a></li>
+				<li><a [routerLink]="'/profile'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Profile'"
+					   [iconClass]="'mdi mdi-face-profile'"></a></li>
 				<li k-sidebar-dropdown-item [label]="'Theming'" [iconClass]="'mdi mdi-palette'">
 					<ul k-sidebar-items-container>
-						<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Colors'" [iconClass]="'mdi mdi-account'"></a></li>
-						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Grids'" [iconClass]="'mdi mdi-account'"></a></li>
-						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Menus'" [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Colors'"
+							   [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
+							   [label]="'Grids'" [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
+							   [label]="'Menus'" [iconClass]="'mdi mdi-account'"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</k-sidebar-group>
+		<k-sidebar-group [title]="'Setting'">
+			<ul k-sidebar-items-container>
+				<li><a [routerLink]="'/account'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Account'"
+					   [iconClass]="'mdi mdi-account-box-multiple'"></a></li>
+				<li><a [routerLink]="'/profile'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Profile'"
+					   [iconClass]="'mdi mdi-face-profile'"></a></li>
+				<li k-sidebar-dropdown-item [label]="'Theming'" [iconClass]="'mdi mdi-palette'">
+					<ul k-sidebar-items-container>
+						<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Colors'"
+							   [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
+							   [label]="'Grids'" [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
+							   [label]="'Menus'" [iconClass]="'mdi mdi-account'"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</k-sidebar-group>
+		<k-sidebar-group [title]="'Setting'">
+			<ul k-sidebar-items-container>
+				<li><a [routerLink]="'/account'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Account'"
+					   [iconClass]="'mdi mdi-account-box-multiple'"></a></li>
+				<li><a [routerLink]="'/profile'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Profile'"
+					   [iconClass]="'mdi mdi-face-profile'"></a></li>
+				<li k-sidebar-dropdown-item [label]="'Theming'" [iconClass]="'mdi mdi-palette'">
+					<ul k-sidebar-items-container>
+						<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Colors'"
+							   [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
+							   [label]="'Grids'" [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
+							   [label]="'Menus'" [iconClass]="'mdi mdi-account'"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</k-sidebar-group>
+		<k-sidebar-group [title]="'Setting'">
+			<ul k-sidebar-items-container>
+				<li><a [routerLink]="'/account'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Account'"
+					   [iconClass]="'mdi mdi-account-box-multiple'"></a></li>
+				<li><a [routerLink]="'/profile'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Profile'"
+					   [iconClass]="'mdi mdi-face-profile'"></a></li>
+				<li k-sidebar-dropdown-item [label]="'Theming'" [iconClass]="'mdi mdi-palette'">
+					<ul k-sidebar-items-container>
+						<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Colors'"
+							   [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
+							   [label]="'Grids'" [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
+							   [label]="'Menus'" [iconClass]="'mdi mdi-account'"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</k-sidebar-group>
+		<k-sidebar-group [title]="'Setting'">
+			<ul k-sidebar-items-container>
+				<li><a [routerLink]="'/account'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Account'"
+					   [iconClass]="'mdi mdi-account-box-multiple'"></a></li>
+				<li><a [routerLink]="'/profile'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Profile'"
+					   [iconClass]="'mdi mdi-face-profile'"></a></li>
+				<li k-sidebar-dropdown-item [label]="'Theming'" [iconClass]="'mdi mdi-palette'">
+					<ul k-sidebar-items-container>
+						<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Colors'"
+							   [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
+							   [label]="'Grids'" [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
+							   [label]="'Menus'" [iconClass]="'mdi mdi-account'"></a></li>
 					</ul>
 				</li>
 			</ul>
@@ -34,7 +114,19 @@
 
 	<k-sidebar-content>
 
-		<div class="container-fluid p-5">
+		<nav kNavbar [bgColor]="'primary'" [darkMode]="true"  class="navbar-expand-lg" [ngClass]="{'sidebar-nav-offset': sidebar.status == 'opened' && sidebar.mode != 'side'}">
+			<a kNavbarBrand href="#">Navbar</a>
+			<ul kNavbarNav>
+				<li kNavbarNavItem>
+					<a href="#" kNavbarNavLink>Dashboard</a>
+				</li>
+				<li kNavbarNavItem>
+					<a href="#" kNavbarNavLink>Orders</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="container-fluid p-5 pt-5">
 
 			<label>Mode:</label>
 			<select [(ngModel)]="sidebar.mode">
