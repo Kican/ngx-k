@@ -1,0 +1,19 @@
+{
+	"name": "ngx-k-components/form",
+	"version": "0.0.1",
+	"peerDependencies": {
+		"@angular/common": "^10.0.3",
+		"@angular/core": "^10.0.3",
+		"ngx-k-componenta/core/models": "0.0.1"
+	},
+	"dependencies": {
+		"tslib": "^2.0.0"
+	},
+	"ngPackage": {
+		"$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
+		"lib": {
+			"entryFile": "src/public-api.ts"
+		},
+		"dest": "../../../dist/form"
+	}
+}

@@ -8,7 +8,8 @@ import {KAlertModule} from 'ngx-k-components/alert';
 import {KBadgeModule} from 'ngx-k-components/badge';
 import {KCardModule} from 'ngx-k-components/card';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {KSidebarModule} from 'ngx-k-components/sidebar';
+import {KSidebarModule, SidebarMode, SidebarStatus} from 'ngx-k-components/sidebar';
+import {KFormModule} from '../../../components/form/src/k-form.module';
 
 @NgModule({
 	declarations: [
@@ -23,7 +24,12 @@ import {KSidebarModule} from 'ngx-k-components/sidebar';
 		KAlertModule,
 		KBadgeModule,
 		KCardModule,
-		KSidebarModule.forRoot({})
+		KSidebarModule.forRoot({
+			initialState: SidebarStatus.Opened,
+			hasBackdrop: false,
+			mode: SidebarMode.Push
+		}),
+		KFormModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

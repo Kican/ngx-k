@@ -1,8 +1,6 @@
 <k-sidebar-container #sidebar
 					 class="custom-container"
 					 initialState="opened"
-					 [mode]="'push'"
-					 [hasBackdrop]="true"
 					 [fixed]="true"
 					 [closeOnBackdropClick]="true">
 	<k-sidebar class="custom-sidebar">
@@ -90,6 +88,32 @@
 				</k-card-body>
 				<k-card-footer>teste footer</k-card-footer>
 			</k-card>
+
+			<div class="mb-2"></div>
+
+			<k-form-group [id]="'name'">
+				<label kFormLabel>Name</label>
+				<input kFormInput [isPlainText]="true" type="text">
+			</k-form-group>
+
+			<k-form-group [id]="'family'">
+				<label kFormLabel>Family</label>
+				<input kFormInput type="text">
+				<small kFormHint>Family Name</small>
+			</k-form-group>
+
+			<k-form-group [id]="'gender'">
+				<label kFormLabel>Gender</label>
+				<select kFormInput>
+					<option value="1">Male</option>
+					<option value="0">Woman</option>
+				</select>
+			</k-form-group>
+
+			<k-form-group [id]="'address'">
+				<label kFormLabel>Address</label>
+				<textarea kFormInput></textarea>
+			</k-form-group>
 
 		</div>
 
