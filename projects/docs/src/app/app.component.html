@@ -114,7 +114,7 @@
 
 	<k-sidebar-content>
 
-		<nav kNavbar [bgColor]="'primary'" [darkMode]="true"  class="navbar-expand-lg" [ngClass]="{'sidebar-nav-offset': sidebar.status == 'opened' && sidebar.mode != 'side'}">
+		<nav kNavbar [bgColor]="'primary'" [darkMode]="true" [position]="'fixed-top'"  class="navbar-expand-lg" [ngClass]="{'sidebar-nav-offset': sidebar.status == 'opened' && sidebar.mode != 'side'}">
 			<a kNavbarBrand href="#">Navbar</a>
 			<ul kNavbarNav>
 				<li kNavbarNavItem>
