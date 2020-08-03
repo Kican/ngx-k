@@ -20,7 +20,7 @@
 
 		.sidebar-item:not(.active) {
 			&:hover {
-				background-color: darken($hover-color, 4%);
+				background-color: darken($hover-color, 5%);
 			}
 		}
 
