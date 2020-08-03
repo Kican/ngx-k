@@ -18,9 +18,9 @@
 			padding-top: 0;
 		}
 
-		.sidebar-item {
+		.sidebar-item:not(.active) {
 			&:hover {
-				background-color: darken($hover-color, 3%);
+				background-color: darken($hover-color, 4%);
 			}
 		}
 

@@ -21,8 +21,21 @@
 			font-weight: 500;
 		}
 
+		.sidebar-badge {
+			color: white;
+			background-color: map_get($colors, 'primary');
+			padding: 4px 6px;
+			border-radius: $radius;
+			font-size: .8em;
+		}
+
 		&.active {
 			background-color: map-get($colors, 'primary');
+
+			.sidebar-badge {
+				background-color: white;
+				color: map_get($colors, 'primary');
+			}
 
 			span {
 				color: white;
@@ -39,14 +52,6 @@
 
 		&:not(.active):hover {
 			background-color: $hover-color;
-		}
-
-		.sidebar-badge {
-			color: white;
-			background-color: map_get($colors, 'primary');
-			padding: 4px 6px;
-			border-radius: $radius;
-			font-size: .8em;
 		}
 	}
 }
