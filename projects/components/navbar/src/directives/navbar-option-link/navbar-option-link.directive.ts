@@ -1,13 +1,13 @@
 import {Directive, HostBinding} from '@angular/core';
 
 @Directive({
-	selector: '[kNavbarNavItem]'
+	selector: '[kNavbarOptionLink]'
 })
-export class NavbarNavItemDirective {
+export class NavbarOptionLinkDirective {
 
 	@HostBinding('class')
 	get classList(): string {
-		return 'k-nav-item';
+		return 'k-navbar-option-link';
 	}
 
 }

@@ -1,4 +1,5 @@
 @import "../../core/scss/src/variables/color";
+@import "../../core/scss/src/variables/common";
 @import "variable";
 
 @mixin sidebar-dropdown-item() {
@@ -25,11 +26,11 @@
 		}
 
 		path {
-			fill: map-get($colors, 'secondary');
+			fill: map-get($theme-colors, 'secondary');
 		}
 
 		svg {
-			transition: $transition;
+			transition: $main-transition;
 		}
 
 		&.opened {

@@ -15,6 +15,15 @@
 	}
 }
 
+@mixin padding-right($value) {
+	padding-right: $value;
+
+	body[dir='rtl'] & {
+		padding-right: 0;
+		padding-left: $value;
+	}
+}
+
 @mixin margin-left($value) {
 	margin-left: $value;
 

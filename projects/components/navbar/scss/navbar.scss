@@ -1,0 +1,31 @@
+@import "../../core/scss/src/mixin/direction";
+@import "../../core/scss/src/base";
+@import "navbar-nav-item";
+@import "navbar-option-item";
+@import "~bootstrap-v4-rtl/scss/navbar";
+
+@mixin k-navbar(
+	$height: 60px,
+	$padding: 1rem
+) {
+	.k-navbar {
+		height: $height;
+		padding: $padding;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&.scrolled-down {
+			height: 60px;
+			padding: 1rem $padding;
+		}
+	}
+
+	.navbar-nav {
+		flex-direction: row;
+		padding-right: 0;
+	}
+
+	@include nav-item();
+	@include navbar-option-item();
+}

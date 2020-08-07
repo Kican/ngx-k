@@ -7,7 +7,7 @@ export class NavbarNavLinkDirective {
 
 	@HostBinding('class')
 	get classList(): string {
-		return 'nav-link';
+		return 'k-nav-link';
 	}
 
 }

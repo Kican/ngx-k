@@ -3,8 +3,8 @@
 	"version": "0.0.1",
 	"peerDependencies": {
 		"@angular/common": "^10.0.3",
-		"@angular/core": "^10.0.3",
-		"k-components/core": "0.0.1"
+		"@angular/core": "^10.0.3"
+
 	},
 	"ngPackage": {
 		"$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",

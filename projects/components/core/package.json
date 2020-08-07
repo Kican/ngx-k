@@ -1,20 +1,16 @@
 {
-	"name": "ngx-k-components/sidebar",
+	"name": "ngx-k-components/core/models",
 	"version": "0.0.1",
 	"peerDependencies": {
 		"@angular/common": "^10.0.3",
 		"@angular/core": "^10.0.3",
-		"ngx-k-components/core/styles": "0.0.1",
-		"ngx-k-components/core": "0.0.1"
-	},
-	"dependencies": {
-		"tslib": "^2.0.0"
+		"k-components/core/models": "0.0.1"
 	},
 	"ngPackage": {
 		"$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
 		"lib": {
 			"entryFile": "src/public-api.ts"
 		},
-		"dest": "../../../dist/sidebar"
+		"dest": "../../../dist/core/models"
 	}
 }

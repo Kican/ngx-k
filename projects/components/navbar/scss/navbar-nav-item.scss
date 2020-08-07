@@ -1,0 +1,22 @@
+@import "../../core/scss/src/variables/color";
+
+@mixin nav-item() {
+	.k-nav-item {
+		font-weight: 500;
+		border-radius: 5px;
+
+		.k-nav-link {
+			text-decoration: none;
+			display: block;
+			padding: 7px 16px;
+			color: #B3BCD1;
+			border-radius: 5px;
+			transition: .2s ease-out;
+
+			&:hover {
+				color: map-get($theme-colors, 'primary');
+				background-color: lighten(map-get($theme-colors, 'primary'), 45%);
+			}
+		}
+	}
+}

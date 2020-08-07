@@ -10,6 +10,7 @@ import {SidebarGroupComponent} from './components/sidebar-group/sidebar-group.co
 import {SidebarItemsContainerComponent} from './components/sidebar-items-container/sidebar-items-container.component';
 import {SidebarItemComponent} from './components/sidebar-item/sidebar-item.component';
 import {SidebarDropdownItemComponent} from './components/sidebar-dropdown-item/sidebar-dropdown-item.component';
+import {KCoreModule} from '../../core/src/public-api';
 
 @NgModule({
 	declarations: [
@@ -26,6 +27,7 @@ import {SidebarDropdownItemComponent} from './components/sidebar-dropdown-item/s
 	],
 	imports: [
 		BrowserAnimationsModule,
+		KCoreModule
 	],
 	exports: [
 		SidebarContainerComponent,

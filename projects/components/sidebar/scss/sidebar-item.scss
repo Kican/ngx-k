@@ -1,3 +1,4 @@
+@import "../../core/scss/src/variables/common";
 @import "../../core/scss/src/variables/color";
 @import "../../core/scss/src/mixin/direction";
 @import "variable";
@@ -7,34 +8,35 @@
 		display: block;
 		margin-bottom: 3px;
 		text-decoration: none;
-		transition: $transition;
+		transition: $main-transition;
 		border-radius: $radius;
 
 		i {
-			font-size: 1.2em;
+			font-size: 1.1em;
 			@include margin-right(10px);
-			color: map-get($colors, 'secondary');
+			color: map-get($theme-colors, 'secondary');
 		}
 
 		span {
 			color: black;
 			font-weight: 500;
+			font-size: .925em;
 		}
 
 		.sidebar-badge {
 			color: white;
-			background-color: map_get($colors, 'primary');
+			background-color: map_get($theme-colors, 'primary');
 			padding: 4px 6px;
 			border-radius: $radius;
 			font-size: .8em;
 		}
 
 		&.active {
-			background-color: map-get($colors, 'primary');
+			background-color: map-get($theme-colors, 'primary');
 
 			.sidebar-badge {
 				background-color: white;
-				color: map_get($colors, 'primary');
+				color: map_get($theme-colors, 'primary');
 			}
 
 			span {
@@ -42,7 +44,7 @@
 			}
 
 			i {
-				color: $icon-color;
+				color: $icon-active-color;
 			}
 		}
 

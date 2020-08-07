@@ -1,5 +1,4 @@
 import {Directive, HostBinding, Input} from '@angular/core';
-import {ColorType} from 'ngx-k-components/core/models';
 import {NavbarPositionType} from '../../models/navbar-position.type';
 
 @Directive({
@@ -11,7 +10,10 @@ export class NavbarDirective {
 	darkMode: boolean;
 
 	@Input()
-	bgColor: ColorType = 'default';
+	bgColor: string = '#FFFFFF';
+
+	@Input()
+	shadow: string = '0 5px 15px rgba(0, 0, 0, .05)';
 
 	@Input()
 	position: NavbarPositionType;
@@ -19,11 +21,20 @@ export class NavbarDirective {
 	@HostBinding('class')
 	get classList(): string {
 		return [
-			'navbar',
-			`bg-${this.bgColor}`,
+			'k-navbar',
 			this.darkMode ? 'navbar-dark' : 'navbar-light',
 			this.position
 		].filter(Boolean).join(' ');
+	}
+
+	@HostBinding('style.background-color')
+	get backgroundColor(): string {
+		return this.bgColor;
+	}
+
+	@HostBinding('style.box-shadow')
+	get boxShadow(): string {
+		return this.shadow;
 	}
 
 }

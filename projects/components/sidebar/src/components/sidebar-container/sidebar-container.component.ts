@@ -2,6 +2,9 @@ import {Attribute, ChangeDetectionStrategy, Component, HostBinding, Input, OnIni
 import {SidebarService} from '../../services/sidebar.service';
 import {SidebarMode} from '../../models/sidebar-mode.enum';
 import {SidebarStatus} from '../../models/sidebar-status.enum';
+import {WindowSizeService} from '../../../../core/src/public-api';
+import {distinctUntilChanged, map} from "rxjs/operators";
+
 
 @Component({
 	selector: 'k-sidebar-container',
@@ -10,8 +13,10 @@ import {SidebarStatus} from '../../models/sidebar-status.enum';
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SidebarContainerComponent implements OnInit {
+	private _mode: SidebarMode = this.sidebarService.mode;
 	@Input()
 	set mode(mode: SidebarMode) {
+		this._mode = mode;
 		this.sidebarService.changeMode(mode);
 	}
 
@@ -19,8 +24,10 @@ export class SidebarContainerComponent implements OnInit {
 		return this.sidebarService.mode;
 	}
 
+	private _hasBackdrop: boolean = this.sidebarService.hasBackdrop;
 	@Input()
 	set hasBackdrop(hasBackdrop: boolean) {
+		this._hasBackdrop = hasBackdrop;
 		this.sidebarService.changeBackdrop(hasBackdrop);
 	}
 
@@ -55,8 +62,26 @@ export class SidebarContainerComponent implements OnInit {
 
 	constructor(
 		@Attribute('initialState') private initialState: SidebarStatus,
-		private sidebarService: SidebarService
+		private sidebarService: SidebarService,
+		private windowSizeService: WindowSizeService
 	) {
+	}
+
+	private handleMobile(): void {
+		this.windowSizeService.windowSize$
+			.pipe(
+				map(value => value.width <= 500),
+				distinctUntilChanged()
+			).subscribe(value => {
+			if (value) {
+				if (!this.hasBackdrop) this.close();
+				this.sidebarService.changeBackdrop(true);
+				this.sidebarService.changeMode(SidebarMode.Over);
+			} else {
+				this.sidebarService.changeBackdrop(this._hasBackdrop);
+				this.sidebarService.changeMode(this._mode);
+			}
+		});
 	}
 
 	ngOnInit(): void {
@@ -65,6 +90,8 @@ export class SidebarContainerComponent implements OnInit {
 		} else if (this.initialState === SidebarStatus.Closed) {
 			this.close();
 		}
+
+		this.handleMobile();
 	}
 
 	open(): void {
