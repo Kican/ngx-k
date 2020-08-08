@@ -27,6 +27,16 @@
 
 		&.scroll {
 			overflow: auto;
+			position: relative;
+
+			&:after {
+				content: "";
+				position: sticky;
+				right: 0;
+				width: 40px;
+				padding: 16px;
+				background: linear-gradient(-90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+			}
 		}
 	}
 

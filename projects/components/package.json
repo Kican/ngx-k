@@ -1,5 +1,5 @@
 {
-	"name": "@ngx-k-components",
+	"name": "ngx-k-components",
 	"version": "0.0.1",
 	"description": "Angular Kican Components",
 	"author": "Kican Contributers",
@@ -8,8 +8,9 @@
 		"postinstall": "ngcc"
 	},
 	"peerDependencies": {
-		"@angular/common": "^10.0.3",
-		"@angular/core": "^10.0.3"
+		"@angular/common": "^10.0.8",
+		"@angular/core": "^10.0.8",
+		"bootstrap-v4-rtl": "^4.4.1-2"
 	},
 	"dependencies": {
 		"tslib": "^2.0.0"

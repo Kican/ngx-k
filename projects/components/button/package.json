@@ -1,10 +1,10 @@
 {
-	"name": "@ngx-k-components/button",
+	"name": "ngx-k-components/button",
 	"version": "0.0.1",
 	"peerDependencies": {
-		"@angular/common": "^10.0.3",
-		"@angular/core": "^10.0.3",
-		"k-components/core/models": "0.0.1"
+		"@angular/common": "^10.0.8",
+		"@angular/core": "^10.0.8",
+		"ngx-k-components/core/models": "0.0.1"
 	},
 	"dependencies": {
 		"tslib": "^2.0.0"
