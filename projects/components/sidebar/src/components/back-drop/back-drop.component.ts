@@ -20,13 +20,13 @@ export class BackDropComponent implements OnInit {
 	}
 
 	ngOnInit(): void {
-		this.sidebarService.isFixedChange$.subscribe(value => {
+		this.sidebarService.config$.subscribe(value => {
 			this.position = this.sidebarService.position;
 		});
 	}
 
-	close() {
-		if (this.sidebarService.closeOnBackdropClick) {
+	close(): void {
+		if (this.sidebarService.config.getValue().closeOnBackdropClick) {
 			this.sidebarService.close();
 		}
 	}

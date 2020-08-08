@@ -24,7 +24,7 @@ export class SidebarContentDirective implements OnInit {
 	}
 
 	ngOnInit(): void {
-		merge(this.sidebarService.statusChange$, this.sidebarService.modeChange$).subscribe(value => {
+		merge(this.sidebarService.statusChange$, this.sidebarService.config$).subscribe(value => {
 			this.setClass(this.sidebarService.mode, this.sidebarService.status);
 		});
 	}

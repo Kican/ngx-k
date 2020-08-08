@@ -27,7 +27,7 @@ export class SidebarDirective implements OnInit {
 			this.opened = (value === SidebarStatus.Opened);
 		});
 
-		this.sidebarService.isFixedChange$.subscribe(value => {
+		this.sidebarService.config$.subscribe(value => {
 			this.position = this.sidebarService.position;
 		});
 	}

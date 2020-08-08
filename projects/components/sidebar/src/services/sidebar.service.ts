@@ -1,62 +1,58 @@
 import {Inject, Injectable} from '@angular/core';
-import {BehaviorSubject} from 'rxjs';
 import {SidebarStatus} from '../models/sidebar-status.enum';
-import {distinctUntilChanged} from 'rxjs/operators';
 import {SIDEBAR_CONFIG, SidebarConfiguration} from '../models/sidebar.config';
+import {BehaviorSubject} from 'rxjs';
 import {SidebarMode} from '../models/sidebar-mode.enum';
+import {WindowSizeService} from 'ngx-k-components/core';
+import {distinctUntilChanged, map} from 'rxjs/operators';
 
 @Injectable()
 export class SidebarService {
-	private statusChange = new BehaviorSubject<SidebarStatus>(this.config.initialState);
-	statusChange$ = this.statusChange.asObservable().pipe(distinctUntilChanged());
+	config = new BehaviorSubject<SidebarConfiguration>(this.globalConfig);
+	config$ = this.config.asObservable();
+	localConfig: SidebarConfiguration = this.config.getValue();
 
-	private modeChange = new BehaviorSubject<SidebarMode>(this.config.mode);
-	modeChange$ = this.modeChange.asObservable().pipe(distinctUntilChanged());
-
-	private hasBackdropChange = new BehaviorSubject<boolean>(this.config.hasBackdrop);
-	hasBackdropChange$ = this.hasBackdropChange.asObservable().pipe(distinctUntilChanged());
-
-	private isFixedChange = new BehaviorSubject<boolean>(this.config.isFixed);
-	isFixedChange$ = this.isFixedChange.asObservable().pipe(distinctUntilChanged());
-
-	private closeOnBackdropClickChange = new BehaviorSubject<boolean>(this.config.closeOnBackdropClick);
-	closeOnBackdropClickChange$ = this.closeOnBackdropClickChange.asObservable().pipe(distinctUntilChanged());
-
-	private mobileModeChange = new BehaviorSubject<SidebarMode>(this.config.mobileMode);
-	mobileModeChange$ = this.closeOnBackdropClickChange.asObservable().pipe(distinctUntilChanged());
-
-	private mobileWidthChange = new BehaviorSubject<number>(this.config.mobileWidth);
-	mobileWidthChange$ = this.closeOnBackdropClickChange.asObservable().pipe(distinctUntilChanged());
+	private statusChange = new BehaviorSubject<SidebarStatus>(this.config.getValue().initialState);
+	public statusChange$ = this.statusChange.asObservable();
 
 	get status(): SidebarStatus {
 		return this.statusChange.getValue();
 	}
 
 	get mode(): SidebarMode {
-		return this.modeChange.getValue();
-	}
-
-	get mobileMode(): SidebarMode {
-		return this.mobileModeChange.getValue();
-	}
-
-	get hasBackdrop(): boolean {
-		return this.hasBackdropChange.getValue();
-	}
-
-	get isFixed(): boolean {
-		return this.isFixedChange.getValue();
+		return this.config.getValue().mode;
 	}
 
 	get position(): string {
-		return this.isFixed ? 'fixed' : 'absolute';
+		return this.config.getValue().isFixed ? 'fixed' : 'absolute';
 	}
 
-	get closeOnBackdropClick(): boolean {
-		return this.closeOnBackdropClickChange.getValue();
+	constructor(
+		@Inject(SIDEBAR_CONFIG) private globalConfig: SidebarConfiguration,
+		private windowSizeService: WindowSizeService
+	) {
+		this.mobileHandler();
 	}
 
-	constructor(@Inject(SIDEBAR_CONFIG) private config: SidebarConfiguration) {
+	private mobileHandler(): void {
+		this.windowSizeService.windowSize$
+			.pipe(
+				map(value => value.width <= this.config.getValue().breakpoint),
+				distinctUntilChanged())
+			.subscribe(value => {
+				if (value) {
+					this.close();
+					this.config.next(new SidebarConfiguration({mode: SidebarMode.Over, hasBackdrop: true}));
+				} else
+					this.config.next(new SidebarConfiguration(this.localConfig));
+			});
+	}
+
+	configure(config: SidebarConfiguration): void {
+		const conf = this.config.getValue();
+		conf.overWrite(config);
+		this.localConfig = conf;
+		this.config.next(conf);
 	}
 
 	open(): void {
@@ -69,29 +65,5 @@ export class SidebarService {
 
 	toggle(): void {
 		this.statusChange.next(this.status === SidebarStatus.Opened ? SidebarStatus.Closed : SidebarStatus.Opened);
-	}
-
-	changeMode(mode: SidebarMode): void {
-		this.modeChange.next(mode);
-	}
-
-	changeBackdrop(hasBackdrop: boolean): void {
-		this.hasBackdropChange.next(hasBackdrop);
-	}
-
-	changeIsFixed(isFixed: boolean): void {
-		this.isFixedChange.next(isFixed);
-	}
-
-	changeCloseOnBackdropClick(closeOnBackdropClick: boolean): void {
-		this.closeOnBackdropClickChange.next(closeOnBackdropClick);
-	}
-
-	changeMobile(mode: SidebarMode): void {
-		this.mobileModeChange.next(mode);
-	}
-
-	changeWidth(width: number): void {
-		this.mobileWidthChange.next(width);
 	}
 }

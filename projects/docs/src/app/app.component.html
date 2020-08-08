@@ -1,7 +1,4 @@
-<k-sidebar-container #sidebar
-					 initialState="opened"
-					 [fixed]="true"
-					 [closeOnBackdropClick]="true">
+<k-sidebar-container #sidebar>
 	<k-sidebar>
 		<k-sidebar-header>
 			<div class="d-flex align-items-center">
@@ -46,7 +43,7 @@
 			[bgColor]="'#FFFFFF'"
 			[position]="'fixed-top'"
 			style="transition: .3s cubic-bezier(.25,.1,.25,1)"
-			[ngClass]="{'k-sidebar-nav-offset': sidebar.status == 'opened' && sidebar.mode == 'push'}">
+			[ngClass]="{'k-sidebar-nav-offset': sidebar.status == 'opened' && sidebar.config.mode == 'push'}">
 			<ul kNavbarNav>
 				<li kNavbarNavItem>
 					<a kNavbarNavLink (click)="sidebar.toggle()" href="javascript:void">
@@ -58,10 +55,13 @@
 					</a>
 				</li>
 				<li kNavbarNavItem>
-					<a href="#" kNavbarNavLink>Dashboard</a>
+					<a href="#" kNavbarNavLink [routerLink]="['/']" routerLinkActive="active">Dashboard</a>
 				</li>
 				<li kNavbarNavItem>
-					<a href="#" kNavbarNavLink>Orders</a>
+					<a href="#" kNavbarNavLink>Managers</a>
+				</li>
+				<li kNavbarNavItem>
+					<a href="#" kNavbarNavLink>Products</a>
 				</li>
 				<li kNavbarNavItem>
 					<a href="#" kNavbarNavLink>Comments</a>
@@ -77,7 +77,7 @@
 			</ul>
 		</nav>
 
-		<div class="p-5" style="padding-top: 110px !important;">
+		<div style="padding: 1.75rem; padding-top: 85px !important;">
 
 			<input type="checkbox" [formControl]="isRtl" id="isRtl">
 			<label for="isRtl">Rtl Layout</label>

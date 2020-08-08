@@ -6,7 +6,7 @@
 
 @mixin k-navbar(
 	$height: 60px,
-	$padding: 1rem
+	$padding: 1rem .7rem
 ) {
 	.k-navbar {
 		height: $height;
@@ -24,8 +24,12 @@
 	.navbar-nav {
 		flex-direction: row;
 		padding-right: 0;
+
+		&.scroll {
+			overflow: auto;
+		}
 	}
 
-	@include nav-item();
+	@include navbar-nav-item();
 	@include navbar-option-item();
 }

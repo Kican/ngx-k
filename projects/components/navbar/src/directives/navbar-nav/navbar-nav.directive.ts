@@ -7,7 +7,7 @@ export class NavbarNavDirective {
 
 	@HostBinding('class')
 	get classList(): string {
-		return 'navbar-nav';
+		return 'navbar-nav scroll';
 	}
 
 }
