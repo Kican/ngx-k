@@ -1,5 +1,5 @@
 {
-	"name": "ngx-k-components/sidebar",
+	"name": "@ngx-k-components/sidebar",
 	"version": "0.0.1",
 	"peerDependencies": {
 		"@angular/common": "^10.0.3",

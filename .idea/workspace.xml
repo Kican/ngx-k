@@ -28,13 +28,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="complete responsive of sidebar and navbar">
+    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="add auto close support for items">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/navbar/scss/navbar-nav-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/scss/navbar-nav-item.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/navbar/scss/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/scss/navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-item/sidebar-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-item/sidebar-item.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/alert/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/alert/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/badge/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/badge/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/button/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/button/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/card/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/card/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/core/models/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/models/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/form/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/form/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +147,8 @@
       <workItem from="1596610805888" duration="652000" />
       <workItem from="1596796527560" duration="20356000" />
       <workItem from="1596862514131" duration="10024000" />
-      <workItem from="1596881965517" duration="2435000" />
+      <workItem from="1596881965517" duration="2456000" />
+      <workItem from="1596889572663" duration="1904000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -249,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596876219393</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add auto close support for items">
+      <created>1596887238751</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1596887238751</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +314,8 @@
     <MESSAGE value="change method of importing bootstrap styles ~&#10;- still need some work on sidebar responsiveness for mobile devices &#10;- navbar styling&#10;- some tweaks on sidebar styles (make it smaller)" />
     <MESSAGE value="responsive sidebar" />
     <MESSAGE value="complete responsive of sidebar and navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete responsive of sidebar and navbar" />
+    <MESSAGE value="add auto close support for items" />
+    <option name="LAST_COMMIT_MESSAGE" value="add auto close support for items" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="321" width="374" height="561" key="#com.intellij.ide.util.MemberChooser" timestamp="1596797428747">
@@ -355,10 +369,10 @@
     </state>
     <state x="849" y="460" key="VCS.ChangelistChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1596871154283" />
     <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="660" y="331" width="800" height="564" key="Vcs.Push.Dialog.v2" timestamp="1596876220856">
+    <state x="660" y="331" width="800" height="564" key="Vcs.Push.Dialog.v2" timestamp="1596887240291">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="660" y="331" width="800" height="564" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1596876220856" />
+    <state x="660" y="331" width="800" height="564" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1596887240291" />
     <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596280780211" />
     <state x="100" y="100" width="1720" height="844" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596864881372">
       <screen x="0" y="0" width="1920" height="1044" />
@@ -383,10 +397,10 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="624" y="238" key="run.anything.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1596875526013" />
-    <state x="0" y="0" width="672" height="491" key="search.everywhere.popup" timestamp="1596882630406">
+    <state x="0" y="0" width="672" height="491" key="search.everywhere.popup" timestamp="1596891369726">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="0" y="0" width="672" height="491" key="search.everywhere.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1596882630406" />
+    <state x="0" y="0" width="672" height="491" key="search.everywhere.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1596891369726" />
     <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1596281322790" />
   </component>
 </project>
