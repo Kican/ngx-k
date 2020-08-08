@@ -28,50 +28,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="minor changes in sidebar and docs project">
-      <change afterPath="$PROJECT_DIR$/projects/components/alert/scss/alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/badge/scss/badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/button/scss/button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/card/scss/card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/core/models/src/interfaces/window-size.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/core/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/core/scss/src/base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/core/scss/src/essentionals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/core/scss/src/variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/core/scss/src/variables/common.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/core/src/k-core.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/core/src/public-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/core/src/services/window-size/window-size.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/core/src/services/window-size/window.size.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/form/scss/form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/navbar/scss/navbar-nav-item.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/navbar/scss/navbar-option-item.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/navbar/scss/navbar.scss" afterDir="false" />
+    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="change method of importing bootstrap styles ~&#10;- still need some work on sidebar responsiveness for mobile devices &#10;- navbar styling&#10;- some tweaks on sidebar styles (make it smaller)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/core/models/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/models/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/core/models/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/models/src/public-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/core/scss/src/mixin/direction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/scss/src/mixin/direction.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/core/scss/src/variables/color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/scss/src/variables/color.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/navbar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar-nav-item/navbar-nav-item.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar-nav-item/navbar-nav-item.directive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar-nav-link/navbar-nav-link.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar-nav-link/navbar-nav-link.directive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar/navbar.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar/navbar.directive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/k-navbar.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/src/k-navbar.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/scss/_variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/scss/_variable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/scss/sidebar-dropdown-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/scss/sidebar-dropdown-item.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/scss/sidebar-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/scss/sidebar-item.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/scss/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/scss/sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/core/src/services/window-size/window.size.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/src/services/window-size/window.size.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-container/sidebar-container.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-container/sidebar-container.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-dropdown-item/sidebar-dropdown-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-dropdown-item/sidebar-dropdown-item.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-group/sidebar-group.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-group/sidebar-group.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/k-sidebar.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/k-sidebar.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/models/sidebar.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/models/sidebar.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +139,8 @@
       <workItem from="1596390514470" duration="18000" />
       <workItem from="1596518167365" duration="1333000" />
       <workItem from="1596610805888" duration="652000" />
-      <workItem from="1596796527560" duration="19735000" />
+      <workItem from="1596796527560" duration="20356000" />
+      <workItem from="1596862514131" duration="1375000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -263,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596479529835</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="change method of importing bootstrap styles ~&#10;- still need some work on sidebar responsiveness for mobile devices &#10;- navbar styling&#10;- some tweaks on sidebar styles (make it smaller)">
+      <created>1596829255792</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1596829255792</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +282,8 @@
     <MESSAGE value="card implementation" />
     <MESSAGE value="sidebar implementation" />
     <MESSAGE value="minor changes in sidebar and docs project" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor changes in sidebar and docs project" />
+    <MESSAGE value="change method of importing bootstrap styles ~&#10;- still need some work on sidebar responsiveness for mobile devices &#10;- navbar styling&#10;- some tweaks on sidebar styles (make it smaller)" />
+    <option name="LAST_COMMIT_MESSAGE" value="change method of importing bootstrap styles ~&#10;- still need some work on sidebar responsiveness for mobile devices &#10;- navbar styling&#10;- some tweaks on sidebar styles (make it smaller)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="321" width="374" height="561" key="#com.intellij.ide.util.MemberChooser" timestamp="1596797428747">
@@ -361,14 +332,15 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="192" y="90" key="MergeDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1596475237778" />
-    <state x="1132" y="634" key="VCS.ChangelistChooser" timestamp="1596004239845">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="660" y="331" key="Vcs.Push.Dialog.v2" timestamp="1596479531905">
+    <state x="849" y="460" key="VCS.ChangelistChooser" timestamp="1596829039675">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="660" y="331" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1596479531905" />
+    <state x="849" y="460" key="VCS.ChangelistChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1596829039675" />
+    <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
+    <state x="660" y="331" key="Vcs.Push.Dialog.v2" timestamp="1596829263228">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="660" y="331" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1596829263228" />
     <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596280780211" />
     <state x="803" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596475227398">
       <screen x="0" y="0" width="1920" height="1044" />
@@ -385,10 +357,10 @@
     <state x="665" y="332" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1594446665389" />
     <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1596827233107" />
     <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1596265126360" />
-    <state x="0" y="0" width="672" height="491" key="search.everywhere.popup" timestamp="1596827942552">
+    <state x="0" y="0" width="672" height="491" key="search.everywhere.popup" timestamp="1596863271664">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="0" y="0" width="672" height="491" key="search.everywhere.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1596827942552" />
+    <state x="0" y="0" width="672" height="491" key="search.everywhere.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1596863271664" />
     <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1596281322790" />
   </component>
 </project>

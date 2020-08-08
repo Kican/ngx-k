@@ -8,6 +8,9 @@ export interface SidebarConfig {
 	mode?: SidebarMode;
 	hasBackdrop?: boolean;
 	isFixed?: boolean;
+	responsive?: boolean;
+	mobileMode?: SidebarMode;
+	mobileWidth?: number;
 }
 
 export class SidebarConfiguration implements SidebarConfig {
@@ -16,6 +19,9 @@ export class SidebarConfiguration implements SidebarConfig {
 	mode = SidebarMode.Over;
 	hasBackdrop = true;
 	isFixed = true;
+	responsive = true;
+	mobileMode = SidebarMode.Over;
+	mobileWidth = 600;
 
 	constructor(defaultValues?: SidebarConfig) {
 		this.overWrite(defaultValues);

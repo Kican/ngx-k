@@ -3,7 +3,7 @@ import {SidebarService} from '../../services/sidebar.service';
 import {SidebarMode} from '../../models/sidebar-mode.enum';
 import {SidebarStatus} from '../../models/sidebar-status.enum';
 import {WindowSizeService} from '../../../../core/src/public-api';
-import {distinctUntilChanged, map} from "rxjs/operators";
+import {distinctUntilChanged, map} from 'rxjs/operators';
 
 
 @Component({
@@ -13,15 +13,22 @@ import {distinctUntilChanged, map} from "rxjs/operators";
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SidebarContainerComponent implements OnInit {
-	private _mode: SidebarMode = this.sidebarService.mode;
 	@Input()
 	set mode(mode: SidebarMode) {
-		this._mode = mode;
 		this.sidebarService.changeMode(mode);
 	}
 
 	get mode(): SidebarMode {
 		return this.sidebarService.mode;
+	}
+
+	@Input()
+	set mobileMode(mode: SidebarMode) {
+		this.sidebarService.changeMobile(mode);
+	}
+
+	get mobileMode(): SidebarMode {
+		return this.sidebarService.mobileMode;
 	}
 
 	private _hasBackdrop: boolean = this.sidebarService.hasBackdrop;
@@ -76,10 +83,10 @@ export class SidebarContainerComponent implements OnInit {
 			if (value) {
 				if (!this.hasBackdrop) this.close();
 				this.sidebarService.changeBackdrop(true);
-				this.sidebarService.changeMode(SidebarMode.Over);
+				this.sidebarService.changeMode(this.mobileMode);
 			} else {
 				this.sidebarService.changeBackdrop(this._hasBackdrop);
-				this.sidebarService.changeMode(this._mode);
+				this.sidebarService.changeMode(this.mode);
 			}
 		});
 	}

@@ -22,12 +22,22 @@ export class SidebarService {
 	private closeOnBackdropClickChange = new BehaviorSubject<boolean>(this.config.closeOnBackdropClick);
 	closeOnBackdropClickChange$ = this.closeOnBackdropClickChange.asObservable().pipe(distinctUntilChanged());
 
+	private mobileModeChange = new BehaviorSubject<SidebarMode>(this.config.mobileMode);
+	mobileModeChange$ = this.closeOnBackdropClickChange.asObservable().pipe(distinctUntilChanged());
+
+	private mobileWidthChange = new BehaviorSubject<number>(this.config.mobileWidth);
+	mobileWidthChange$ = this.closeOnBackdropClickChange.asObservable().pipe(distinctUntilChanged());
+
 	get status(): SidebarStatus {
 		return this.statusChange.getValue();
 	}
 
 	get mode(): SidebarMode {
 		return this.modeChange.getValue();
+	}
+
+	get mobileMode(): SidebarMode {
+		return this.mobileModeChange.getValue();
 	}
 
 	get hasBackdrop(): boolean {
@@ -75,5 +85,13 @@ export class SidebarService {
 
 	changeCloseOnBackdropClick(closeOnBackdropClick: boolean): void {
 		this.closeOnBackdropClickChange.next(closeOnBackdropClick);
+	}
+
+	changeMobile(mode: SidebarMode): void {
+		this.mobileModeChange.next(mode);
+	}
+
+	changeWidth(width: number): void {
+		this.mobileWidthChange.next(width);
 	}
 }
