@@ -28,22 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="add auto close support for items">
+    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="add navbar fade effect">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/alert/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/alert/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/badge/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/badge/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/button/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/button/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/card/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/card/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/core/models/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/models/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/core/scss/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/scss/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/form/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/form/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/navbar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/core/scss/src/mixin/direction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/scss/src/mixin/direction.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/components/navbar/scss/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/scss/navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +142,7 @@
       <workItem from="1596881965517" duration="2456000" />
       <workItem from="1596889572663" duration="1904000" />
       <workItem from="1596892099100" duration="4158000" />
-      <workItem from="1596896672570" duration="1217000" />
+      <workItem from="1596896672570" duration="1696000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -268,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596887238751</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add navbar fade effect">
+      <created>1596897924507</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1596897924507</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +316,8 @@
     <MESSAGE value="responsive sidebar" />
     <MESSAGE value="complete responsive of sidebar and navbar" />
     <MESSAGE value="add auto close support for items" />
-    <option name="LAST_COMMIT_MESSAGE" value="add auto close support for items" />
+    <MESSAGE value="add navbar fade effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="add navbar fade effect" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="321" width="374" height="561" key="#com.intellij.ide.util.MemberChooser" timestamp="1596797428747">
@@ -342,29 +338,29 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="183" y="133" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596003766335" />
-    <state width="1897" height="282" key="GridCell.Tab.0.bottom" timestamp="1596896881328">
+    <state width="1897" height="282" key="GridCell.Tab.0.bottom" timestamp="1596898130452">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1897" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1596896881328" />
+    <state width="1897" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1596898130452" />
     <state width="2539" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1596281508810" />
-    <state width="1897" height="282" key="GridCell.Tab.0.center" timestamp="1596896881327">
+    <state width="1897" height="282" key="GridCell.Tab.0.center" timestamp="1596898130451">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1897" height="282" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1596896881327" />
+    <state width="1897" height="282" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1596898130451" />
     <state width="2539" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1596281508808" />
-    <state width="1897" height="282" key="GridCell.Tab.0.left" timestamp="1596896881326">
+    <state width="1897" height="282" key="GridCell.Tab.0.left" timestamp="1596898130451">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1897" height="282" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1596896881326" />
+    <state width="1897" height="282" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1596898130451" />
     <state width="2539" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1596281508808" />
-    <state width="1897" height="282" key="GridCell.Tab.0.right" timestamp="1596896881327">
+    <state width="1897" height="282" key="GridCell.Tab.0.right" timestamp="1596898130452">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1897" height="282" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1596896881327" />
+    <state width="1897" height="282" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1596898130452" />
     <state width="2539" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1596281508809" />
     <state x="192" y="90" key="MergeDialog" timestamp="1596475237778">
       <screen x="0" y="0" width="1920" height="1044" />
@@ -375,10 +371,10 @@
     </state>
     <state x="849" y="460" key="VCS.ChangelistChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1596871154283" />
     <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="660" y="331" width="800" height="564" key="Vcs.Push.Dialog.v2" timestamp="1596887240291">
+    <state x="660" y="331" width="800" height="564" key="Vcs.Push.Dialog.v2" timestamp="1596897927124">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="660" y="331" width="800" height="564" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1596887240291" />
+    <state x="660" y="331" width="800" height="564" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1596897927124" />
     <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596280780211" />
     <state x="100" y="100" width="1720" height="844" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596864881372">
       <screen x="0" y="0" width="1920" height="1044" />
@@ -403,10 +399,10 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="624" y="238" key="run.anything.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1596875526013" />
-    <state x="0" y="0" width="672" height="160" key="search.everywhere.popup" timestamp="1596897006285">
+    <state x="0" y="0" width="672" height="160" key="search.everywhere.popup" timestamp="1596898127469">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="0" y="0" width="672" height="160" key="search.everywhere.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1596897006285" />
+    <state x="0" y="0" width="672" height="160" key="search.everywhere.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1596898127469" />
     <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1596281322790" />
   </component>
 </project>

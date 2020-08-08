@@ -42,6 +42,15 @@
 	}
 }
 
+@mixin right($value) {
+	right: $value;
+
+	body[dir='rtl'] & {
+		right: unset;
+		left: $value;
+	}
+}
+
 @mixin transform-translate($x, $y) {
 	transform: translate($x, $y);
 
