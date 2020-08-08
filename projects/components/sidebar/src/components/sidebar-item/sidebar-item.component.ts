@@ -1,4 +1,5 @@
-import {ChangeDetectionStrategy, Component, HostBinding, Input, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, HostBinding, HostListener, Input, OnInit} from '@angular/core';
+import {SidebarService} from '../../services/sidebar.service';
 
 @Component({
 	selector: '[k-sidebar-item]',
@@ -17,7 +18,7 @@ export class SidebarItemComponent implements OnInit {
 	@Input()
 	badge: number;
 
-	constructor() {
+	constructor(private sidebarService: SidebarService) {
 	}
 
 	ngOnInit(): void {
@@ -26,6 +27,12 @@ export class SidebarItemComponent implements OnInit {
 	@HostBinding('class')
 	get classList(): string {
 		return 'sidebar-item sidebar-single-item';
+	}
+
+	@HostListener('click', ['$event'])
+	onClick($event): void {
+		if (this.sidebarService.config.getValue().hasBackdrop)
+			this.sidebarService.close();
 	}
 
 }
