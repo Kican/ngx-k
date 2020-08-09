@@ -1,5 +1,5 @@
 import {Directive, HostBinding, Inject, OnInit} from '@angular/core';
-import {SidebarService} from '../../services/sidebar.service';
+import {SidebarService} from '../../services/sidebar/sidebar.service';
 import {SidebarStatus} from '../../models/sidebar-status.enum';
 import {SidebarConfiguration, SIDEBAR_CONFIG} from '../../models/sidebar.config';
 

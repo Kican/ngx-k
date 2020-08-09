@@ -1,0 +1,7 @@
+<ng-container *ngFor="let menu of menus | async">
+	<k-sidebar-group [title]="menu.title">
+		<ul *ngFor="let subMenu of menu.items" k-sidebar-items-container>
+			<li k-sidebar-item [label]="subMenu.label" [iconClass]="subMenu.iconClass"></li>
+		</ul>
+	</k-sidebar-group>
+</ng-container>

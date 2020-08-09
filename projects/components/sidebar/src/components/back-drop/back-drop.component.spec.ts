@@ -1,7 +1,7 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {BackDropComponent} from './back-drop.component';
-import {SidebarService} from '../../services/sidebar.service';
+import {SidebarService} from '../../services/sidebar/sidebar.service';
 import {By} from '@angular/platform-browser';
 import {SIDEBAR_CONFIG, SidebarConfiguration} from '../../models/sidebar.config';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';

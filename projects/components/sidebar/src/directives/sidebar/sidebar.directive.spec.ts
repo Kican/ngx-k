@@ -3,7 +3,7 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {SIDEBAR_CONFIG, SidebarConfiguration} from '../../models/sidebar.config';
 import {SidebarMode} from '../../models/sidebar-mode.enum';
 import {SidebarContentDirective} from '../sidebar-content/sidebar-content.directive';
-import {SidebarService} from '../../services/sidebar.service';
+import {SidebarService} from '../../services/sidebar/sidebar.service';
 import {SidebarDirective} from './sidebar.directive';
 import {By} from '@angular/platform-browser';
 

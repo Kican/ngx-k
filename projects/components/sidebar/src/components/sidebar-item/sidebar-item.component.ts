@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, HostBinding, HostListener, Input, OnInit} from '@angular/core';
-import {SidebarService} from '../../services/sidebar.service';
+import {SidebarService} from '../../services/sidebar/sidebar.service';
 
 @Component({
 	selector: '[k-sidebar-item]',

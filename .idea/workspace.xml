@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -18,20 +15,53 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-    </expand>
-    <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:dev" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-    </select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="add navbar fade effect">
+    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="implement navbar library ~&#10;- fix sidebar issues&#10;- add status getter in sidebar">
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-dynamic-menu/sidebar-dynamic-menu.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-dynamic-menu/sidebar-dynamic-menu.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-dynamic-menu/sidebar-dynamic-menu.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-dynamic-menu/sidebar-dynamic-menu.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/models/sidebar-dropdown-item.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/models/sidebar-group.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/models/sidebar-item.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar-dynamic-menu/sidebar-dynamic-menu.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar-dynamic-menu/sidebar-dynamic-menu.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/core/scss/src/mixin/direction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/scss/src/mixin/direction.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/navbar/scss/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/scss/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/components/back-drop/back-drop.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/back-drop/back-drop.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/components/back-drop/back-drop.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/back-drop/back-drop.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/components/back-drop/back-drop.component.unit.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/back-drop/back-drop.component.unit.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-container/sidebar-container.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-container/sidebar-container.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-container/sidebar-container.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-container/sidebar-container.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-item/sidebar-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/components/sidebar-item/sidebar-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar-content/sidebar-content.directive.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar-content/sidebar-content.directive.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar-content/sidebar-content.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar-content/sidebar-content.directive.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar-content/sidebar-content.directive.unit.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar-content/sidebar-content.directive.unit.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar/sidebar.directive.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar/sidebar.directive.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar/sidebar.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar/sidebar.directive.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar/sidebar.directive.unit.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/directives/sidebar/sidebar.directive.unit.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/k-sidebar.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/k-sidebar.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/public-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar/sidebar.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar.service.unit.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar/sidebar.service.unit.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +71,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package.json" />
         <option value="SCSS File" />
+        <option value="package.json" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -62,14 +92,13 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/components/core/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/components/navbar/src" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -82,18 +111,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/projects/components/core/src" />
-      <recent name="$PROJECT_DIR$/projects/components/core" />
-      <recent name="$PROJECT_DIR$/projects/components/core/services" />
+      <recent name="$PROJECT_DIR$/projects/components/navbar/src" />
+      <recent name="$PROJECT_DIR$/projects/components/navbar" />
+      <recent name="$PROJECT_DIR$/projects/components/form/src" />
+      <recent name="$PROJECT_DIR$/projects/docs/src/assets/img" />
       <recent name="$PROJECT_DIR$/projects/components/core/scss/src" />
-      <recent name="$PROJECT_DIR$/projects/components/core/scss" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/projects/components/core/src" />
-      <recent name="$PROJECT_DIR$/projects/components/core" />
-      <recent name="$PROJECT_DIR$/projects/components/core/src/services" />
+      <recent name="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar" />
       <recent name="$PROJECT_DIR$/projects/components/core/scss/src" />
       <recent name="$PROJECT_DIR$/projects/components/sidebar" />
+      <recent name="$PROJECT_DIR$/projects/components/card/src/components" />
+      <recent name="$PROJECT_DIR$/projects/components/card/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
@@ -111,7 +140,6 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -130,19 +158,8 @@
       <workItem from="1596002172252" duration="9859000" />
       <workItem from="1596261704417" duration="6193000" />
       <workItem from="1596270927808" duration="4602000" />
-      <workItem from="1596386238471" duration="1088000" />
-      <workItem from="1596388225319" duration="1900000" />
-      <workItem from="1596390335846" duration="16000" />
-      <workItem from="1596390411792" duration="44000" />
-      <workItem from="1596390514470" duration="18000" />
-      <workItem from="1596518167365" duration="1333000" />
-      <workItem from="1596610805888" duration="652000" />
-      <workItem from="1596796527560" duration="20356000" />
-      <workItem from="1596862514131" duration="10024000" />
-      <workItem from="1596881965517" duration="2456000" />
-      <workItem from="1596889572663" duration="1904000" />
-      <workItem from="1596892099100" duration="4158000" />
-      <workItem from="1596896672570" duration="1696000" />
+      <workItem from="1596286914030" duration="749000" />
+      <workItem from="1596348170374" duration="14327000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -221,53 +238,46 @@
       <option name="project" value="LOCAL" />
       <updated>1596280778368</updated>
     </task>
-    <task id="LOCAL-00012" summary="minor changes in sidebar and docs project">
-      <created>1596479529835</created>
+    <task id="LOCAL-00012" summary="remove unnecessary files from alert module">
+      <created>1596287182182</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1596479529835</updated>
+      <updated>1596287182182</updated>
     </task>
-    <task id="LOCAL-00013" summary="change method of importing bootstrap styles ~&#10;- still need some work on sidebar responsiveness for mobile devices &#10;- navbar styling&#10;- some tweaks on sidebar styles (make it smaller)">
-      <created>1596829255792</created>
+    <task id="LOCAL-00013" summary="fix sidebar styling">
+      <created>1596437706619</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1596829255792</updated>
+      <updated>1596437706619</updated>
     </task>
-    <task id="LOCAL-00014" summary="responsive sidebar">
-      <created>1596864051315</created>
+    <task id="LOCAL-00014" summary="implement form library">
+      <created>1596452488654</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1596864051315</updated>
+      <updated>1596452488654</updated>
     </task>
-    <task id="LOCAL-00015" summary="complete responsive of sidebar and navbar">
-      <created>1596876219393</created>
+    <task id="LOCAL-00015" summary="more contrast for dropdown items hover">
+      <created>1596453535550</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1596876219393</updated>
+      <updated>1596453535550</updated>
     </task>
-    <task id="LOCAL-00016" summary="add auto close support for items">
-      <created>1596887238751</created>
+    <task id="LOCAL-00016" summary="implement navbar library ~&#10;- fix sidebar issues&#10;- add status getter in sidebar">
+      <created>1596460194541</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1596887238751</updated>
+      <updated>1596460194541</updated>
     </task>
-    <task id="LOCAL-00017" summary="add navbar fade effect">
-      <created>1596897924507</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1596897924507</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
     <option name="additionalRoots">
       <list>
         <option value="$PROJECT_DIR$/dist/components" />
@@ -279,19 +289,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="dev" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -311,98 +309,77 @@
     <MESSAGE value="move methods from ctor to ngOnInit" />
     <MESSAGE value="card implementation" />
     <MESSAGE value="sidebar implementation" />
-    <MESSAGE value="minor changes in sidebar and docs project" />
-    <MESSAGE value="change method of importing bootstrap styles ~&#10;- still need some work on sidebar responsiveness for mobile devices &#10;- navbar styling&#10;- some tweaks on sidebar styles (make it smaller)" />
-    <MESSAGE value="responsive sidebar" />
-    <MESSAGE value="complete responsive of sidebar and navbar" />
-    <MESSAGE value="add auto close support for items" />
-    <MESSAGE value="add navbar fade effect" />
-    <option name="LAST_COMMIT_MESSAGE" value="add navbar fade effect" />
+    <MESSAGE value="remove unnecessary files from alert module" />
+    <MESSAGE value="fix sidebar styling" />
+    <MESSAGE value="implement form library" />
+    <MESSAGE value="more contrast for dropdown items hovers" />
+    <MESSAGE value="more contrast for dropdown items hover" />
+    <MESSAGE value="implement navbar library ~&#10;- fix sidebar issues&#10;- add status getter in sidebar" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement navbar library ~&#10;- fix sidebar issues&#10;- add status getter in sidebar" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="820" y="321" width="374" height="561" key="#com.intellij.ide.util.MemberChooser" timestamp="1596797428747">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="1093" y="443" key="#com.intellij.ide.util.MemberChooser" timestamp="1596977811356">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="820" y="321" width="374" height="561" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1596797428747" />
-    <state x="1093" y="443" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596262085394" />
+    <state x="1093" y="443" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596977811356" />
     <state x="931" y="374" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595924557607">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="698" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594404337137" />
     <state x="931" y="374" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1595924557607" />
-    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1596281486595">
+    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1596960185731">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1596281486595" />
-    <state x="183" y="133" key="DiffContextDialog" timestamp="1596003766335">
+    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1596960185731" />
+    <state x="183" y="133" key="DiffContextDialog" timestamp="1596453514560">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="183" y="133" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596003766335" />
-    <state width="1897" height="282" key="GridCell.Tab.0.bottom" timestamp="1596898130452">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="183" y="133" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596453514560" />
+    <state width="2539" height="249" key="GridCell.Tab.0.bottom" timestamp="1596977058941">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1897" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1596898130452" />
-    <state width="2539" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1596281508810" />
-    <state width="1897" height="282" key="GridCell.Tab.0.center" timestamp="1596898130451">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="2539" height="249" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1596977058941" />
+    <state width="2539" height="249" key="GridCell.Tab.0.center" timestamp="1596977058939">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1897" height="282" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1596898130451" />
-    <state width="2539" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1596281508808" />
-    <state width="1897" height="282" key="GridCell.Tab.0.left" timestamp="1596898130451">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="2539" height="249" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1596977058939" />
+    <state width="2539" height="249" key="GridCell.Tab.0.left" timestamp="1596977058938">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1897" height="282" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1596898130451" />
-    <state width="2539" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1596281508808" />
-    <state width="1897" height="282" key="GridCell.Tab.0.right" timestamp="1596898130452">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="2539" height="249" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1596977058938" />
+    <state width="2539" height="249" key="GridCell.Tab.0.right" timestamp="1596977058940">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1897" height="282" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1596898130452" />
-    <state width="2539" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1596281508809" />
-    <state x="192" y="90" key="MergeDialog" timestamp="1596475237778">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="2539" height="249" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1596977058940" />
+    <state x="1132" y="634" key="VCS.ChangelistChooser" timestamp="1596004239845">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="192" y="90" key="MergeDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1596475237778" />
-    <state x="849" y="460" key="VCS.ChangelistChooser" timestamp="1596871154283">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state x="849" y="460" key="VCS.ChangelistChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1596871154283" />
     <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="660" y="331" width="800" height="564" key="Vcs.Push.Dialog.v2" timestamp="1596897927124">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="880" y="456" key="Vcs.Push.Dialog.v2" timestamp="1596460195707">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="660" y="331" width="800" height="564" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1596897927124" />
-    <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596280780211" />
-    <state x="100" y="100" width="1720" height="844" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596864881372">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596460195707" />
+    <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596367756439">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="100" y="100" width="1720" height="844" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1596864881372" />
-    <state x="803" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596475227398">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596367756439" />
+    <state x="1070" y="637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596002175235">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="803" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1044@0.0.1920.1044" timestamp="1596475227398" />
     <state x="1070" y="637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596002175235" />
-    <state x="665" y="245" width="696" height="554" key="find.popup" timestamp="1596894128306">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state x="665" y="245" width="696" height="554" key="find.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1596894128306" />
-    <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate" timestamp="1596827233107">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate" timestamp="1596974681367">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="665" y="332" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1594446665389" />
-    <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1596827233107" />
-    <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1596265126360" />
-    <state x="624" y="238" key="run.anything.popup" timestamp="1596875526013">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1594404843801" />
+    <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1596974681367" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1596978921256">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="624" y="238" key="run.anything.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1596875526013" />
-    <state x="0" y="0" width="672" height="160" key="search.everywhere.popup" timestamp="1596898127469">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state x="0" y="0" width="672" height="160" key="search.everywhere.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1596898127469" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1596281322790" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1596978921256" />
   </component>
 </project>

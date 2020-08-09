@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {SidebarService} from '../../services/sidebar.service';
+import {SidebarService} from '../../services/sidebar/sidebar.service';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({

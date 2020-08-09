@@ -11,6 +11,7 @@ import {SidebarItemsContainerComponent} from './components/sidebar-items-contain
 import {SidebarItemComponent} from './components/sidebar-item/sidebar-item.component';
 import {SidebarDropdownItemComponent} from './components/sidebar-dropdown-item/sidebar-dropdown-item.component';
 import {KCoreModule} from 'ngx-k-components/core';
+import { SidebarDynamicMenuComponent } from './components/sidebar-dynamic-menu/sidebar-dynamic-menu.component';
 
 @NgModule({
 	declarations: [
@@ -24,6 +25,7 @@ import {KCoreModule} from 'ngx-k-components/core';
 		SidebarItemsContainerComponent,
 		SidebarItemComponent,
 		SidebarDropdownItemComponent,
+		SidebarDynamicMenuComponent,
 	],
 	imports: [
 		BrowserAnimationsModule,
@@ -38,14 +40,14 @@ import {KCoreModule} from 'ngx-k-components/core';
 		SidebarItemsContainerComponent,
 		SidebarItemComponent,
 		SidebarDropdownItemComponent,
+		SidebarDynamicMenuComponent,
 	],
-	providers: [{provide: SIDEBAR_CONFIG, useValue: new SidebarConfiguration()}]
 })
 export class KSidebarModule {
-	public static forRoot(configuration: SidebarConfig): ModuleWithProviders<KSidebarModule> {
+	public static forRoot(configuration?: SidebarConfig): ModuleWithProviders<KSidebarModule> {
 		return {
 			ngModule: KSidebarModule,
-			providers: [{provide: SIDEBAR_CONFIG, useValue: new SidebarConfiguration(configuration)}]
+			providers: [{provide: SIDEBAR_CONFIG, useValue: new SidebarConfiguration(configuration ?? {})}]
 		};
 	}
 }

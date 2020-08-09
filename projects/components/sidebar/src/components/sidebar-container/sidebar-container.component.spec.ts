@@ -2,7 +2,7 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {SidebarContainerComponent} from './sidebar-container.component';
 import {SIDEBAR_CONFIG, SidebarConfiguration} from '../../models/sidebar.config';
-import {SidebarService} from '../../services/sidebar.service';
+import {SidebarService} from '../../services/sidebar/sidebar.service';
 
 describe('SidebarContainerComponent', () => {
 	let component: SidebarContainerComponent;

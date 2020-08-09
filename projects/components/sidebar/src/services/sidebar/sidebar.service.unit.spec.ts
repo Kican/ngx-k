@@ -1,7 +1,6 @@
 import {SidebarService} from './sidebar.service';
-import {SidebarConfiguration} from '../models/sidebar.config';
-import {SidebarStatus} from '../models/sidebar-status.enum';
-import {SidebarMode} from '../models/sidebar-mode.enum';
+import {SidebarConfiguration} from '../../models/sidebar.config';
+import {SidebarStatus} from '../../models/sidebar-status.enum';
 
 describe('SidebarServiceUnit', () => {
 	let service: SidebarService;
@@ -9,7 +8,7 @@ describe('SidebarServiceUnit', () => {
 	configuration.overWrite({initialState: SidebarStatus.Closed});
 
 	beforeEach(() => {
-		service = new SidebarService(configuration);
+		service = new SidebarService(configuration, null);
 	});
 
 	it('should observe statusChange$ with opened value when open method called', () => {
@@ -86,40 +85,5 @@ describe('SidebarServiceUnit', () => {
 		service.close();
 
 		expect(service.status).toBe(SidebarStatus.Closed);
-	});
-
-	it('should change the mode of sidebar when changeMode method called', () => {
-		service.changeMode(SidebarMode.Side);
-
-		expect(service.mode).toBe(SidebarMode.Side);
-	});
-
-	it('should change hasBackdrop when changeHasBackdrop method called', () => {
-		service.changeBackdrop(false);
-
-		expect(service.hasBackdrop).toBe(false);
-	});
-
-	it('should change isFixed when changeIsFixed method called', () => {
-		service.changeIsFixed(false);
-
-		expect(service.isFixed).toBe(false);
-	});
-
-	it('should change closeOnBackdropClick when changeCloseOnBackdropClick method called', () => {
-		service.changeCloseOnBackdropClick(false);
-
-		expect(service.closeOnBackdropClick).toBe(false);
-	});
-
-	[
-		[true, 'fixed'],
-		[false, 'absolute']
-	].forEach(([value, expected]) => {
-		it('should return correct position based on isFixed status', () => {
-			service.changeIsFixed(value as boolean);
-
-			expect(service.position).toBe(expected as string);
-		});
 	});
 });

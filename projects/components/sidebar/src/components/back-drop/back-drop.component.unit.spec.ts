@@ -1,6 +1,6 @@
 import {BackDropComponent} from './back-drop.component';
 import {SidebarConfiguration} from '../../models/sidebar.config';
-import {SidebarService} from '../../services/sidebar.service';
+import {SidebarService} from '../../services/sidebar/sidebar.service';
 
 describe('BackdropComponent', () => {
 	const configuration = new SidebarConfiguration({isFixed: true});

@@ -1,6 +1,6 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {SIDEBAR_CONFIG, SidebarConfiguration} from '../../models/sidebar.config';
-import {SidebarService} from '../../services/sidebar.service';
+import {SidebarService} from '../../services/sidebar/sidebar.service';
 import {SidebarContentDirective} from './sidebar-content.directive';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';

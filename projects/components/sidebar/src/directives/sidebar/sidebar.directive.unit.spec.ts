@@ -1,6 +1,6 @@
 import {SidebarDirective} from './sidebar.directive';
 import {SidebarConfiguration} from '../../models/sidebar.config';
-import {SidebarService} from '../../services/sidebar.service';
+import {SidebarService} from '../../services/sidebar/sidebar.service';
 
 describe('SidebarDirectiveUnit', () => {
 	let directive: SidebarDirective;

@@ -1,5 +1,5 @@
 import {Directive, HostBinding, OnInit} from '@angular/core';
-import {SidebarService} from '../../services/sidebar.service';
+import {SidebarService} from '../../services/sidebar/sidebar.service';
 import {SidebarStatus} from '../../models/sidebar-status.enum';
 import {merge} from 'rxjs';
 import {SidebarMode} from '../../models/sidebar-mode.enum';

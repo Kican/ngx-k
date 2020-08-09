@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, HostBinding, Input, OnInit} from '@angular/core';
-import {SidebarService} from '../../services/sidebar.service';
+import {SidebarService} from '../../services/sidebar/sidebar.service';
 import {SidebarStatus} from '../../models/sidebar-status.enum';
 import {SidebarConfiguration} from '../../models/sidebar.config';
 

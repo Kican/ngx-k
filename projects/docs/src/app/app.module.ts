@@ -8,7 +8,8 @@ import {KButtonModule} from 'ngx-k-components/button';
 import {KAlertModule} from 'ngx-k-components/alert';
 import {KBadgeModule} from 'ngx-k-components/badge';
 import {KCardModule} from 'ngx-k-components/card';
-import {KSidebarModule, SidebarMode, SidebarStatus} from 'ngx-k-components/sidebar';
+// import {KSidebarModule, SidebarMode, SidebarStatus} from 'ngx-k-components/sidebar';
+import {KSidebarModule, SidebarMode, SidebarStatus} from '../../../components/sidebar/src/public-api';
 import {KFormModule} from 'ngx-k-components/form';
 import {KNavbarModule} from 'ngx-k-components/navbar';
 
