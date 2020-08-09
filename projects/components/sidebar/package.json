@@ -4,6 +4,7 @@
 	"peerDependencies": {
 		"@angular/common": "^10.0.8",
 		"@angular/core": "^10.0.8",
+		"@angular/router": "^10.0.8",
 		"ngx-k-components/core/styles": "0.0.1",
 		"ngx-k-components/core": "0.0.1"
 	},

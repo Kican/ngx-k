@@ -1,8 +1,7 @@
 import {SidebarItem} from './sidebar-item.model';
-import {SidebarDropdownItem} from './sidebar-dropdown-item.model';
 
 export interface SidebarGroup {
-	id: string;
+	groupId: string;
 	title: string;
-	items: SidebarItem[] | SidebarDropdownItem [];
+	items?: SidebarItem[];
 }

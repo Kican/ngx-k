@@ -14,7 +14,7 @@ export class SidebarDynamicMenuComponent implements OnInit {
 	@Input()
 	sidebarId: string;
 
-	menus: Observable<SidebarGroup[]>;
+	groups: Observable<SidebarGroup[]>;
 
 	constructor(private sidebarDynamicMenuService: SidebarDynamicMenuService, private cdr: ChangeDetectorRef) {
 	}
@@ -22,7 +22,7 @@ export class SidebarDynamicMenuComponent implements OnInit {
 	ngOnInit(): void {
 		this.sidebarDynamicMenuService.registerSidebar(this.sidebarId);
 		setTimeout(() => {
-			this.menus = this.sidebarDynamicMenuService.getMenu(this.sidebarId);
+			this.groups = this.sidebarDynamicMenuService.getMenus$(this.sidebarId);
 			this.cdr.detectChanges();
 		}, 1);
 	}

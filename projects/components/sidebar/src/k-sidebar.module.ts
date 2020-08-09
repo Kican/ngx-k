@@ -12,6 +12,7 @@ import {SidebarItemComponent} from './components/sidebar-item/sidebar-item.compo
 import {SidebarDropdownItemComponent} from './components/sidebar-dropdown-item/sidebar-dropdown-item.component';
 import {KCoreModule} from 'ngx-k-components/core';
 import { SidebarDynamicMenuComponent } from './components/sidebar-dynamic-menu/sidebar-dynamic-menu.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
 	declarations: [
@@ -29,6 +30,7 @@ import { SidebarDynamicMenuComponent } from './components/sidebar-dynamic-menu/s
 	],
 	imports: [
 		BrowserAnimationsModule,
+		RouterModule,
 		KCoreModule
 	],
 	exports: [

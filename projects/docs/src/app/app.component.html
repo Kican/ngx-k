@@ -87,84 +87,56 @@
 
 			<br>
 
-			<label>Mode:</label>
-			<select [(ngModel)]="sidebar.mode">
-				<option value="push">Push</option>
-				<option value="over">Over</option>
-				<option value="side">Side</option>
-			</select>
-
-			<br>
-
-			<label>Fixed:</label>
-			<input type="checkbox" [(ngModel)]="sidebar.fixed">
-
-			<br>
-
-			<label>Has Backdrop:</label>
-			<input type="checkbox" [(ngModel)]="sidebar.hasBackdrop">
-
-			<br>
-
-			<label>Close On Backdrop Click:</label>
-			<input type="checkbox" [(ngModel)]="sidebar.closeOnBackdropClick">
-
-			<br>
-
-			<button (click)="sidebar.toggle()" kButton [color]="'info'">toggle</button>
-
-			<div kButton [color]="'danger'" [isOutline]="false" [size]="'md'">Submit</div>
-
-			<div class="mb-2"></div>
-
-			<div *kAlertDismiss kAlert [color]="'primary'">
-				<span kAlertHeading>Hello Everyone</span>
-				<button kAlertDismissBtn type="button" class="close" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-
-			<h5><span kBadge [color]="'warning'" [isPill]="true">Hey!</span></h5>
-			<h5><span kBadge [color]="'primary'" [isPill]="false">Hey!</span></h5>
-
-			<div class="mb-2"></div>
-
 			<k-card>
-				<k-card-header>teste header</k-card-header>
 				<k-card-body>
-					<h5 kCardTitle>Title</h5>
-					<h5 kCardSubtitle>Subtitle</h5>
-					<p kCardText>salam be hame :D</p>
-					<a href="#" kCardLink>teste card link</a>
+					<form ngForm #form=ngForm>
+						<k-form-group [id]="'groupName'">
+							<label kFormLabel>Group Name</label>
+							<input type="text" kFormInput ngModel name="groupName">
+						</k-form-group>
+
+						<k-form-group [id]="'groupId'">
+							<label kFormLabel>Group Id</label>
+							<input type="text" kFormInput ngModel name="groupId">
+						</k-form-group>
+					</form>
 				</k-card-body>
-				<k-card-footer>teste footer</k-card-footer>
 			</k-card>
 
-			<div class="mb-2"></div>
+			<br>
 
-			<k-form-group [id]="'name'">
-				<label kFormLabel>Name</label>
-				<input kFormInput [isPlainText]="true" type="text" placeholder="Alireza">
-			</k-form-group>
+			<button kButton [color]="'dark'" (click)="addGroup(form.controls.groupId.value, form.controls.groupName.value)">Add Menu</button>
+			<button kButton [color]="'danger'" class="ml-1" (click)="removeGroup(form.controls.groupId.value)">Remove Menu</button>
 
-			<k-form-group [id]="'family'">
-				<label kFormLabel>Family</label>
-				<input kFormInput type="text">
-				<small kFormHint>Family Name</small>
-			</k-form-group>
+			<br>
 
-			<k-form-group [id]="'gender'">
-				<label kFormLabel>Gender</label>
-				<select kFormInput>
-					<option value="1">Male</option>
-					<option value="0">Woman</option>
-				</select>
-			</k-form-group>
+			<div class="mb-3"></div>
 
-			<k-form-group [id]="'address'">
-				<label kFormLabel>Address</label>
-				<textarea kFormInput></textarea>
-			</k-form-group>
+			<k-card>
+				<k-card-body>
+					<form ngForm #itemForm=ngForm>
+						<k-form-group [id]="'groupId'">
+							<label kFormLabel>Group Id</label>
+							<input type="text" kFormInput ngModel name="groupId">
+						</k-form-group>
+
+						<k-form-group [id]="'itemTitle'">
+							<label kFormLabel>Item Title</label>
+							<input type="text" kFormInput ngModel name="itemTitle">
+						</k-form-group>
+
+						<k-form-group [id]="'itemId'">
+							<label kFormLabel>Item Id</label>
+							<input type="text" kFormInput ngModel name="itemId">
+						</k-form-group>
+					</form>
+				</k-card-body>
+			</k-card>
+
+			<br>
+
+			<button kButton [color]="'dark'" (click)="addItem(itemForm.controls.groupId.value, itemForm.controls.itemId.value, itemForm.controls.itemTitle.value)">Add Item</button>
+			<button kButton [color]="'danger'" class="ml-1" (click)="removeItem(itemForm.controls.groupId.value, itemForm.controls.itemId.value)">Remove Item</button>
 
 		</div>
 

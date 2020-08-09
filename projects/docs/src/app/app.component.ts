@@ -7,7 +7,7 @@ import {SidebarDynamicMenuService} from '../../../components/sidebar/src/service
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, AfterViewChecked {
+export class AppComponent implements OnInit, AfterViewInit {
 	title = 'docs';
 	isRtl = new FormControl(false);
 
@@ -20,23 +20,57 @@ export class AppComponent implements OnInit, AfterViewChecked {
 		});
 	}
 
-	ngAfterViewChecked(): void {
-		setTimeout(() => {
-			this.sidebarDynamicMenuService.setMenu('main-sidebar', [
-				{
-					title: 'Management',
-					id: 'test',
-					items: [
-						{
-							id: 'test',
-							label: 'Users',
-							iconClass: 'mdi mdi-account',
-							routerLink: '/'
-						}
-					]
-				}
-			]);
-		}, 1);
+	addGroup(groupId: string, title: string): void {
+		this.sidebarDynamicMenuService.addGroup('main-sidebar',
+			{
+				title,
+				groupId,
+			},
+		);
 	}
 
+	removeGroup(groupId: string): void {
+		this.sidebarDynamicMenuService.removeGroup('main-sidebar', groupId);
+	}
+
+	addItem(groupId: string, itemId: string, label: string): void {
+		this.sidebarDynamicMenuService.addItem('main-sidebar', groupId, {
+			itemId,
+			label,
+			type: 'single',
+			routerLink: '/somewhere',
+			iconClass: 'mdi mdi-account'
+		});
+	}
+
+	removeItem(groupId: string, itemId: string): void {
+		this.sidebarDynamicMenuService.removeItem('main-sidebar', groupId, itemId);
+	}
+
+	ngAfterViewInit(): void {
+		this.sidebarDynamicMenuService.setMenu('main-sidebar', [
+			{
+				groupId: 'management',
+				title: 'Management',
+				items: [
+					{
+						itemId: 'users',
+						iconClass: 'mdi mdi-account',
+						type: 'dropdown',
+						routerLink: '/somewhere',
+						label: 'Users',
+						items: [
+							{
+								itemId: 'wallet',
+								iconClass: 'mdi mdi-wallet',
+								type: 'dropdown',
+								routerLink: '/somewhere',
+								label: 'Wallets'
+							}
+						]
+					}
+				]
+			}
+		]);
+	}
 }
