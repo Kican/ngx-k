@@ -13,8 +13,10 @@
 @import "~ngx-k-components/alert/scss/alert";
 @import "~ngx-k-components/badge/scss/badge";
 @import "~ngx-k-components/button/scss/button";
-@import "~ngx-k-components/card/scss/card";
-@import "~ngx-k-components/form/scss/form";
+//@import "~ngx-k-components/card/scss/card";
+@import "../../components/card/scss/card";
+//@import "~ngx-k-components/form/scss/form";
+@import "../../components/form/scss/form";
 
 body {
 	background-color: #FBFCFE;

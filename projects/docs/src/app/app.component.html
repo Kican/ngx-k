@@ -80,7 +80,7 @@
 			</ul>
 		</nav>
 
-		<div style="padding: 1.5rem; padding-top: 85px !important;">
+		<div style="padding: 1.75rem; padding-top: 85px !important;">
 
 			<input type="checkbox" [formControl]="isRtl" id="isRtl">
 			<label for="isRtl">Rtl Layout</label>
@@ -113,6 +113,9 @@
 			<div class="mb-3"></div>
 
 			<k-card>
+				<k-card-header>
+					<h5 class="mb-0">Header</h5>
+				</k-card-header>
 				<k-card-body>
 					<form ngForm #itemForm=ngForm>
 						<k-form-group [id]="'groupId'">
@@ -131,12 +134,52 @@
 						</k-form-group>
 					</form>
 				</k-card-body>
+				<k-card-footer>
+					<h5 class="mb-0">Footer</h5>
+				</k-card-footer>
 			</k-card>
 
 			<br>
 
 			<button kButton [color]="'dark'" (click)="addItem(itemForm.controls.groupId.value, itemForm.controls.itemId.value, itemForm.controls.itemTitle.value)">Add Item</button>
 			<button kButton [color]="'danger'" class="ml-1" (click)="removeItem(itemForm.controls.groupId.value, itemForm.controls.itemId.value)">Remove Item</button>
+
+			<div class="mt-4"></div>
+
+			<k-card>
+				<k-card-body>
+					<table class="table">
+						<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+						</tbody>
+					</table>
+				</k-card-body>
+			</k-card>
 
 		</div>
 

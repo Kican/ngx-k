@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {SidebarGroup} from '../../models/sidebar-group.model';
 import {BehaviorSubject, Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
-import {SidebarItem} from "../../models/sidebar-item.model";
+import {SidebarItem} from '../../models/sidebar-item.model';
 
 export interface SidebarMenu {
 	sidebarId: string;
