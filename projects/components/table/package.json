@@ -1,10 +1,10 @@
 {
-	"name": "ngx-k-components/badge",
+	"name": "ngx-k-components/table",
 	"version": "0.0.1",
 	"peerDependencies": {
 		"@angular/common": "^10.0.8",
 		"@angular/core": "^10.0.8",
-		"ngx-k-components/core/models": "0.0.1",
+		"@angular/router": "^10.0.8",
 		"ngx-k-components/core/styles": "0.0.1"
 	},
 	"dependencies": {
@@ -15,6 +15,6 @@
 		"lib": {
 			"entryFile": "src/public-api.ts"
 		},
-		"dest": "../../../dist/badge"
+		"dest": "../../../dist/table"
 	}
 }

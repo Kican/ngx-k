@@ -11,6 +11,7 @@ import {KCardModule} from 'ngx-k-components/card';
 import {KSidebarModule, SidebarMode, SidebarStatus} from 'ngx-k-components/sidebar';
 import {KFormModule} from 'ngx-k-components/form';
 import {KNavbarModule} from 'ngx-k-components/navbar';
+import {KTableModule} from 'ngx-k-components/table';
 
 @NgModule({
 	declarations: [
@@ -32,7 +33,8 @@ import {KNavbarModule} from 'ngx-k-components/navbar';
 			mode: SidebarMode.Push
 		}),
 		KFormModule,
-		KNavbarModule
+		KNavbarModule,
+		KTableModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
