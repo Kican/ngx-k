@@ -7,7 +7,6 @@
 @include k-sidebar();
 
 @import "~ngx-k-components/navbar/scss/navbar";
-@import "../../components/navbar/scss/navbar";
 @include k-navbar();
 
 @import "~ngx-k-components/alert/scss/alert";

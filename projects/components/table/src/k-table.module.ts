@@ -3,6 +3,7 @@ import {TableContainerComponent} from './components/table-container/table-contai
 import { TableHeaderComponent } from './components/table-header/table-header.component';
 import { TableFooterComponent } from './components/table-footer/table-footer.component';
 import { TableBodyComponent } from './components/table-body/table-body.component';
+import { TableDirective } from './directives/table/table.directive';
 
 
 @NgModule({
@@ -10,13 +11,15 @@ import { TableBodyComponent } from './components/table-body/table-body.component
 		TableContainerComponent,
 		TableHeaderComponent,
 		TableFooterComponent,
-		TableBodyComponent
+		TableBodyComponent,
+		TableDirective
 	],
 	exports: [
 		TableContainerComponent,
 		TableHeaderComponent,
 		TableFooterComponent,
-		TableBodyComponent
+		TableBodyComponent,
+		TableDirective
 	]
 })
 export class KTableModule {

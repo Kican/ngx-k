@@ -87,111 +87,112 @@
 
 			<br>
 
-			<k-card>
-				<k-card-body>
-					<form ngForm #form=ngForm>
-						<k-form-group [id]="'groupName'">
-							<label kFormLabel>Group Name</label>
-							<input type="text" kFormInput ngModel name="groupName">
-						</k-form-group>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<k-card>
+						<k-card-header>
+							<h6 class="mb-0">Menu Group</h6>
+						</k-card-header>
+						<k-card-body>
+							<form ngForm #form=ngForm>
+								<k-form-group [id]="'groupName'">
+									<label kFormLabel>Group Name</label>
+									<input type="text" kFormInput ngModel name="groupName">
+								</k-form-group>
 
-						<k-form-group [id]="'groupId'">
-							<label kFormLabel>Group Id</label>
-							<input type="text" kFormInput ngModel name="groupId">
-						</k-form-group>
-					</form>
-				</k-card-body>
-			</k-card>
+								<k-form-group [id]="'groupId'">
+									<label kFormLabel>Group Id</label>
+									<input type="text" kFormInput ngModel name="groupId">
+								</k-form-group>
+							</form>
+						</k-card-body>
+						<k-card-footer>
+							<div class="text-right">
+							<button kButton [color]="'dark'" (click)="addGroup(form.controls.groupId.value, form.controls.groupName.value)">Add Menu</button>
+							<button kButton [color]="'danger'" class="ml-1" (click)="removeGroup(form.controls.groupId.value)">Remove Menu</button>
+							</div>
+						</k-card-footer>
+					</k-card>
+					<div class="mt-4"></div>
+					<k-card>
+						<k-card-header>
+							<h6 class="mb-0">Group Item</h6>
+						</k-card-header>
+						<k-card-body>
+							<form ngForm #itemForm=ngForm>
+								<k-form-group [id]="'groupId'">
+									<label kFormLabel>Group Id</label>
+									<input type="text" kFormInput ngModel name="groupId">
+								</k-form-group>
 
-			<br>
+								<k-form-group [id]="'itemTitle'">
+									<label kFormLabel>Item Title</label>
+									<input type="text" kFormInput ngModel name="itemTitle">
+								</k-form-group>
 
-			<button kButton [color]="'dark'" (click)="addGroup(form.controls.groupId.value, form.controls.groupName.value)">Add Menu</button>
-			<button kButton [color]="'danger'" class="ml-1" (click)="removeGroup(form.controls.groupId.value)">Remove Menu</button>
-
-			<br>
-
-			<div class="mb-3"></div>
-
-			<k-card>
-				<k-card-header>
-					<h5 class="mb-0">Header</h5>
-				</k-card-header>
-				<k-card-body>
-					<form ngForm #itemForm=ngForm>
-						<k-form-group [id]="'groupId'">
-							<label kFormLabel>Group Id</label>
-							<input type="text" kFormInput ngModel name="groupId">
-						</k-form-group>
-
-						<k-form-group [id]="'itemTitle'">
-							<label kFormLabel>Item Title</label>
-							<input type="text" kFormInput ngModel name="itemTitle">
-						</k-form-group>
-
-						<k-form-group [id]="'itemId'">
-							<label kFormLabel>Item Id</label>
-							<input type="text" kFormInput ngModel name="itemId">
-						</k-form-group>
-					</form>
-				</k-card-body>
-				<k-card-footer>
-					<h5 class="mb-0">Footer</h5>
-				</k-card-footer>
-			</k-card>
-
-			<br>
-
-			<button kButton [color]="'dark'" (click)="addItem(itemForm.controls.groupId.value, itemForm.controls.itemId.value, itemForm.controls.itemTitle.value)">Add Item</button>
-			<button kButton [color]="'danger'" class="ml-1" (click)="removeItem(itemForm.controls.groupId.value, itemForm.controls.itemId.value)">Remove Item</button>
-
-			<div class="mt-4"></div>
-
-			<k-table-container>
-				<k-table-header>
-					<div class="d-flex flex-wrap-reverse justify-content-between align-items-center">
-						<h5 class="mb-0">Title</h5>
-						<div>
-							<button kButton [color]="'primary'" class="mr-1">Add Item</button>
-							<button kButton [color]="'success'">Upload File</button>
-						</div>
-					</div>
-				</k-table-header>
-				<k-table-body>
-					<table class="table">
-						<thead>
-						<tr>
-							<th scope="col">#</th>
-							<th scope="col">First</th>
-							<th scope="col">Last</th>
-							<th scope="col">Handle</th>
-						</tr>
-						</thead>
-						<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>@mdo</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>@fat</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Larry</td>
-							<td>the Bird</td>
-							<td>@twitter</td>
-						</tr>
-						</tbody>
-					</table>
-				</k-table-body>
-				<k-table-footer>
-					<h6 class="mb-0">Pagination Goes Here</h6>
-				</k-table-footer>
-			</k-table-container>
+								<k-form-group [id]="'itemId'">
+									<label kFormLabel>Item Id</label>
+									<input type="text" kFormInput ngModel name="itemId">
+								</k-form-group>
+							</form>
+						</k-card-body>
+						<k-card-footer>
+							<div class="text-right">
+							<button kButton [color]="'dark'" (click)="addItem(itemForm.controls.groupId.value, itemForm.controls.itemId.value, itemForm.controls.itemTitle.value)">Add Item</button>
+							<button kButton [color]="'danger'" class="ml-1" (click)="removeItem(itemForm.controls.groupId.value, itemForm.controls.itemId.value)">Remove Item</button>
+							</div>
+						</k-card-footer>
+					</k-card>
+				</div>
+				<div class="col-md-8">
+					<k-table-container>
+						<k-table-header>
+							<div class="d-flex flex-wrap-reverse justify-content-between align-items-center">
+								<h5 class="mb-0">Title</h5>
+								<div>
+									<button kButton [color]="'primary'" class="mr-1">Add Item</button>
+									<button kButton [color]="'success'">Upload File</button>
+								</div>
+							</div>
+						</k-table-header>
+						<k-table-body>
+							<table kTable>
+								<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First</th>
+									<th scope="col">Last</th>
+									<th scope="col">Handle</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+								</tr>
+								</tbody>
+							</table>
+						</k-table-body>
+						<k-table-footer>
+							<h6 class="mb-0">Pagination Goes Here</h6>
+						</k-table-footer>
+					</k-table-container>
+				</div>
+			</div>
 
 		</div>
 
