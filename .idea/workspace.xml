@@ -5,7 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="wip: add auth module">
+    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="change component struct">
       <change afterPath="$PROJECT_DIR$/projects/components/alert/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/projects/components/badge/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/projects/components/button/package.json" afterDir="false" />
@@ -88,6 +88,7 @@
       <change beforePath="$PROJECT_DIR$/projects/components/core/src/services/window-size/window.size.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/src/services/window-size/window.size.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/components/form/src/directives/form-input/form-input.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/form/src/directives/form-input/form-input.directive.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/k-sidebar.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/k-sidebar.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar/sidebar.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar/sidebar.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" afterDir="false" />
     </list>
@@ -95,11 +96,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -328,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597138864511</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="change component struct">
+      <created>1597147879608</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1597147879608</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,8 +341,8 @@
         <option value="$PROJECT_DIR$/../Kpanel/dist/entity-manager" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/dashboard" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/data-table" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/core" />
         <option value="$PROJECT_DIR$/dist/components" />
+        <option value="$PROJECT_DIR$/../Kpanel/dist/core" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/auth" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/form-builder" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/form-builder-bootstrap" />
@@ -411,7 +414,8 @@
     <MESSAGE value="some styling on card and inputs" />
     <MESSAGE value="add table library" />
     <MESSAGE value="wip: add auth module" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: add auth module" />
+    <MESSAGE value="change component struct" />
+    <option name="LAST_COMMIT_MESSAGE" value="change component struct" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1093" y="443" key="#com.intellij.ide.util.MemberChooser" timestamp="1596977811356">
@@ -464,10 +468,10 @@
     </state>
     <state x="849" y="458" key="VCS.ChangelistChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146929098" />
     <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1597138866060">
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1597147881928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597138866060" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597147881928" />
     <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040087294" />
     <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596367756439">
       <screen x="0" y="0" width="2560" height="1440" />
