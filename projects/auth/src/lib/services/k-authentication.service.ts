@@ -8,7 +8,7 @@ import {Login} from '../models/login.model';
 @Injectable({
 	providedIn: 'root'
 })
-export class NgxKAuthenticationService {
+export class KAuthenticationService {
 	private TOKEN_KEY = 'token';
 	decodedToken: any;
 

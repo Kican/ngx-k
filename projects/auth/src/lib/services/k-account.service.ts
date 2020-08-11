@@ -8,7 +8,7 @@ import {NewPassWithToken} from '../models/new-pass-with-token.model';
 @Injectable({
 	providedIn: 'root'
 })
-export class NgxKAccountService {
+export class KAccountService {
 	user$ = new BehaviorSubject<UserDto>(null);
 
 	constructor(private http: HttpClient) {

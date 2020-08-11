@@ -7,5 +7,5 @@ import {CommonModule} from '@angular/common';
 	imports: [
 	]
 })
-export class NgxKCoreCommonModule {
+export class KCoreCommonModule {
 }

@@ -20,7 +20,7 @@ export class WindowSizeService {
 		return this._windowSize;
 	}
 
-	isSmallScreen() {
+	get isSmallScreen(): boolean {
 		return this.windowSize < this.smallScreenWidth;
 	}
 }

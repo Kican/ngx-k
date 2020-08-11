@@ -6,12 +6,12 @@ import {
 	HttpInterceptor
 } from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {NgxKAuthenticationService} from '../services/ngx-k-authentication.service';
+import {KAuthenticationService} from '../services/k-authentication.service';
 
 @Injectable()
 export class AuthHttpInterceptor implements HttpInterceptor {
 
-	constructor(private authService: NgxKAuthenticationService) {
+	constructor(private authService: KAuthenticationService) {
 	}
 
 	intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {

@@ -5,30 +5,35 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="add toast &amp; dialog modules">
-      <change afterPath="$PROJECT_DIR$/projects/core/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/common/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/common/src/common/app-validators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/common/src/ngx-kcore-common.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/common/src/public-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/ng-package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/src/lib/ngx-kcore.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/src/lib/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/src/lib/services/scroll.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/src/lib/services/window-size.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/src/public-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/tsconfig.lib.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/tsconfig.lib.prod.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/core/tslint.json" afterDir="false" />
+    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="add common module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs-update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.base.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/auth/src/lib/gaurds/auth-gaurd/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/src/lib/gaurds/auth-gaurd/auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/auth/src/lib/ngx-k-auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/src/lib/k-auth.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/auth/src/lib/providers/auth-http.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/src/lib/providers/auth-http.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/auth/src/lib/services/ngx-k-account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/src/lib/services/k-account.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/auth/src/lib/services/ngx-k-authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/src/lib/services/k-authentication.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/auth/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/src/public-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/core/src/k-core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/src/k-components-core.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/core/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/src/public-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/k-sidebar.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/k-sidebar.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/toast/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/toast/src/public-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/core/common/src/ngx-kcore-common.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/common/src/k-core-common.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/core/common/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/common/src/public-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/core/src/lib/ngx-kcore.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/src/lib/k-core.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/core/src/lib/services/window-size.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/src/lib/services/window-size.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/core/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/src/public-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/ngx-k-form-builder-bootstrap.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/k-form-builder-bootstrap.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/projects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/ngx-k-form-builder.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/k-form-builder.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/projects.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,21 +295,28 @@
       <option name="project" value="LOCAL" />
       <updated>1597161179112</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add common module">
+      <created>1597162983923</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1597162983923</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
     <option name="additionalRoots">
       <list>
-        <option value="$PROJECT_DIR$/../Kpanel/dist/data-table" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/core" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/dashboard" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/auth" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/form-builder" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/form-builder-bootstrap" />
+        <option value="$PROJECT_DIR$/dist/core" />
+        <option value="$PROJECT_DIR$/../Kpanel/dist/auth" />
+        <option value="$PROJECT_DIR$/../Kpanel/dist/data-table" />
         <option value="$PROJECT_DIR$/dist/components" />
+        <option value="$PROJECT_DIR$/../Kpanel/dist/form-builder-bootstrap" />
         <option value="$PROJECT_DIR$/dist/auth" />
+        <option value="$PROJECT_DIR$/../Kpanel/dist/core" />
       </list>
     </option>
   </component>
@@ -375,7 +387,8 @@
     <MESSAGE value="change component struct" />
     <MESSAGE value="fix guard export in public-api.ts" />
     <MESSAGE value="add toast &amp; dialog modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="add toast &amp; dialog modules" />
+    <MESSAGE value="add common module" />
+    <option name="LAST_COMMIT_MESSAGE" value="add common module" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1093" y="443" key="#com.intellij.ide.util.MemberChooser" timestamp="1596977811356">
@@ -428,10 +441,10 @@
     </state>
     <state x="849" y="458" key="VCS.ChangelistChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146929098" />
     <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1597161180779">
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1597162985301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597161180779" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597162985301" />
     <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040087294" />
     <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596367756439">
       <screen x="0" y="0" width="2560" height="1440" />
@@ -452,9 +465,11 @@
     <state x="831" y="419" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597162190610" />
     <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1594404843801" />
     <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1597044132992" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1597061607243">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="2452" y="372" width="672" height="405" key="search.everywhere.popup" timestamp="1597164004134">
+      <screen x="1920" y="174" width="1440" height="860" />
     </state>
+    <state x="709" y="239" width="672" height="489" key="search.everywhere.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597163951541" />
+    <state x="2452" y="372" width="672" height="405" key="search.everywhere.popup/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597164004134" />
     <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1597061607243" />
   </component>
 </project>

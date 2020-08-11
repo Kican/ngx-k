@@ -10,7 +10,7 @@ import {SidebarGroupComponent} from './components/sidebar-group/sidebar-group.co
 import {SidebarItemsContainerComponent} from './components/sidebar-items-container/sidebar-items-container.component';
 import {SidebarItemComponent} from './components/sidebar-item/sidebar-item.component';
 import {SidebarDropdownItemComponent} from './components/sidebar-dropdown-item/sidebar-dropdown-item.component';
-import {KCoreModule} from '@ngx-k/components/core';
+import {KComponentsCoreModule} from '@ngx-k/components/core';
 import { SidebarDynamicMenuComponent } from './components/sidebar-dynamic-menu/sidebar-dynamic-menu.component';
 import {RouterModule} from '@angular/router';
 
@@ -31,7 +31,7 @@ import {RouterModule} from '@angular/router';
 	imports: [
 		BrowserAnimationsModule,
 		RouterModule,
-		KCoreModule
+		KComponentsCoreModule
 	],
 	exports: [
 		SidebarContainerComponent,

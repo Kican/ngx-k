@@ -14,5 +14,5 @@ import {FormBuilderComponent} from './components/form-builder/form-builder.compo
 		FormBuilderComponent
 	]
 })
-export class NgxKFormBuilderModule {
+export class KFormBuilderModule {
 }

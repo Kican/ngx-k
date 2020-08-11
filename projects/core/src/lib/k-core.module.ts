@@ -11,5 +11,5 @@ import {CommonModule} from '@angular/common';
 		CommonModule
 	]
 })
-export class NgxKCoreModule {
+export class KCoreModule {
 }

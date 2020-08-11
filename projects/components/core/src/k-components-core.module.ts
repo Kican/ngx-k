@@ -6,5 +6,5 @@ import {WindowSizeService} from './services/window-size/window.size.service';
 		WindowSizeService
 	]
 })
-export class KCoreModule {
+export class KComponentsCoreModule {
 }

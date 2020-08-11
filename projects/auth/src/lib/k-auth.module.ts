@@ -11,5 +11,5 @@ import {HTTP_INTERCEPTORS} from '@angular/common/http';
 		{provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true},
 	]
 })
-export class NgxKAuthModule {
+export class KAuthModule {
 }
