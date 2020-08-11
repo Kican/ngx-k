@@ -1,6 +1,6 @@
 import {AfterViewInit, Component, OnInit, Renderer2} from '@angular/core';
 import {FormControl} from '@angular/forms';
-import {SidebarDynamicMenuService} from 'ngx-k-components/sidebar';
+import {SidebarDynamicMenuService} from '@ngx-k/components/sidebar';
 
 @Component({
 	selector: 'app-root',

@@ -1,6 +1,6 @@
 const {readFileSync, writeFileSync} = require('fs');
 
-const appVer = '0.0.5'
+const appVer = '0.0.6'
 const versions = [
 	{
 		packages: [
