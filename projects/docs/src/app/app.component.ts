@@ -65,7 +65,16 @@ export class AppComponent implements OnInit, AfterViewInit {
 								iconClass: 'mdi mdi-wallet',
 								type: 'dropdown',
 								routerLink: '/somewhere',
-								label: 'Wallets'
+								label: 'Wallets',
+								items: [
+									{
+										itemId: 'wallet',
+										iconClass: 'mdi mdi-wallet',
+										type: 'dropdown',
+										routerLink: '/somewhere',
+										label: 'Wallets'
+									}
+								]
 							}
 						]
 					}

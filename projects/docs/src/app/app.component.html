@@ -8,8 +8,7 @@
 		</k-sidebar-header>
 		<k-sidebar-group [title]="'Menu'">
 			<ul k-sidebar-items-container>
-				<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Dashboard'"
-					   [iconClass]="'mdi mdi-delete'"></a></li>
+				<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Dashboard'" [iconClass]="'mdi mdi-delete'"></a></li>
 				<li><a [routerLink]="'/orders'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Orders'"
 					   [iconClass]="'mdi mdi-pencil'" [badge]="99"></a></li>
 				<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Customers'"
@@ -24,8 +23,9 @@
 					   [iconClass]="'mdi mdi-face-profile'"></a></li>
 				<li k-sidebar-dropdown-item [label]="'Theming'" [iconClass]="'mdi mdi-palette'">
 					<ul k-sidebar-items-container>
-						<li><a [routerLink]="'/colors'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Colors'"
-							   [iconClass]="'mdi mdi-account'"></a></li>
+						<li>
+							<a [routerLink]="'/colors'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Colors'" [iconClass]="'mdi mdi-account'"></a>
+						</li>
 						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
 							   [label]="'Grids'" [iconClass]="'mdi mdi-account'"></a></li>
 						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item

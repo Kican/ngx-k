@@ -21,6 +21,12 @@
     },
     {
       "path": "./projects/docs/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/auth/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/auth/tsconfig.spec.json"
     }
 ]
 }
