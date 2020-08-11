@@ -1,0 +1,18 @@
+@import "~@ngx-k/components/core/scss/src/base";
+@import "~bootstrap-v4-rtl/scss/card";
+
+.card {
+	border-radius: $main-radius;
+	border-color: $border-color;
+	box-shadow: 0 5px 15px rgba(0,0,0,.05);
+
+	.card-header {
+		background-color: unset;
+		border-color: $border-color;
+	}
+
+	.card-footer {
+		background-color: unset;
+		border-color: $border-color;
+	}
+}

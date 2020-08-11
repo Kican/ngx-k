@@ -1,0 +1,17 @@
+@import "../../core/scss/src/variables/common";
+
+@mixin navbar-option-item() {
+	.k-navbar-option-item {
+		color: #B3BCD1;
+		transition: $main-transition;
+		padding: 5px;
+
+		&:hover {
+			color: darken(#B3BCD1, 10%);
+		}
+	}
+
+	.k-navbar-option-link {
+		@extend .k-navbar-option-item;
+	}
+}

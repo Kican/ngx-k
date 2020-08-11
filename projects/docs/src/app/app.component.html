@@ -1,0 +1,202 @@
+<k-sidebar-container #sidebar>
+	<k-sidebar>
+		<k-sidebar-header>
+			<div class="d-flex align-items-center">
+				<img src="./assets/img/kican-logo.png" alt="logo" width="30">
+				<h5 class="font-weight-bold p-3 mt-2 text-muted">Kican Panel</h5>
+			</div>
+		</k-sidebar-header>
+		<k-sidebar-group [title]="'Menu'">
+			<ul k-sidebar-items-container>
+				<li><a [routerLink]="'/'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Dashboard'" [iconClass]="'mdi mdi-delete'"></a></li>
+				<li><a [routerLink]="'/orders'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Orders'"
+					   [iconClass]="'mdi mdi-pencil'" [badge]="99"></a></li>
+				<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Customers'"
+					   [iconClass]="'mdi mdi-account'"></a></li>
+			</ul>
+		</k-sidebar-group>
+		<k-sidebar-group [title]="'Setting'">
+			<ul k-sidebar-items-container>
+				<li><a [routerLink]="'/account'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Account'"
+					   [iconClass]="'mdi mdi-account-box-multiple'"></a></li>
+				<li><a [routerLink]="'/profile'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Profile'"
+					   [iconClass]="'mdi mdi-face-profile'"></a></li>
+				<li k-sidebar-dropdown-item [label]="'Theming'" [iconClass]="'mdi mdi-palette'">
+					<ul k-sidebar-items-container>
+						<li>
+							<a [routerLink]="'/colors'" [routerLinkActive]="'active'" k-sidebar-item [label]="'Colors'" [iconClass]="'mdi mdi-account'"></a>
+						</li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
+							   [label]="'Grids'" [iconClass]="'mdi mdi-account'"></a></li>
+						<li><a [routerLink]="'/customers'" [routerLinkActive]="'active'" k-sidebar-item
+							   [label]="'Menus'" [iconClass]="'mdi mdi-account'"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</k-sidebar-group>
+
+		<k-sidebar-dynamic-menu [sidebarId]="'main-sidebar'"></k-sidebar-dynamic-menu>
+
+	</k-sidebar>
+
+	<k-sidebar-content>
+
+		<nav
+			kNavbar
+			[bgColor]="'#FFFFFF'"
+			[position]="'fixed-top'"
+			style="transition: .3s cubic-bezier(.25,.1,.25,1)"
+			[ngClass]="{'k-sidebar-nav-offset': sidebar.status == 'opened' && sidebar.config.mode == 'push'}">
+			<ul kNavbarNav>
+				<li kNavbarNavItem>
+					<a kNavbarNavLink (click)="sidebar.toggle()" href="javascript:void">
+						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 24 12">
+							<g transform="translate(-301 -41)">
+								<line x2="21" transform="translate(302.5 51.5)" fill="none" stroke="#008bff" stroke-linecap="round" stroke-width="3"/>
+								<line x2="21" transform="translate(302.5 42.5)" fill="none" stroke="#008bff" stroke-linecap="round" stroke-width="3"/>
+							</g></svg>
+					</a>
+				</li>
+				<li kNavbarNavItem>
+					<a href="#" kNavbarNavLink [routerLink]="['/']" routerLinkActive="active">Dashboard</a>
+				</li>
+				<li kNavbarNavItem>
+					<a href="#" kNavbarNavLink>Managers</a>
+				</li>
+				<li kNavbarNavItem>
+					<a href="#" kNavbarNavLink>Products</a>
+				</li>
+				<li kNavbarNavItem>
+					<a href="#" kNavbarNavLink>Comments</a>
+				</li>
+			</ul>
+			<ul kNavbarOption>
+				<li kNavbarOptionItem>
+					<a kNavbarOptionLink [routerLink]="['/somewhere']"><i class="mdi mdi-bell mdi-24px"></i></a>
+				</li>
+				<li kNavbarOptionItem>
+					<a kNavbarOptionLink [routerLink]="['/somewhere']"><i class="mdi mdi-logout mdi-24px"></i></a>
+				</li>
+			</ul>
+		</nav>
+
+		<div style="padding: 1.75rem; padding-top: 85px !important;">
+
+			<input type="checkbox" [formControl]="isRtl" id="isRtl">
+			<label for="isRtl">Rtl Layout</label>
+
+			<br>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<k-card>
+						<k-card-header>
+							<h6 class="mb-0">Menu Group</h6>
+						</k-card-header>
+						<k-card-body>
+							<form ngForm #form=ngForm>
+								<k-form-group [id]="'groupName'">
+									<label kFormLabel>Group Name</label>
+									<input type="text" kFormInput ngModel name="groupName">
+								</k-form-group>
+
+								<k-form-group [id]="'groupId'">
+									<label kFormLabel>Group Id</label>
+									<input type="text" kFormInput ngModel name="groupId">
+								</k-form-group>
+							</form>
+						</k-card-body>
+						<k-card-footer>
+							<div class="text-right">
+							<button kButton [color]="'dark'" (click)="addGroup(form.controls.groupId.value, form.controls.groupName.value)">Add Menu</button>
+							<button kButton [color]="'danger'" class="ml-1" (click)="removeGroup(form.controls.groupId.value)">Remove Menu</button>
+							</div>
+						</k-card-footer>
+					</k-card>
+					<div class="mt-4"></div>
+					<k-card>
+						<k-card-header>
+							<h6 class="mb-0">Group Item</h6>
+						</k-card-header>
+						<k-card-body>
+							<form ngForm #itemForm=ngForm>
+								<k-form-group [id]="'groupId'">
+									<label kFormLabel>Group Id</label>
+									<input type="text" kFormInput ngModel name="groupId">
+								</k-form-group>
+
+								<k-form-group [id]="'itemTitle'">
+									<label kFormLabel>Item Title</label>
+									<input type="text" kFormInput ngModel name="itemTitle">
+								</k-form-group>
+
+								<k-form-group [id]="'itemId'">
+									<label kFormLabel>Item Id</label>
+									<input type="text" kFormInput ngModel name="itemId">
+								</k-form-group>
+							</form>
+						</k-card-body>
+						<k-card-footer>
+							<div class="text-right">
+							<button kButton [color]="'dark'" (click)="addItem(itemForm.controls.groupId.value, itemForm.controls.itemId.value, itemForm.controls.itemTitle.value)">Add Item</button>
+							<button kButton [color]="'danger'" class="ml-1" (click)="removeItem(itemForm.controls.groupId.value, itemForm.controls.itemId.value)">Remove Item</button>
+							</div>
+						</k-card-footer>
+					</k-card>
+				</div>
+				<div class="col-md-8">
+					<k-table-container>
+						<k-table-header>
+							<div class="d-flex flex-wrap-reverse justify-content-between align-items-center">
+								<h5 class="mb-0">Title</h5>
+								<div>
+									<button kButton [color]="'primary'" class="mr-1">Add Item</button>
+									<button kButton [color]="'success'">Upload File</button>
+								</div>
+							</div>
+						</k-table-header>
+						<k-table-body>
+							<table kTable>
+								<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First</th>
+									<th scope="col">Last</th>
+									<th scope="col">Handle</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+								</tr>
+								</tbody>
+							</table>
+						</k-table-body>
+						<k-table-footer>
+							<h6 class="mb-0">Pagination Goes Here</h6>
+						</k-table-footer>
+					</k-table-container>
+				</div>
+			</div>
+
+		</div>
+
+	</k-sidebar-content>
+
+</k-sidebar-container>
+

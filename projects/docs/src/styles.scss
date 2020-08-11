@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@mdi/font/css/materialdesignicons.min.css";
+
+@import "~@ngx-k/components/core/scss/src/essentionals";
+
+@import "~@ngx-k/components/sidebar/scss/sidebar";
+@include k-sidebar();
+
+@import "~@ngx-k/components/navbar/scss/navbar";
+@include k-navbar();
+
+@import "~@ngx-k/components/alert/scss/alert";
+@import "~@ngx-k/components/badge/scss/badge";
+@import "~@ngx-k/components/button/scss/button";
+@import "~@ngx-k/components/card/scss/card";
+@import "~@ngx-k/components/form/scss/form";
+@import "~@ngx-k/components/table/scss/table";
+
+body {
+	background-color: #FBFCFE;
+
+	&[dir="rtl"] {
+		text-align: right;
+	}
+}

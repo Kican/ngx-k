@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-between align-items-center">
+	<div>
+		<i *ngIf="iconClass" [classList]="iconClass"></i>
+		<span>{{label}}</span>
+	</div>
+	<div *ngIf="badge">
+		<span class="sidebar-badge">{{badge}}</span>
+	</div>
+</div>

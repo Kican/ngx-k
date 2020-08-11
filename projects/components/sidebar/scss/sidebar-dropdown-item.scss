@@ -1,0 +1,44 @@
+@import "../../core/scss/src/variables/color";
+@import "../../core/scss/src/variables/common";
+@import "variable";
+
+@mixin sidebar-dropdown-item() {
+	.sidebar-dropdown-item {
+		cursor: pointer;
+
+		.dropdown-btn {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.dropdown-btn, .dropdown-content {
+			padding: $item-padding;
+		}
+
+		.dropdown-content {
+			padding-top: 0;
+		}
+
+		.sidebar-item:not(.active) {
+			&:hover {
+				background-color: darken($hover-color, 5%);
+			}
+		}
+
+		path {
+			fill: map-get($theme-colors, 'secondary');
+		}
+
+		svg {
+			transition: $main-transition;
+		}
+
+		&.opened {
+			background-color: $hover-color;
+
+			svg {
+				transform: rotate(180deg) translateY(-2px);
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+<ng-container *ngFor="let group of groups | async">
+	<k-sidebar-group [title]="group.title">
+		<ul k-sidebar-items-container>
+			<ng-container *ngFor="let item of group.items" [ngSwitch]="item.type">
+				<ng-container *ngSwitchCase="'single'">
+					<li>
+						<a k-sidebar-item [label]="item.label" [iconClass]="item.iconClass" [routerLink]="item.routerLink" [routerLinkActive]="'active'"></a>
+					</li>
+				</ng-container>
+				<ng-container *ngSwitchCase="'dropdown'">
+					<li k-sidebar-dropdown-item [label]="item.label" [iconClass]="item.iconClass">
+						<ul k-sidebar-items-container>
+							<li *ngFor="let dropdownItem of item.items">
+								<a k-sidebar-item [label]="dropdownItem.label" [iconClass]="dropdownItem.iconClass" [routerLink]="item.routerLink" [routerLinkActive]="'active'"></a>
+							</li>
+						</ul>
+					</li>
+				</ng-container>
+			</ng-container>
+		</ul>
+	</k-sidebar-group>
+</ng-container>

@@ -1,0 +1,17 @@
+@import "~@ngx-k/components/core/scss/src/base";
+@import "~bootstrap-v4-rtl/scss/tables";
+
+.table {
+	margin-bottom: 0;
+
+	thead th {
+		border-bottom: none;
+		border-top: none;
+		color: map-get($theme-colors, 'secondary');
+		font-weight: 500;
+	}
+
+	th, td {
+		border-top: 1px solid $border-color;
+	}
+}

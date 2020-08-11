@@ -1,58 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="create components library">
-      <change afterPath="$PROJECT_DIR$/projects/components/src/lib/modules/button/models/button-type.ts" afterDir="false" />
+    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="fix guard export in public-api.ts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/components.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/src/lib/components.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/modules/button/button-type.enum.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/modules/button/button.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/src/lib/modules/button/k-button.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/modules/button/components/button/button.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/modules/button/components/button/button.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/src/lib/models/color-type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/modules/button/components/button/button.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/modules/button/components/button/button.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/modules/button/components/icon-button/icon-button.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/modules/button/components/icon-button/icon-button.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/src/lib/models/size-type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/modules/button/components/icon-button/icon-button.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/modules/button/components/icon-button/icon-button.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/src/public-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/tsconfig.lib.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/tsconfig.lib.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/tsconfig.lib.prod.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/tsconfig.lib.prod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/alert/scss/alert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/alert/scss/alert.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/badge/scss/badge.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/badge/scss/badge.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/button/scss/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/button/scss/button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/card/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/card/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/card/scss/card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/card/scss/card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/core/scss/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/scss/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/form/scss/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/form/scss/form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/scss/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/navbar/scss/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/scss/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/scss/sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/k-components.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/src/lib/k-components.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/table/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/table/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/table/scss/table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/table/scss/table.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,24 +32,35 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="SCSS File" />
         <option value="TypeScript File" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1eVPscCY6bwcEk3qgQhM8vgSTgR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/components/src/button" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -91,7 +72,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/projects/components/src/lib/modules/button/models" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\src" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\auth\src\lib" />
+      <recent name="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar" />
+      <recent name="$PROJECT_DIR$/projects/components/core/scss/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\src\button" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\auth\src\lib\services" />
+      <recent name="C:\Users\moein\Desktop\ngx-k" />
+      <recent name="$PROJECT_DIR$/projects/components/navbar/src" />
+      <recent name="$PROJECT_DIR$/projects/components/navbar" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
@@ -123,7 +115,13 @@
       <workItem from="1594412866483" duration="725000" />
       <workItem from="1594446429855" duration="567000" />
       <workItem from="1595923509058" duration="747000" />
-      <workItem from="1595924350931" duration="1940000" />
+      <workItem from="1595924350931" duration="10226000" />
+      <workItem from="1596002172252" duration="9859000" />
+      <workItem from="1596261704417" duration="6193000" />
+      <workItem from="1596270927808" duration="4602000" />
+      <workItem from="1596286914030" duration="749000" />
+      <workItem from="1596348170374" duration="14327000" />
+      <workItem from="1597043391768" duration="2158000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -146,15 +144,185 @@
       <option name="project" value="LOCAL" />
       <updated>1594404398815</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix button module ~&#10;- use directive instead component for button&#10;- create some global types for size and color&#10;- set paths in tsconfig for models to have shorter import statements">
+      <created>1595926703365</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595926703365</updated>
+    </task>
+    <task id="LOCAL-00005" summary="try to use ng-packagr as library builder but we need some work . .">
+      <created>1595938397974</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595938397975</updated>
+    </task>
+    <task id="LOCAL-00006" summary="reimport button module with shorter path">
+      <created>1596003802260</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596003802260</updated>
+    </task>
+    <task id="LOCAL-00007" summary="set role attribute when directive assigned to other tags">
+      <created>1596005128565</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596005128565</updated>
+    </task>
+    <task id="LOCAL-00008" summary="alert directives">
+      <created>1596015557046</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596015557046</updated>
+    </task>
+    <task id="LOCAL-00009" summary="move methods from ctor to ngOnInit">
+      <created>1596262224926</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596262224926</updated>
+    </task>
+    <task id="LOCAL-00010" summary="card implementation">
+      <created>1596267620606</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596267620606</updated>
+    </task>
+    <task id="LOCAL-00011" summary="sidebar implementation">
+      <created>1596280778368</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596280778368</updated>
+    </task>
+    <task id="LOCAL-00012" summary="remove unnecessary files from alert module">
+      <created>1596287182182</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1596287182182</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix sidebar styling">
+      <created>1596437706619</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1596437706619</updated>
+    </task>
+    <task id="LOCAL-00014" summary="implement form library">
+      <created>1596452488654</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1596452488654</updated>
+    </task>
+    <task id="LOCAL-00015" summary="more contrast for dropdown items hover">
+      <created>1596453535550</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1596453535550</updated>
+    </task>
+    <task id="LOCAL-00016" summary="implement navbar library ~&#10;- fix sidebar issues&#10;- add status getter in sidebar">
+      <created>1596460194541</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1596460194541</updated>
+    </task>
+    <task id="LOCAL-00017" summary="some styling on card and inputs">
+      <created>1597037928050</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1597037928050</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add table library">
+      <created>1597040085570</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1597040085570</updated>
+    </task>
+    <task id="LOCAL-00019" summary="wip: add auth module">
+      <created>1597138864511</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1597138864511</updated>
+    </task>
+    <task id="LOCAL-00020" summary="change component struct">
+      <created>1597147879608</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1597147879608</updated>
+    </task>
+    <task id="LOCAL-00021" summary="change component struct">
+      <created>1597147973043</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1597147973043</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fix guard export in public-api.ts">
+      <created>1597149237562</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1597149237562</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+    <option name="additionalRoots">
+      <list>
+        <option value="$PROJECT_DIR$/../Kpanel/dist/data-table" />
+        <option value="$PROJECT_DIR$/../Kpanel/dist/core" />
+        <option value="$PROJECT_DIR$/../Kpanel/dist/dashboard" />
+        <option value="$PROJECT_DIR$/../Kpanel/dist/auth" />
+        <option value="$PROJECT_DIR$/../Kpanel/dist/form-builder" />
+        <option value="$PROJECT_DIR$/../Kpanel/dist/form-builder-bootstrap" />
+        <option value="$PROJECT_DIR$/dist/components" />
+        <option value="$PROJECT_DIR$/dist/auth" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/moein/Desktop/ngx-k/projects/components" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -162,53 +330,117 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="clean entire solution" />
     <MESSAGE value="initialize new project" />
     <MESSAGE value="create components library" />
-    <option name="LAST_COMMIT_MESSAGE" value="create components library" />
+    <MESSAGE value="fix button module ~&#10;- use directive instead component for button&#10;- create some global types for size and color&#10;- set paths in tsconfig for models to have shorter import statements" />
+    <MESSAGE value="try to use ng-packagr as library builder but we need some work . ." />
+    <MESSAGE value="reimport button module with shorter path" />
+    <MESSAGE value="set role attribute when directive assigned to other tags" />
+    <MESSAGE value="alert directives" />
+    <MESSAGE value="move methods from ctor to ngOnInit" />
+    <MESSAGE value="card implementation" />
+    <MESSAGE value="sidebar implementation" />
+    <MESSAGE value="remove unnecessary files from alert module" />
+    <MESSAGE value="fix sidebar styling" />
+    <MESSAGE value="implement form library" />
+    <MESSAGE value="more contrast for dropdown items hovers" />
+    <MESSAGE value="more contrast for dropdown items hover" />
+    <MESSAGE value="implement navbar library ~&#10;- fix sidebar issues&#10;- add status getter in sidebar" />
+    <MESSAGE value="some styling on card and inputs" />
+    <MESSAGE value="add table library" />
+    <MESSAGE value="wip: add auth module" />
+    <MESSAGE value="change component struct" />
+    <MESSAGE value="fix guard export in public-api.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix guard export in public-api.ts" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1093" y="443" key="#com.intellij.ide.util.MemberChooser" timestamp="1596977811356">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1093" y="443" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596977811356" />
     <state x="931" y="374" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595924557607">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="698" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594404337137" />
     <state x="931" y="374" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1595924557607" />
-    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1595926130357">
+    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1597040085377">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1595926130357" />
-    <state width="2539" height="419" key="GridCell.Tab.0.bottom" timestamp="1595924336046">
+    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040085377" />
+    <state x="183" y="133" key="DiffContextDialog" timestamp="1596453514560">
       <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="183" y="133" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596453514560" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1597149848058">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="2539" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1595924336046" />
-    <state width="2539" height="419" key="GridCell.Tab.0.center" timestamp="1595924336045">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597149848058" />
+    <state width="2539" height="249" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305778" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center" timestamp="1597149848058">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="2539" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1595924336045" />
-    <state width="2539" height="419" key="GridCell.Tab.0.left" timestamp="1595924336044">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597149848058" />
+    <state width="2539" height="249" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305776" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left" timestamp="1597149848058">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="2539" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1595924336044" />
-    <state width="2539" height="419" key="GridCell.Tab.0.right" timestamp="1595924336046">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597149848058" />
+    <state width="2539" height="249" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305775" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right" timestamp="1597149848058">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="2539" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1595924336046" />
-    <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate" timestamp="1595924568030">
+    <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597149848058" />
+    <state width="2539" height="249" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305777" />
+    <state x="773" y="139" key="RollbackChangesDialog" timestamp="1597146856769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="773" y="139" key="RollbackChangesDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146856769" />
+    <state x="849" y="458" key="VCS.ChangelistChooser" timestamp="1597146929098">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="849" y="458" key="VCS.ChangelistChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146929098" />
+    <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1597149238925">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597149238925" />
+    <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040087294" />
+    <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596367756439">
       <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596367756439" />
+    <state x="1070" y="637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596002175235">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1070" y="637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596002175235" />
+    <state x="668" y="208" width="583" height="624" key="find.popup" timestamp="1597149466130">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="208" width="583" height="624" key="find.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597149466130" />
+    <state x="831" y="419" width="435" height="298" key="org.angular.cli.generate" timestamp="1597142825080">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="665" y="332" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1594446665389" />
+    <state x="831" y="419" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597142825080" />
     <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1594404843801" />
-    <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1595924568030" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1595924167100">
+    <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1597044132992" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1597061607243">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1595924167100" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1597061607243" />
   </component>
 </project>

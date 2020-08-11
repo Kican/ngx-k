@@ -1,11 +1,18 @@
 {
-  "name": "components",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^10.0.3",
-    "@angular/core": "^10.0.3"
-  },
-  "dependencies": {
-    "tslib": "^2.0.0"
-  }
+    "name": "@ngx-k/components",
+    "version": "0.0.6",
+    "description": "Angular Kican Components",
+    "author": "Kican Contributers",
+    "repository": "https://github.com/Kican/ngx-k",
+    "scripts": {
+        "postinstall": "ngcc"
+    },
+    "peerDependencies": {
+        "@angular/common": "^10.0.8",
+        "@angular/core": "^10.0.8",
+        "bootstrap-v4-rtl": "^4.4.1-2"
+    },
+    "dependencies": {
+        "tslib": "^2.0.0"
+    }
 }

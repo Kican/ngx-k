@@ -1,0 +1,94 @@
+@import "~@ngx-k/components/core/scss/src/mixin/direction";
+@import "~@ngx-k/components/core/scss/src/variables/color";
+@import "sidebar-item";
+@import "sidebar-dropdown-item";
+@import "sidebar-single-item";
+
+@mixin k-sidebar(
+	$sidebar-width: 250px,
+	$transition: .3s cubic-bezier(.25,.1,.25,1),
+	$shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05),
+	$backdrop-alpha: .6,
+	$radius: 5px
+) {
+
+	.k-sidebar-container {
+		display: block;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.k-sidebar {
+		background-color: white;
+		z-index: 1032;
+		height: 100%;
+		width: $sidebar-width;
+		overflow-x: hidden;
+		overflow-y: auto;
+		@include transform-translate(-$sidebar-width - 20, 0);
+		transition: $transition;
+		box-shadow: $shadow;
+
+		// lack of rtl-bootstrap package
+		.list-unstyled {
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		.k-sidebar-group-title {
+			color: #c6c6c6;
+			font-weight: 500;
+			font-size: .825em;
+			margin-bottom: .5rem;
+			margin-top: 10px;
+		}
+
+		&::-webkit-scrollbar {
+			width: .35em;
+		}
+
+		&::-webkit-scrollbar-track {
+			background-color: lighten(map-get($theme-colors, 'secondary'), 10%);
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: map-get($theme-colors, 'secondary');
+			border-radius: $radius;
+		}
+
+		&.opened {
+			@include transform-translate(0, 0);
+		}
+
+		@include sidebar-item($radius);
+		@include sidebar-dropdown-item();
+		@include sidebar-single-item();
+	}
+
+	.k-sidebar-content {
+		display: block;
+		transition: $transition;
+
+		&.side {
+			@include transform-translate($sidebar-width, 0);
+		}
+
+		&.pushed {
+			@include padding-left($sidebar-width);
+		}
+	}
+
+	.k-backdrop {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1031;
+		background-color: rgba(0, 0, 0, $backdrop-alpha);
+		transition: $transition;
+	}
+
+	.k-sidebar-nav-offset {
+		@include margin-left($sidebar-width);
+	}
+}

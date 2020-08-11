@@ -1,0 +1,60 @@
+@mixin padding($top, $right, $bottom, $left) {
+	padding: $top $right $bottom $left;
+
+	body[dir='rtl'] & {
+		padding: $top $left $bottom $right;
+	}
+}
+
+@mixin padding-left($value) {
+	padding-left: $value;
+
+	body[dir='rtl'] & {
+		padding-left: 0;
+		padding-right: $value;
+	}
+}
+
+@mixin padding-right($value) {
+	padding-right: $value;
+
+	body[dir='rtl'] & {
+		padding-right: 0;
+		padding-left: $value;
+	}
+}
+
+@mixin margin-left($value) {
+	margin-left: $value;
+
+	body[dir='rtl'] & {
+		margin-left: 0;
+		margin-right: $value;
+	}
+}
+
+@mixin margin-right($value) {
+	margin-right: $value;
+
+	body[dir='rtl'] & {
+		margin-right: 0;
+		margin-left: $value;
+	}
+}
+
+@mixin right($value) {
+	right: $value;
+
+	body[dir='rtl'] & {
+		right: unset;
+		left: $value;
+	}
+}
+
+@mixin transform-translate($x, $y) {
+	transform: translate($x, $y);
+
+	body[dir='rtl'] & {
+		transform: translate(-$x, $y);
+	}
+}
