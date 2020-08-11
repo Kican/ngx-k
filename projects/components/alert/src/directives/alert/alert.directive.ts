@@ -1,5 +1,5 @@
 import {Directive, ElementRef, HostBinding, Input, OnInit, Renderer2} from '@angular/core';
-import {ColorType} from 'ngx-k-components/core/models';
+import {ColorType} from '@ngx-k/components/core/models';
 
 @Directive({
 	selector: '[kAlert]'

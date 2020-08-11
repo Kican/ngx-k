@@ -21,7 +21,7 @@ for (let library of getLibraries()) {
 		}
 		if (process.argv.includes('--publish')) {
 			console.log(`publishing package [${library.key}] ...`)
-			execSync(`npm publish dist/${library.key}`)
+			execSync(`npm publish dist/${library.key} --access public`)
 		}
 	} catch (e) {
 		console.error(e);

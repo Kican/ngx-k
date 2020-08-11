@@ -28,7 +28,10 @@
 		"@auth0/angular-jwt": "^5.0.1"
 	},
 	"optionalDependencies": {
-		"ngx-k-components": "file:dist/components"
+		"@ngx-k/components": "file:dist/components",
+		"@ngx-k/form-builder": "file:dist/form-builder",
+		"@ngx-k/form-builder-bootstrap": "file:dist/form-builder-bootstrap",
+		"@ngx-k/auth": "file:dist/auth"
 	},
 	"devDependencies": {
 		"@angular-devkit/build-angular": "~0.1000.5",

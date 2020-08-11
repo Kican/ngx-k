@@ -1,5 +1,5 @@
 import {Directive, HostBinding, Input} from '@angular/core';
-import {SizeType} from 'ngx-k-components/core/models';
+import {SizeType} from '@ngx-k/components/core/models';
 
 @Directive({
 	selector: '[kFormInput]'

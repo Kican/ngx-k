@@ -1,7 +1,7 @@
 import {Inject, Injectable, PLATFORM_ID} from '@angular/core';
 import {BehaviorSubject, Observable} from 'rxjs';
 import {isPlatformBrowser} from '@angular/common';
-import {WindowSize} from 'ngx-k-components/core/models';
+import {WindowSize} from '@ngx-k/components/core/models';
 
 @Injectable({
 	providedIn: 'root'

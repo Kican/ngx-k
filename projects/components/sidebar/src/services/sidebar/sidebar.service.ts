@@ -3,7 +3,7 @@ import {SidebarStatus} from '../../models/sidebar-status.enum';
 import {SIDEBAR_CONFIG, SidebarConfiguration} from '../../models/sidebar.config';
 import {BehaviorSubject} from 'rxjs';
 import {SidebarMode} from '../../models/sidebar-mode.enum';
-import {WindowSizeService} from 'ngx-k-components/core';
+import {WindowSizeService} from '@ngx-k/components/core';
 import {distinctUntilChanged, map} from 'rxjs/operators';
 
 @Injectable()

@@ -1,16 +1,13 @@
 const {readFileSync, writeFileSync} = require('fs');
 
-const appVer = '0.0.2'
+const appVer = '0.0.4'
 const versions = [
 	{
 		packages: [
-			"@ngx-k-panel/core",
-			"@ngx-k-panel/auth",
-			"@ngx-k-panel/dashboard",
-			"@ngx-k-panel/data-table",
-			"@ngx-k-panel/entity-manager",
-			"@ngx-k-panel/form-builder",
-			"@ngx-k-panel/form-builder-bootstrap"
+			"@ngx-k/form-builder",
+			"@ngx-k/form-builder-bootstrap",
+			"@ngx-k/auth",
+			"@ngx-k/components"
 		],
 		version: "^" + appVer
 	},
