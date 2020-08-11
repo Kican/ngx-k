@@ -6,91 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="change component struct">
-      <change afterPath="$PROJECT_DIR$/projects/components/alert/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/badge/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/button/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/card/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/core/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/form/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/navbar/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/sidebar/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/table/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/ng-package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/bootstrap-component-collection/bootstrap-component-collection.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/bootstrap-component-collection/bootstrap-component-collection.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-number/input-number.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-number/input-number.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-number/input-number.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-number/input-number.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-text/input-text.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-text/input-text.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-text/input-text.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-text/input-text.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/layout/linear-layout/linear-layout.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/layout/linear-layout/linear-layout.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/layout/linear-layout/linear-layout.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/layout/linear-layout/linear-layout.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/ngx-k-form-builder-bootstrap.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/projects.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/tsconfig.lib.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/tsconfig.lib.prod.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/ng-package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/component-collection/component-collection.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/component-collection/component-collection.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/component-descriptor-collection/component-descriptor-collection.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/component-descriptor-collection/component-descriptor-collection.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/i-component-descriptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/i-element-component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/icomponent.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/iedit-text-component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/ilayout-component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/components/form-builder/form-builder.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/components/form-builder/form-builder.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/components/form-builder/form-builder.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/components/form-builder/form-builder.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/input-number/input-number-descriptor.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/input-number/input-number-descriptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/input-text/input-text-descriptor.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/input-text/input-text-descriptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/layouts/linear/linear-layout-descriptor.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/layouts/linear/linear-layout-descriptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/ngx-k-form-builder.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/services/form-builder.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/services/form-builder.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/projects.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/tsconfig.lib.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/tsconfig.lib.prod.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/tslint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs-publish.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs-publish.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs-update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/auth/src/lib/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/src/lib/ngx-k-auth.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/auth/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/src/public-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/alert/src/directives/alert/alert.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/alert/src/directives/alert/alert.directive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/badge/src/directives/badge/badge.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/badge/src/directives/badge/badge.directive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/button/src/directives/button/button.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/button/src/directives/button/button.directive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/core/models/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/models/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/core/src/services/window-size/window.size.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/src/services/window-size/window.size.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/form/src/directives/form-input/form-input.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/form/src/directives/form-input/form-input.directive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/k-sidebar.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/k-sidebar.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar/sidebar.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar/sidebar.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597147879608</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="change component struct">
+      <created>1597147973043</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1597147973043</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +264,6 @@
     <option name="additionalRoots">
       <list>
         <option value="$PROJECT_DIR$/../Kpanel/dist/entity-manager" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/dashboard" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/data-table" />
         <option value="$PROJECT_DIR$/dist/components" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/core" />
@@ -468,10 +392,10 @@
     </state>
     <state x="849" y="458" key="VCS.ChangelistChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146929098" />
     <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1597147881928">
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1597147974465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597147881928" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597147974465" />
     <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040087294" />
     <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596367756439">
       <screen x="0" y="0" width="2560" height="1440" />

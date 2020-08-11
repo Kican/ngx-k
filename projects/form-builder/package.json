@@ -1,6 +1,6 @@
 {
     "name": "@ngx-k/form-builder",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "peerDependencies": {
         "@angular/common": "^10.0.8",
         "@angular/forms": "^10.0.8",
