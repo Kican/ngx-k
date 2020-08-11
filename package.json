@@ -29,6 +29,7 @@
 	},
 	"optionalDependencies": {
 		"@ngx-k/components": "file:dist/components",
+		"@ngx-k/core": "file:dist/core",
 		"@ngx-k/form-builder": "file:dist/form-builder",
 		"@ngx-k/form-builder-bootstrap": "file:dist/form-builder-bootstrap",
 		"@ngx-k/auth": "file:dist/auth"
