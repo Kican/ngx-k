@@ -27,6 +27,14 @@
       "core": [
         "dist/core/core",
         "dist/core"
+      ],
+      "components-bs": [
+        "dist/components-bs/components-bs",
+        "dist/components-bs"
+      ],
+      "components-bootstrap": [
+        "dist/components-bootstrap/components-bootstrap",
+        "dist/components-bootstrap"
       ]
     }
   }
