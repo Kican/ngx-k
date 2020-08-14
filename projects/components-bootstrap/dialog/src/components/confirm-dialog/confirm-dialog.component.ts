@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {BsModalRef} from 'ngx-bootstrap/modal';
+import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
 	selector: 'lib-confirm-dialog',
@@ -15,7 +15,7 @@ export class ConfirmDialogComponent implements OnInit {
 
 	result = false;
 
-	constructor(public bsModalRef: BsModalRef) {
+	constructor(public bsModalRef: NgbActiveModal) {
 	}
 
 	ngOnInit(): void {
@@ -23,7 +23,7 @@ export class ConfirmDialogComponent implements OnInit {
 
 	accept(): void {
 		this.result = true;
-		this.bsModalRef.hide();
+		this.bsModalRef.close();
 	}
 
 }

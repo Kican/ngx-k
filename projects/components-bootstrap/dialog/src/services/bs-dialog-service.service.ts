@@ -2,15 +2,16 @@ import {Injectable, TemplateRef} from '@angular/core';
 import {take} from 'rxjs/operators';
 import {ConfirmDialogBase, DialogConfig, DialogRef, DialogService} from '@ngx-k/components/dialog';
 import {ComponentType} from '@angular/cdk/overlay';
-import {BsModalService} from 'ngx-bootstrap/modal';
 import {ConfirmDialogComponent} from '../components/confirm-dialog/confirm-dialog.component';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {fromPromise} from 'rxjs/internal-compatibility';
 
 @Injectable({
 	providedIn: 'root'
 })
 export class BsDialogServiceService extends DialogService {
 
-	constructor(private bsModalService: BsModalService) {
+	constructor(private bsModalService: NgbModal) {
 		super();
 	}
 
@@ -19,16 +20,18 @@ export class BsDialogServiceService extends DialogService {
 	}
 
 	open<TComponent, TResult>(component: ComponentType<TComponent> | TemplateRef<TComponent>, config: DialogConfig): DialogRef<TComponent, TResult> {
-		const size = config.size === 'small' ? 'modal-sm' : config.size === 'mid' ? 'modal-md' : 'modal-lg';
+		const size = config.size === 'small' ? 'sm' : config.size === 'mid' ? 'lg' : 'xl';
 
-		const bsDialogRef = this.bsModalService.show(component, {initialState: config.data, class: size});
+		const bsDialogRef = this.bsModalService.open(component, {size});
 		const ref = new DialogRef<TComponent, TResult>();
 
-		this.bsModalService.onHidden.pipe(
+		ref.componentInstance = bsDialogRef.componentInstance;
+
+		fromPromise(bsDialogRef.result).pipe(
 			take(1)
 		).subscribe(value => {
-			console.log(bsDialogRef.content.result);
-			ref.close(bsDialogRef.content.result);
+			console.log(bsDialogRef.componentInstance.result);
+			ref.close(bsDialogRef.componentInstance.result);
 		});
 
 		return ref;

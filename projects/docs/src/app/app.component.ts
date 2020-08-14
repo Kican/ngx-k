@@ -1,6 +1,7 @@
 import {AfterViewInit, Component, OnInit, Renderer2} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {SidebarDynamicMenuService} from '@ngx-k/components/sidebar';
+import {DialogService} from "@ngx-k/components/dialog";
 
 @Component({
 	selector: 'app-root',
@@ -11,13 +12,21 @@ export class AppComponent implements OnInit, AfterViewInit {
 	title = 'docs';
 	isRtl = new FormControl(false);
 
-	constructor(private renderer: Renderer2, private sidebarDynamicMenuService: SidebarDynamicMenuService) {
+	constructor(
+		private renderer: Renderer2,
+		private sidebarDynamicMenuService: SidebarDynamicMenuService,
+		private dialogService: DialogService
+	) {
 	}
 
 	ngOnInit(): void {
 		this.isRtl.valueChanges.subscribe(value => {
 			this.renderer.setAttribute(document.body, 'dir', value ? 'rtl' : 'ltr');
 		});
+	}
+
+	openConfirmDialog(): void {
+		this.dialogService.confirm({size: 'small'}).onResult().subscribe(value => alert(value));
 	}
 
 	addGroup(groupId: string, title: string): void {

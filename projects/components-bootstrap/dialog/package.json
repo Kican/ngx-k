@@ -1,9 +1,13 @@
 {
 	"ngPackage": {
+		"$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
 		"lib": {
-			"entryFile": "./src/public-api.ts"
+			"entryFile": "./src/public-api.ts",
+			"umdModuleIds": {
+			}
 		}
 	},
 	"peerDependencies": {
+		"@ng-bootstrap/ng-bootstrap": "^7.0.0"
 	}
 }
