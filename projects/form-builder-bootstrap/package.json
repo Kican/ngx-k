@@ -1,10 +1,10 @@
 {
     "name": "@ngx-k/form-builder-bootstrap",
-    "version": "0.0.12",
+    "version": "0.0.13",
     "peerDependencies": {
         "@angular/common": "^10.0.9",
         "@angular/core": "^10.0.9",
-        "@ngx-k/form-builder": "^0.0.12"
+        "@ngx-k/form-builder": "^0.0.13"
     },
     "dependencies": {
         "tslib": "^2.0.0"

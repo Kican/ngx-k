@@ -24,14 +24,13 @@ export class BsDialogServiceService extends DialogService {
 
 		const bsDialogRef = this.bsModalService.open(component, {size});
 		const ref = new DialogRef<TComponent, TResult>();
-
+		console.log(bsDialogRef.componentInstance);
 		ref.componentInstance = bsDialogRef.componentInstance;
 
 		fromPromise(bsDialogRef.result).pipe(
 			take(1)
 		).subscribe(value => {
-			console.log(bsDialogRef.componentInstance.result);
-			ref.close(bsDialogRef.componentInstance.result);
+			ref.close(value);
 		});
 
 		return ref;

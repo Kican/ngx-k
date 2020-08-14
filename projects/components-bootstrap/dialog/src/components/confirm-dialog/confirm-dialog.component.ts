@@ -23,7 +23,7 @@ export class ConfirmDialogComponent implements OnInit {
 
 	accept(): void {
 		this.result = true;
-		this.bsModalRef.close();
+		this.bsModalRef.close(this.result);
 	}
 
 }
