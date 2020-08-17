@@ -9,7 +9,7 @@ import {fromPromise} from 'rxjs/internal-compatibility';
 @Injectable({
 	providedIn: 'root'
 })
-export class BsDialogServiceService extends DialogService {
+export class BsDialogService extends DialogService {
 
 	constructor(private bsModalService: NgbModal) {
 		super();

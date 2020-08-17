@@ -1,13 +1,18 @@
 import {Injectable} from '@angular/core';
-import {ToastOption} from '../models/toastOption';
+import {ToastConfig} from '../models/toast-config';
+import {ToastRef} from '../models/toast-ref';
 
 @Injectable({
 	providedIn: 'root'
 })
 export abstract class ToastService {
-	abstract success(message?: string): void;
+	abstract success(option: ToastConfig): ToastRef;
 
-	abstract failed(message?: string): void;
+	abstract error(option: ToastConfig): ToastRef;
 
-	abstract show(option: ToastOption): void;
+	abstract info(option: ToastConfig): ToastRef;
+
+	abstract warning(option: ToastConfig): ToastRef;
+
+	abstract openComponent(component: any, option: ToastConfig): ToastRef;
 }

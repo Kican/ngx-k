@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ConfirmDialogComponent} from './components/confirm-dialog/confirm-dialog.component';
 import {DialogService} from '@ngx-k/components/dialog';
-import {BsDialogServiceService} from './services/bs-dialog-service.service';
+import {BsDialogService} from './services/bs-dialog.service';
 import {NgbModalModule} from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -14,9 +14,9 @@ import {NgbModalModule} from '@ng-bootstrap/ng-bootstrap';
 		CommonModule,
 		NgbModalModule
 	],
-	exports: [NgbModalModule],
+	exports: [],
 	providers: [
-		{provide: DialogService, useClass: BsDialogServiceService}
+		{provide: DialogService, useClass: BsDialogService}
 	],
 })
 export class KBootstrapDialogModule {
