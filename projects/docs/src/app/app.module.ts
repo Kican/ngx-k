@@ -9,12 +9,12 @@ import {KAlertModule} from '@ngx-k/components/alert';
 import {KBadgeModule} from '@ngx-k/components/badge';
 import {KCardModule} from '@ngx-k/components/card';
 import {KSidebarModule, SidebarMode, SidebarStatus} from '@ngx-k/components/sidebar';
-import {KFormModule} from '@ngx-k/components/form';
+// import {KFormModule} from '@ngx-k/components/form';
 import {KNavbarModule} from '@ngx-k/components/navbar';
 import {KTableModule} from '@ngx-k/components/table';
-import {KDialogModule} from '@ngx-k/components/dialog';
-import {KBootstrapDialogModule} from "@ngx-k/components-bootstrap/dialog";
-import {NgbModalModule} from "@ng-bootstrap/ng-bootstrap";
+import {KBootstrapDialogModule} from '../../../components-bootstrap/dialog/src/k-bootstrap-dialog.module';
+import {HttpClientModule} from '@angular/common/http';
+import {KFormModule} from "../../../components/form/src/k-form.module";
 
 @NgModule({
 	declarations: [
@@ -38,8 +38,8 @@ import {NgbModalModule} from "@ng-bootstrap/ng-bootstrap";
 		KFormModule,
 		KNavbarModule,
 		KTableModule,
-		NgbModalModule,
 		KBootstrapDialogModule,
+		HttpClientModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

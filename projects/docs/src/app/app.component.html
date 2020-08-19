@@ -192,10 +192,32 @@
 							<h6 class="mb-0">Pagination Goes Here</h6>
 						</k-table-footer>
 					</k-table-container>
+
+					<div class="mt-4"></div>
+
+					<k-form-group [id]="'file'">
+						<label>Profile Cert</label>
+						<k-form-file-input
+							[multiple]="true"
+							[(files)]="files"
+							(filesChange)="log($event)"
+							[previousFilesUrl]="['http://127.0.0.1:8081/1.svg']"
+							[accept]="'application/pdf'">
+							<div class="d-flex justify-content-center align-items-center flex-column p-3" *kFileInputTmp>
+								<i class="mdi mdi-file-upload mdi-48px label"></i>
+								<div>
+									<span class="label">Drag files or </span>
+									<span class="label">Browse</span>
+								</div>
+							</div>
+						</k-form-file-input>
+					</k-form-group>
+
 				</div>
 			</div>
-
 		</div>
+
+		{{files | json}}
 
 	</k-sidebar-content>
 

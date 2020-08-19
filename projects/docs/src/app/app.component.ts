@@ -1,7 +1,7 @@
 import {AfterViewInit, Component, OnInit, Renderer2} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {SidebarDynamicMenuService} from '@ngx-k/components/sidebar';
-import {DialogService} from "@ngx-k/components/dialog";
+import {DialogService} from '@ngx-k/components/dialog';
 
 @Component({
 	selector: 'app-root',
@@ -12,11 +12,17 @@ export class AppComponent implements OnInit, AfterViewInit {
 	title = 'docs';
 	isRtl = new FormControl(false);
 
+	files: File[];
+
 	constructor(
 		private renderer: Renderer2,
 		private sidebarDynamicMenuService: SidebarDynamicMenuService,
 		private dialogService: DialogService
 	) {
+	}
+
+	log(data: any) {
+		console.log(data);
 	}
 
 	ngOnInit(): void {

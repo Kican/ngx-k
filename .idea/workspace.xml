@@ -6,21 +6,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="fix ng-bootstrap dialog">
-      <change afterPath="$PROJECT_DIR$/projects/components-bootstrap/toast/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components-bootstrap/toast/src/k-bootstrap-toast.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components-bootstrap/toast/src/public-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components-bootstrap/toast/src/services/bs-toast.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/toast/src/models/toast-config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/toast/src/models/toast-ref.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/core/src/services/file-saver/file-saver.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/core/src/services/file-saver/file-saver.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/form/src/modules/file-input/_partials/form-file-list/form-file-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/form/src/modules/file-input/_partials/form-file-list/form-file-list.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/form/src/modules/file-input/_partials/form-file-list/form-file-list.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/form/src/modules/file-input/_partials/form-file-list/form-file-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/form/src/modules/file-input/components/form-file-input/form-file-input.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/form/src/modules/file-input/components/form-file-input/form-file-input.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/form/src/modules/file-input/components/form-file-input/form-file-input.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/form/src/modules/file-input/components/form-file-input/form-file-input.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/form/src/modules/file-input/file-input.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components-bootstrap/dialog/src/k-bootstrap-dialog.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components-bootstrap/dialog/src/k-bootstrap-dialog.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components-bootstrap/dialog/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components-bootstrap/dialog/src/public-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components-bootstrap/dialog/src/services/bs-dialog-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components-bootstrap/dialog/src/services/bs-dialog.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/toast/src/models/toastOption.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/toast/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/toast/src/public-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/toast/src/services/toast.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/toast/src/services/toast.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/core/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/src/public-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/form/src/k-form.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/form/src/k-form.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/form/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/form/src/public-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,19 +74,19 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\src\lib\services" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\src\lib" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\toast\src\models" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\toast\src\services" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\toast\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\toast" />
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\dialog\src" />
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap" />
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\common\src\common" />
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\common\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/components/form/src/modules/file-input" />
+      <recent name="$PROJECT_DIR$/projects/components/form/src/modules/file-input/_partials" />
+      <recent name="$PROJECT_DIR$/projects/components/form/src/modules/file-input/components" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\src\lib\services" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\src\lib" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
@@ -99,7 +104,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -350,17 +355,9 @@
     <option name="version" value="3" />
     <option name="additionalRoots">
       <list>
-        <option value="$PROJECT_DIR$/dist/components" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/form-builder" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/auth" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/data-table" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/users-manager" />
-        <option value="$PROJECT_DIR$/dist/components-bootstrap" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/entity-manager" />
-        <option value="$PROJECT_DIR$/dist/core" />
         <option value="$PROJECT_DIR$/dist/auth" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/dashboard" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/core" />
+        <option value="$PROJECT_DIR$/dist/core" />
+        <option value="$PROJECT_DIR$/dist/components" />
       </list>
     </option>
   </component>
@@ -509,19 +506,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="668" y="208" width="583" height="624" key="find.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597149466130" />
-    <state x="2117" y="286" width="348" height="298" key="org.angular.cli.generate" timestamp="1597523008891">
-      <screen x="1920" y="174" width="1440" height="860" />
+    <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate" timestamp="1597846261271">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="665" y="332" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1594446665389" />
     <state x="929" y="361" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597240437008" />
     <state x="2117" y="286" width="348" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597523008891" />
     <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1594404843801" />
-    <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1597044132992" />
-    <state x="2452" y="372" width="672" height="405" key="search.everywhere.popup" timestamp="1597164004134">
-      <screen x="1920" y="174" width="1440" height="860" />
+    <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1597846261271" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1597845732260">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="709" y="239" width="672" height="489" key="search.everywhere.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597163951541" />
     <state x="2452" y="372" width="672" height="405" key="search.everywhere.popup/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597164004134" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1597061607243" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1597845732260" />
   </component>
 </project>
