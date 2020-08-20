@@ -1,0 +1,25 @@
+<div class="d-flex justify-content-between align-items-center p-2 my-1" *ngFor="let file of files; let i = index">
+	<div>
+		<div class="d-flex align-items-center">
+			<div>
+				<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+					<path fill="currentColor" d="M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z"/>
+				</svg>
+			</div>
+			<div class="h6 mx-2">
+				{{file.name}}
+				<br>
+				<span class="small text-muted">{{sizeText}}: {{file.size | fileSize}}</span>
+				<span class="mx-2"></span>
+				<span class="small text-muted">{{typeText}}: {{file.name | fileType}}</span>
+			</div>
+		</div>
+	</div>
+	<div>
+		<span class="btn" (click)="saveFile(file, file.name)">
+			<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+				<path fill="currentColor" d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"/>
+			</svg>
+		</span>
+	</div>
+</div>

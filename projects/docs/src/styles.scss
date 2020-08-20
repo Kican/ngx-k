@@ -17,6 +17,9 @@
 @import "~@ngx-k/components/form/scss/form";
 @import "~@ngx-k/components/table/scss/table";
 
+@import "../../../../ngx-k/projects/components/form/scss/file-input";
+@include k-file-input();
+
 body {
 	background-color: #FBFCFE;
 
