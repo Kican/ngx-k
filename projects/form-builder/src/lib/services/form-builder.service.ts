@@ -1,8 +1,5 @@
-import {ComponentFactoryResolver, Injectable, Injector, ViewContainerRef} from '@angular/core';
-import {IComponent} from '../classes/icomponent';
-import {ComponentCollection} from '../classes/component-collection/component-collection';
-import {ComponentDescriptorCollection} from '../classes/component-descriptor-collection/component-descriptor-collection';
-import {IElementComponent} from '../classes/i-element-component';
+import {AbstractType, ComponentFactoryResolver, ComponentRef, Injectable, InjectFlags, InjectionToken, Injector, Type, ViewContainerRef} from '@angular/core';
+import {ComponentCollection, ComponentConfig, ComponentDescriptorCollection, IComponent, IElementComponent} from '../classes';
 import {FormGroup} from '@angular/forms';
 
 @Injectable({
@@ -23,15 +20,48 @@ export class FormBuilderService {
 		componentFactoryResolver: ComponentFactoryResolver,
 		injector: Injector
 	): void {
+		const componentRef = this.resolve(component, formGroup, componentFactoryResolver, injector);
+
+		viewContainerRef.insert(componentRef.hostView);
+	}
+
+	public resolve(
+		component: IComponent,
+		formGroup: FormGroup,
+		componentFactoryResolver: ComponentFactoryResolver,
+		injector: Injector
+	): ComponentRef<IElementComponent> {
 		const componentName = this.componentDescriptorCollection.resolve(component);
 		const componentClass = this.componentCollection.find(componentName);
 
 		const componentFactory = componentFactoryResolver.resolveComponentFactory<IElementComponent>(componentClass);
-		const componentRef = componentFactory.create(injector);
 
-		componentRef.instance.parentFormGroup = formGroup;
-		componentRef.instance.componentData = component;
+		const config: ComponentConfig = {
+			data: component,
+			form: formGroup
+		};
+		const map = new WeakMap();
+		map.set(ComponentConfig, config);
 
-		viewContainerRef.insert(componentRef.hostView);
+		return componentFactory.create(new ComponentInjector(injector, map));
 	}
+}
+
+export class ComponentInjector implements Injector {
+	constructor(
+		private _parentInjector: Injector,
+		private _additionalTokens: WeakMap<any, any>
+	) {
+	}
+
+	get<T>(token: Type<T> | InjectionToken<T> | AbstractType<T>, notFoundValue?: T, flags?: InjectFlags): T;
+	get(token: any, notFoundValue?: any): any;
+	get(token, notFoundValue?, flags?: InjectFlags): any {
+		const value = this._additionalTokens.get(token);
+
+		if (value) return value;
+
+		return this._parentInjector.get<any>(token, notFoundValue);
+	}
+
 }

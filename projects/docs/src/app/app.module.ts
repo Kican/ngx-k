@@ -15,9 +15,10 @@ import {KTableModule} from '@ngx-k/components/table';
 import {KBootstrapDialogModule} from '@ngx-k/components-bootstrap/dialog';
 import {NgbModalModule} from '@ng-bootstrap/ng-bootstrap';
 import {SimpleFormBuilderPageComponent} from './components/_form-builder/simple-form-builder-page/simple-form-builder-page.component';
+import {DashboardPageComponent} from './components/dashboard-page/dashboard-page.component';
+import {HttpClientModule} from '@angular/common/http';
 import {KFormBuilderModule} from '@ngx-k/form-builder';
 import {KFormBuilderBootstrapModule} from '@ngx-k/form-builder-bootstrap';
-import { DashboardPageComponent } from './components/dashboard-page/dashboard-page.component';
 
 @NgModule({
 	declarations: [
@@ -30,6 +31,7 @@ import { DashboardPageComponent } from './components/dashboard-page/dashboard-pa
 		AppRoutingModule,
 		FormsModule,
 		ReactiveFormsModule,
+		HttpClientModule,
 		KButtonModule,
 		KAlertModule,
 		KBadgeModule,

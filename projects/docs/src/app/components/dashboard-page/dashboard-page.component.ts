@@ -10,6 +10,11 @@ import {FormControl} from '@angular/forms';
 export class DashboardPageComponent implements OnInit {
 	isRtl = new FormControl(false);
 
+	files: FileList;
+
+	file = new FormControl();
+	customFile = new FormControl();
+
 	constructor(
 		private sidebarDynamicMenuService: SidebarDynamicMenuService,
 		private dialogService: DialogService,
@@ -21,12 +26,21 @@ export class DashboardPageComponent implements OnInit {
 		this.isRtl.valueChanges.subscribe(value => {
 			this.renderer.setAttribute(document.body, 'dir', value ? 'rtl' : 'ltr');
 		});
+		this.file.valueChanges.subscribe(value => {
+			console.log(value);
+		});
+		this.customFile.valueChanges.subscribe(value => {
+			console.log(value);
+		});
 	}
 
 	openConfirmDialog(): void {
 		this.dialogService.confirm({size: 'small'}).onResult().subscribe(value => alert(value));
 	}
 
+	log(data: any): void {
+		console.log(data);
+	}
 
 	addGroup(groupId: string, title: string): void {
 		this.sidebarDynamicMenuService.addGroup('main-sidebar',

@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {IEditTextComponent, IElementComponent} from '@ngx-k/form-builder';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import { IElementComponent, IEditTextComponent, ComponentConfig} from '@ngx-k/form-builder';
 
 @Component({
 	selector: 'k-input-number',
@@ -8,20 +8,15 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 	styleUrls: ['./input-number.component.scss']
 })
 export class InputNumberComponent implements OnInit, IElementComponent {
-	@Input()
-	parentFormGroup: FormGroup;
-
-	@Input()
-	componentData: IEditTextComponent;
-
 	control: FormControl;
 
-	constructor() {
+	constructor(public config: ComponentConfig<IEditTextComponent>) {
+		console.log(`edit-number`, config);
 		this.control = new FormControl(null, []);
 	}
 
 	ngOnInit(): void {
-		this.parentFormGroup.addControl(this.toLowerCamelCase(this.componentData.name), this.control)
+		this.config.form.addControl(this.toLowerCamelCase(this.config.data.name), this.control);
 	}
 
 	toLowerCamelCase(text: string): string {

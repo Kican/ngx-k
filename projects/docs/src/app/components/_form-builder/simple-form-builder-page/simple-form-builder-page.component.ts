@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ILayoutComponent} from '@ngx-k/form-builder';
+import {FormBuilder, FormGroup} from '@angular/forms';
 
 @Component({
 	selector: 'app-simple-form-builder-page',
@@ -7,19 +7,27 @@ import {ILayoutComponent} from '@ngx-k/form-builder';
 })
 export class SimpleFormBuilderPageComponent implements OnInit {
 
-	formData: ILayoutComponent = {
-		type: 'LinearLayoutComponent',
-		name: '',
-		children: [
-			{name: 'title', type: 'TextFieldComponent'},
-			{name: 'count', type: 'NumberFieldComponent'},
-		]
-	};
+	formData;
 
-	constructor() {
+	form: FormGroup;
+
+	constructor(_fb: FormBuilder) {
+		this.form = _fb.group({});
+
 	}
 
 	ngOnInit(): void {
+		setTimeout(() => {
+			this.formData = {
+				type: 'LinearLayoutComponent',
+				name: 'salam',
+				orientation: 'horizontal',
+				children: [
+					{name: 'title', type: 'TextFieldComponent', title: 'title'},
+					{name: 'count', type: 'NumberFieldComponent', title: 'count'},
+				]
+			};
+		}, 0);
 	}
 
 }

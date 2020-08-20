@@ -1,22 +1,22 @@
 import {
-	AfterViewInit,
 	Component,
 	ComponentFactoryResolver,
-	Injector, Input,
+	Injector, Input, OnChanges,
 	OnInit,
 	ViewChild,
-	ViewContainerRef
+	ViewContainerRef,
+	SimpleChanges
 } from '@angular/core';
-import {IComponent} from '../../classes/icomponent';
+import {IComponent} from '../../classes';
 import {FormBuilderService} from '../../services/form-builder.service';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import {FormGroup} from '@angular/forms';
 
 @Component({
 	selector: 'k-form-builder',
 	templateUrl: './form-builder.component.html',
 	styleUrls: ['./form-builder.component.scss']
 })
-export class FormBuilderComponent implements OnInit, AfterViewInit {
+export class FormBuilderComponent implements OnInit, OnChanges {
 
 	@ViewChild('content', {read: ViewContainerRef})
 	dynamicInsert: ViewContainerRef;
@@ -34,10 +34,12 @@ export class FormBuilderComponent implements OnInit, AfterViewInit {
 	) {
 	}
 
+	ngOnChanges(changes: SimpleChanges): void {
+		if (this.dynamicInsert != null)
+			this.formBuilder.render(this.component, this.form, this.dynamicInsert, this.componentFactoryResolver, this.injector);
+	}
+
 	ngOnInit(): void {
 	}
 
-	ngAfterViewInit(): void {
-		this.formBuilder.render(this.component, this.form, this.dynamicInsert, this.componentFactoryResolver, this.injector);
-	}
 }

@@ -6,17 +6,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="fix ng-bootstrap dialog">
-      <change afterPath="$PROJECT_DIR$/projects/docs/src/app/components/_form-builder/simple-form-builder-page/simple-form-builder-page.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/docs/src/app/components/_form-builder/simple-form-builder-page/simple-form-builder-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/component-config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/layout/ilinear-layout-component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.spec.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/layouts/linear/linear-layout-descriptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/layouts/linear/linear-layout-descriptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/components/_form-builder/simple-form-builder-page/simple-form-builder-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/components/_form-builder/simple-form-builder-page/simple-form-builder-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/components/_form-builder/simple-form-builder-page/simple-form-builder-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/components/_form-builder/simple-form-builder-page/simple-form-builder-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/components/dashboard-page/dashboard-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/components/dashboard-page/dashboard-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/components/dashboard-page/dashboard-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/components/dashboard-page/dashboard-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-number/input-number.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-number/input-number.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-number/input-number.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-number/input-number.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-text/input-text.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-text/input-text.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-text/input-text.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-text/input-text.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/layout/linear-layout/linear-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/layout/linear-layout/linear-layout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/layout/linear-layout/linear-layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/layout/linear-layout/linear-layout.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/i-element-component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/i-element-component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/components/form-builder/form-builder.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/components/form-builder/form-builder.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/services/form-builder.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/services/form-builder.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/projects.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +140,9 @@
       <workItem from="1597467334762" duration="32000" />
       <workItem from="1597521794212" duration="4840000" />
       <workItem from="1597820593295" duration="910000" />
-      <workItem from="1597825337803" duration="2473000" />
+      <workItem from="1597825337803" duration="5935000" />
+      <workItem from="1597932810981" duration="6563000" />
+      <workItem from="1597947308401" duration="7526000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -348,19 +361,26 @@
       <option name="project" value="LOCAL" />
       <updated>1597639841260</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="change doc project struct">
+      <created>1597928564759</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1597928564759</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
     <option name="additionalRoots">
       <list>
-        <option value="$PROJECT_DIR$/dist/components" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/data-table" />
-        <option value="$PROJECT_DIR$/dist/components-bootstrap" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/form-builder" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/core" />
+        <option value="$PROJECT_DIR$/dist/components-bootstrap" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/users-manager" />
+        <option value="$PROJECT_DIR$/dist/components" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/entity-manager" />
         <option value="$PROJECT_DIR$/dist/core" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/auth" />
@@ -413,7 +433,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="set role attribute when directive assigned to other tags" />
     <MESSAGE value="alert directives" />
     <MESSAGE value="move methods from ctor to ngOnInit" />
     <MESSAGE value="card implementation" />
@@ -438,12 +457,14 @@
     <MESSAGE value="ng-bootstrap dialog" />
     <MESSAGE value="fix ng-bootstrap dialog" />
     <MESSAGE value="add toast" />
-    <option name="LAST_COMMIT_MESSAGE" value="add toast" />
+    <MESSAGE value="change doc project struct" />
+    <option name="LAST_COMMIT_MESSAGE" value="change doc project struct" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2535" y="439" key="#com.intellij.ide.util.MemberChooser" timestamp="1597524955809">
-      <screen x="1920" y="174" width="1440" height="860" />
+    <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser" timestamp="1597949550494">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597949550494" />
     <state x="2535" y="439" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597524955809" />
     <state x="1093" y="443" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596977811356" />
     <state x="931" y="374" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595924557607">
@@ -455,38 +476,47 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040085377" />
-    <state x="183" y="133" key="DiffContextDialog" timestamp="1596453514560">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="151" y="65" width="1536" height="860" key="DiffContextDialog" timestamp="1597929285409">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="151" y="65" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597929285409" />
     <state x="183" y="133" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596453514560" />
-    <state width="1419" height="215" key="GridCell.Tab.0.bottom" timestamp="1597927370867">
-      <screen x="1920" y="174" width="1440" height="860" />
+    <state width="1899" height="215" key="GridCell.Tab.0.bottom" timestamp="1597957303878">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597398331292" />
+    <state width="1899" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597957303878" />
     <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927370867" />
     <state width="2539" height="249" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305778" />
-    <state width="1419" height="215" key="GridCell.Tab.0.center" timestamp="1597927370867">
-      <screen x="1920" y="174" width="1440" height="860" />
+    <state width="1899" height="215" key="GridCell.Tab.0.center" timestamp="1597957303878">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597398331292" />
+    <state width="1899" height="215" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597957303878" />
     <state width="1419" height="215" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927370867" />
     <state width="2539" height="249" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305776" />
-    <state width="1419" height="215" key="GridCell.Tab.0.left" timestamp="1597927370866">
-      <screen x="1920" y="174" width="1440" height="860" />
+    <state width="1899" height="215" key="GridCell.Tab.0.left" timestamp="1597957303878">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597398331292" />
+    <state width="1899" height="215" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597957303878" />
     <state width="1419" height="215" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927370866" />
     <state width="2539" height="249" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305775" />
-    <state width="1419" height="215" key="GridCell.Tab.0.right" timestamp="1597927370867">
-      <screen x="1920" y="174" width="1440" height="860" />
+    <state width="1899" height="215" key="GridCell.Tab.0.right" timestamp="1597957303878">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597398331292" />
+    <state width="1899" height="215" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597957303878" />
     <state width="1419" height="215" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927370867" />
     <state width="2539" height="249" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305777" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1597928718795">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597928718795" />
+    <state x="128" y="272" key="MultipleFileMergeDialog" timestamp="1597928721558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="128" y="272" key="MultipleFileMergeDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597928721558" />
     <state x="773" y="139" key="RollbackChangesDialog" timestamp="1597146856769">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -496,10 +526,10 @@
     </state>
     <state x="849" y="458" key="VCS.ChangelistChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146929098" />
     <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="2310" y="339" key="Vcs.Push.Dialog.v2" timestamp="1597639842764">
-      <screen x="1920" y="174" width="1440" height="860" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1597928574605">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597395475083" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597928574605" />
     <state x="2310" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597639842764" />
     <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040087294" />
     <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596367756439">
@@ -514,18 +544,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="668" y="208" width="583" height="624" key="find.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597149466130" />
-    <state x="2386" y="428" width="348" height="298" key="org.angular.cli.generate" timestamp="1597927355004">
-      <screen x="1920" y="174" width="1440" height="860" />
+    <state x="929" y="361" width="435" height="298" key="org.angular.cli.generate" timestamp="1597948101129">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="665" y="332" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1594446665389" />
-    <state x="929" y="361" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597240437008" />
+    <state x="929" y="361" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597948101129" />
     <state x="2386" y="428" width="348" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927355004" />
     <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1594404843801" />
     <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1597044132992" />
-    <state x="2452" y="372" width="672" height="405" key="search.everywhere.popup" timestamp="1597164004134">
-      <screen x="1920" y="174" width="1440" height="860" />
+    <state x="709" y="239" width="672" height="489" key="search.everywhere.popup" timestamp="1597934295090">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="709" y="239" width="672" height="489" key="search.everywhere.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597163951541" />
+    <state x="709" y="239" width="672" height="489" key="search.everywhere.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597934295090" />
     <state x="2452" y="372" width="672" height="405" key="search.everywhere.popup/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597164004134" />
     <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1597061607243" />
   </component>

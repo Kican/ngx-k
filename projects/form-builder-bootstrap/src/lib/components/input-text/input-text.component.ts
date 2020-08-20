@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {IEditTextComponent, IElementComponent} from '@ngx-k/form-builder';
+import {IEditTextComponent, IElementComponent, ComponentConfig} from '@ngx-k/form-builder';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
@@ -8,20 +8,15 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 	styleUrls: ['./input-text.component.scss']
 })
 export class InputTextComponent implements OnInit, IElementComponent {
-	@Input()
-	componentData: IEditTextComponent;
-
-	@Input()
-	parentFormGroup: FormGroup;
-
 	control: FormControl;
 
-	constructor() {
+	constructor(public config: ComponentConfig<IEditTextComponent>) {
+		console.log(`edit-text`, config);
 		this.control = new FormControl('', Validators.required);
 	}
 
 	ngOnInit(): void {
-		this.parentFormGroup.addControl(this.toLowerCamelCase(this.componentData.name), this.control);
+		this.config.form.addControl(this.toLowerCamelCase(this.config.data.name), this.control);
 	}
 
 	toLowerCamelCase(text: string): string {
