@@ -28,7 +28,7 @@ export class FormFilePreviousListComponent implements OnInit {
 
 	saveFile(url: string): void {
 		this.http.get(url, {responseType: 'blob'}).subscribe(value => {
-			this.fileSaver.saveFile(value, 't');
+			this.fileSaver.saveFile(value, this.fileName(url));
 		});
 	}
 

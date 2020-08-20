@@ -9,8 +9,9 @@
 			<div class="h6 mx-2">
 				{{file.name}}
 				<br>
-				<span class="small text-muted">size: {{file.size | fileSize}}</span>
-				<span class="small text-muted mx-3">type: {{file.name | fileType}}</span>
+				<span class="small text-muted">{{sizeText}}: {{file.size | fileSize}}</span>
+				<span class="mx-2"></span>
+				<span class="small text-muted">{{typeText}}: {{file.name | fileType}}</span>
 			</div>
 		</div>
 	</div>

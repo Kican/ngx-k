@@ -200,9 +200,15 @@
 						<k-form-file-input
 							[multiple]="true"
 							[(files)]="files"
+							[disabled]="false"
+							[previousFilesText]="'فایل قبلی'"
+							[selectedCountText]="'انتخاب شده'"
+							[typeText]="'نوع'"
+							[sizeText]="'حجم'"
 							(filesChange)="log($event)"
+							[formControl]="customFile"
 							[previousFilesUrl]="['http://127.0.0.1:8081/1.svg']"
-							[accept]="'application/pdf'">
+							[accept]="'*'">
 							<div class="d-flex justify-content-center align-items-center flex-column p-3" *kFileInputTmp>
 								<i class="mdi mdi-file-upload mdi-48px label"></i>
 								<div>
@@ -218,6 +224,8 @@
 		</div>
 
 		{{files | json}}
+
+		<input type="file" [formControl]="file" [multiple]="true">
 
 	</k-sidebar-content>
 

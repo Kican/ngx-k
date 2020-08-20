@@ -11,6 +11,12 @@ export class FormFileListComponent implements OnInit {
 	@Input()
 	files: File[];
 
+	@Input()
+	typeText;
+
+	@Input()
+	sizeText;
+
 	constructor(private fileSaver: FileSaverService) {
 	}
 
@@ -20,6 +26,5 @@ export class FormFileListComponent implements OnInit {
 	saveFile(file, fileName): void {
 		this.fileSaver.saveFile(file, fileName);
 	}
-
 
 }

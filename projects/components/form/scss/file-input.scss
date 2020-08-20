@@ -1,0 +1,13 @@
+@mixin k-file-input(
+	$border: 1px dashed #ccc,
+	$border-radius: 10px,
+	$defaultTextColor: #ccc) {
+	.k-file-input-container {
+		border: $border;
+		border-radius: $border-radius;
+
+		.label {
+			color: $defaultTextColor !important;
+		}
+	}
+}

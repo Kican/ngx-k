@@ -1,3 +1,16 @@
+:host {
+	&.disabled {
+		input[type="file"] {
+			display: none;
+		}
+
+		.k-file-input-container {
+			opacity: .6;
+			cursor: default;
+		}
+	}
+}
+
 input[type="file"] {
 	opacity: 0;
 	position: absolute;
@@ -6,16 +19,10 @@ input[type="file"] {
 	cursor: pointer;
 }
 
-.input-container {
+.k-file-input-container {
 	position: relative;
 	width: 100%;
-	border: 1px dashed #ccc;
-	border-radius: 10px;
 	cursor: pointer;
-}
-
-.label {
-	color: #ccc;
 }
 
 .browse-label {

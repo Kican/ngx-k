@@ -12,9 +12,9 @@ import {KSidebarModule, SidebarMode, SidebarStatus} from '@ngx-k/components/side
 // import {KFormModule} from '@ngx-k/components/form';
 import {KNavbarModule} from '@ngx-k/components/navbar';
 import {KTableModule} from '@ngx-k/components/table';
-import {KBootstrapDialogModule} from '../../../components-bootstrap/dialog/src/k-bootstrap-dialog.module';
+// import {KBootstrapDialogModule} from '../../../components-bootstrap/dialog/src/k-bootstrap-dialog.module';
 import {HttpClientModule} from '@angular/common/http';
-import {KFormModule} from "../../../components/form/src/k-form.module";
+import {KFormModule} from '../../../components/form/src/k-form.module';
 
 @NgModule({
 	declarations: [
@@ -38,7 +38,7 @@ import {KFormModule} from "../../../components/form/src/k-form.module";
 		KFormModule,
 		KNavbarModule,
 		KTableModule,
-		KBootstrapDialogModule,
+		// KBootstrapDialogModule,
 		HttpClientModule
 	],
 	providers: [],

@@ -12,17 +12,26 @@ export class AppComponent implements OnInit, AfterViewInit {
 	title = 'docs';
 	isRtl = new FormControl(false);
 
-	files: File[];
+	files: FileList;
+
+	file = new FormControl();
+	customFile = new FormControl();
 
 	constructor(
 		private renderer: Renderer2,
 		private sidebarDynamicMenuService: SidebarDynamicMenuService,
 		private dialogService: DialogService
 	) {
+		this.file.valueChanges.subscribe(value => {
+			console.log(value);
+		});
+		this.customFile.valueChanges.subscribe(value => {
+			console.log(value);
+		});
 	}
 
 	log(data: any) {
-		console.log(data);
+		// console.log(data);
 	}
 
 	ngOnInit(): void {
