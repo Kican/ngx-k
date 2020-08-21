@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {IEditTextComponent, IElementComponent, ComponentConfig} from '@ngx-k/form-builder';
+import {Component, Inject, Input, OnInit} from '@angular/core';
+import {IEditTextComponent, ComponentConfig, COMPONENT_DATA} from '@ngx-k/form-builder';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
@@ -7,11 +7,12 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 	templateUrl: './input-text.component.html',
 	styleUrls: ['./input-text.component.scss']
 })
-export class InputTextComponent implements OnInit, IElementComponent {
+export class InputTextComponent implements OnInit {
 	control: FormControl;
+	data: IEditTextComponent;
 
-	constructor(public config: ComponentConfig<IEditTextComponent>) {
-		console.log(`edit-text`, config);
+	constructor(@Inject(COMPONENT_DATA) public config: ComponentConfig<IEditTextComponent>) {
+		this.data = config.data;
 		this.control = new FormControl('', Validators.required);
 	}
 

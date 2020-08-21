@@ -1,6 +1,7 @@
-import {AbstractType, ComponentFactoryResolver, ComponentRef, Injectable, InjectFlags, InjectionToken, Injector, Type, ViewContainerRef} from '@angular/core';
-import {ComponentCollection, ComponentConfig, ComponentDescriptorCollection, IComponent, IElementComponent} from '../classes';
+import {ComponentFactoryResolver, ComponentRef, Injectable, InjectionToken, Injector, StaticProvider, Type, ViewContainerRef} from '@angular/core';
+import {ComponentCollection, ComponentConfig, ComponentDescriptorCollection, IComponent} from '../classes';
 import {FormGroup} from '@angular/forms';
+import {ToastInjector} from "ngx-toastr";
 
 @Injectable({
 	providedIn: 'root'
@@ -30,38 +31,23 @@ export class FormBuilderService {
 		formGroup: FormGroup,
 		componentFactoryResolver: ComponentFactoryResolver,
 		injector: Injector
-	): ComponentRef<IElementComponent> {
+	): ComponentRef<any> {
 		const componentName = this.componentDescriptorCollection.resolve(component);
 		const componentClass = this.componentCollection.find(componentName);
 
-		const componentFactory = componentFactoryResolver.resolveComponentFactory<IElementComponent>(componentClass);
+		const componentFactory = componentFactoryResolver.resolveComponentFactory<any>(componentClass);
 
 		const config: ComponentConfig = {
 			data: component,
 			form: formGroup
 		};
-		const map = new WeakMap();
-		map.set(ComponentConfig, config);
 
-		return componentFactory.create(new ComponentInjector(injector, map));
+		const providers: StaticProvider[] = [
+			{provide: COMPONENT_DATA, useValue: config},
+		];
+
+		return componentFactory.create(Injector.create({providers, parent: injector}));
 	}
 }
 
-export class ComponentInjector implements Injector {
-	constructor(
-		private _parentInjector: Injector,
-		private _additionalTokens: WeakMap<any, any>
-	) {
-	}
-
-	get<T>(token: Type<T> | InjectionToken<T> | AbstractType<T>, notFoundValue?: T, flags?: InjectFlags): T;
-	get(token: any, notFoundValue?: any): any;
-	get(token, notFoundValue?, flags?: InjectFlags): any {
-		const value = this._additionalTokens.get(token);
-
-		if (value) return value;
-
-		return this._parentInjector.get<any>(token, notFoundValue);
-	}
-
-}
+export const COMPONENT_DATA = new InjectionToken<ComponentConfig>('k_component_data');

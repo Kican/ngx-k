@@ -1,17 +1,16 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Inject, Input, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import { IElementComponent, IEditTextComponent, ComponentConfig} from '@ngx-k/form-builder';
+import {IEditTextComponent, ComponentConfig, COMPONENT_DATA} from '@ngx-k/form-builder';
 
 @Component({
 	selector: 'k-input-number',
 	templateUrl: './input-number.component.html',
 	styleUrls: ['./input-number.component.scss']
 })
-export class InputNumberComponent implements OnInit, IElementComponent {
+export class InputNumberComponent implements OnInit {
 	control: FormControl;
 
-	constructor(public config: ComponentConfig<IEditTextComponent>) {
-		console.log(`edit-number`, config);
+	constructor(@Inject(COMPONENT_DATA) public config: ComponentConfig<IEditTextComponent>) {
 		this.control = new FormControl(null, []);
 	}
 
