@@ -4,6 +4,7 @@ import {InputNumberComponent} from './components/input-number/input-number.compo
 import {LinearLayoutComponent} from './components/layout/linear-layout/linear-layout.component';
 import {KFormBuilderModule, ComponentCollection} from '@ngx-k/form-builder';
 import {BootstrapComponentCollection} from './bootstrap-component-collection/bootstrap-component-collection';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
 	declarations: [
@@ -12,7 +13,8 @@ import {BootstrapComponentCollection} from './bootstrap-component-collection/boo
 		LinearLayoutComponent,
 	],
 	imports: [
-		KFormBuilderModule
+		KFormBuilderModule,
+		ReactiveFormsModule
 	],
 	providers: [
 		{provide: ComponentCollection, useClass: BootstrapComponentCollection},

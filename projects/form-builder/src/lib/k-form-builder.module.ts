@@ -1,7 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormBuilderComponent} from './components/form-builder/form-builder.component';
-import {ComponentDescriptorCollection} from './classes/component-descriptor-collection/component-descriptor-collection';
+import {ComponentDescriptorCollection} from './classes';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
 	declarations: [
@@ -9,9 +10,11 @@ import {ComponentDescriptorCollection} from './classes/component-descriptor-coll
 	],
 	imports: [
 		CommonModule,
+		ReactiveFormsModule
 	],
 	exports: [
 		CommonModule,
+		ReactiveFormsModule,
 		FormBuilderComponent
 	],
 	providers: [
