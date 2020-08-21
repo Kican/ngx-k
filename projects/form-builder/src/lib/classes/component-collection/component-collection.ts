@@ -1,5 +1,5 @@
 export abstract class ComponentCollection {
-	public components: { [name: string]:  any; } = {};
+	public components: { [name: string]: any; } = {};
 
 
 	find(name: string): any {

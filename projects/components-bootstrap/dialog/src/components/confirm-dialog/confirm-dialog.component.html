@@ -1,0 +1,8 @@
+<div class="modal-body text-center">
+	<p>{{questionText}}</p>
+	<div class="row justify-content-center">
+		<button type="button" class="btn {{declineBtnClass}}" (click)="bsModalRef.close(result)">{{declineBtnText}}</button>
+		<div class="col-6"></div>
+		<button type="button" class="btn {{acceptBtnClass}} float-left" (click)="accept()">{{acceptBtnText}}</button>
+	</div>
+</div>

@@ -27,6 +27,24 @@
     },
     {
       "path": "./projects/auth/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/core/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/core/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/components-bs/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/components-bs/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/components-bootstrap/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/components-bootstrap/tsconfig.spec.json"
     }
 ]
 }

@@ -1,0 +1,29 @@
+<div class="k-file-input-container">
+	<input type="file" (change)="fileChangeHandler($event)" [attr.multiple]="multiple" [accept]="accept" #input>
+	<div>
+		<ng-container *ngTemplateOutlet="inputTemplate ? inputTemplate : defaultTemplate"></ng-container>
+	</div>
+</div>
+<ng-container *ngIf="files?.length">
+	<span class="p-1 text-muted" style="cursor: pointer" (click)="clear()">
+		<svg style="width:14px;height:14px" viewBox="0 0 24 24">
+			<path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+		</svg>
+	</span>
+	<small class="text-muted">{{files?.length}} {{selectedCountText}}</small>
+	<k-form-file-list [files]="filesAsArray" [sizeText]="sizeText" [typeText]="typeText"></k-form-file-list>
+</ng-container>
+
+<ng-container *ngIf="previousFilesUrl">
+	<div class="text-muted small mt-2 mb-2">{{previousFilesText}}</div>
+	<k-form-file-previous-list [previousFilesUrl]="previousFilesUrl"></k-form-file-previous-list>
+</ng-container>
+
+<ng-template #defaultTemplate>
+	<div class="d-flex justify-content-center align-items-center flex-column p-3">
+		<div>
+			<span class="label">Drag files or </span>
+			<span class="browse-label">Browse</span>
+		</div>
+	</div>
+</ng-template>

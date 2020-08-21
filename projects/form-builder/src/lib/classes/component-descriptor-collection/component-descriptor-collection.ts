@@ -1,5 +1,5 @@
 import {IComponentDescriptor} from "../i-component-descriptor";
-import {IComponent} from "../icomponent";
+import {IComponent} from "../components/icomponent";
 import {InputNumberDescriptor} from "../../descriptors/input-number/input-number-descriptor";
 import {InputTextDescriptor} from "../../descriptors/input-text/input-text-descriptor";
 import {LinearLayoutDescriptor} from "../../descriptors/layouts/linear/linear-layout-descriptor";

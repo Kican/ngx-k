@@ -1,44 +1,31 @@
-import {
-	AfterViewInit,
-	Component,
-	ComponentFactoryResolver, Injector,
-	Input,
-	OnInit,
-	ViewChild,
-	ViewContainerRef
-} from '@angular/core';
-import {FormBuilderService, IElementComponent, ILayoutComponent} from '@ngx-k/form-builder';
-import {FormGroup} from '@angular/forms';
+import {Component, Injector, OnInit, ViewChild, ViewContainerRef} from '@angular/core';
+import {LayoutComponentBase, ILinearLayoutComponent} from '@ngx-k/form-builder';
 
 @Component({
 	selector: 'k-linear-layout',
 	templateUrl: './linear-layout.component.html',
 	styleUrls: ['./linear-layout.component.scss']
 })
-export class LinearLayoutComponent implements OnInit, IElementComponent, AfterViewInit {
-	@Input()
-	componentData: ILayoutComponent;
-
-	@ViewChild('content', {read: ViewContainerRef})
+export class LinearLayoutComponent extends LayoutComponentBase<ILinearLayoutComponent> implements OnInit {
+	@ViewChild('content', {read: ViewContainerRef, static: true})
 	dynamicInsert: ViewContainerRef;
 
-	@Input()
-	parentFormGroup: FormGroup;
-
 	constructor(
-		private formBuilder: FormBuilderService,
-		private componentFactoryResolver: ComponentFactoryResolver,
-		private injector: Injector
+		protected injector: Injector
 	) {
+		super(injector);
+		this.data = this.config.data;
 	}
+
+	data: ILinearLayoutComponent;
 
 	ngOnInit(): void {
-		for (const child of this.componentData.children) {
-			this.formBuilder.render(child, this.parentFormGroup, this.dynamicInsert, this.componentFactoryResolver, this.injector);
+		if (this.data.orientation == 'vertical') {
+			for (const child of this.data.children) {
+				this.formBuilder.render(child, this.config.form, this.dynamicInsert, this.componentFactoryResolver, this.injector);
+			}
 		}
-	}
 
-	ngAfterViewInit(): void {
-
+		super.ngOnInit();
 	}
 }

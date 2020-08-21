@@ -1,6 +1,6 @@
 {
     "name": "@ngx-k/components",
-    "version": "0.0.6",
+    "version": "0.0.14",
     "description": "Angular Kican Components",
     "author": "Kican Contributers",
     "repository": "https://github.com/Kican/ngx-k",
@@ -8,8 +8,8 @@
         "postinstall": "ngcc"
     },
     "peerDependencies": {
-        "@angular/common": "^10.0.8",
-        "@angular/core": "^10.0.8",
+        "@angular/common": "^10.0.9",
+        "@angular/core": "^10.0.9",
         "bootstrap-v4-rtl": "^4.4.1-2"
     },
     "dependencies": {

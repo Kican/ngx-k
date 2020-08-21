@@ -1,1 +1,8 @@
 <ng-template #content></ng-template>
+<ng-container *ngIf="data.orientation == 'horizontal'">
+	<div class="form-row">
+		<div *ngFor="let cmp of components" class="col">
+			<ng-container [ngComponentOutlet]="cmp.component" [ngComponentOutletInjector]="cmp.injector"></ng-container>
+		</div>
+	</div>
+</ng-container>

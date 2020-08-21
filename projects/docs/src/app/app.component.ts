@@ -1,54 +1,29 @@
 import {AfterViewInit, Component, OnInit, Renderer2} from '@angular/core';
-import {FormControl} from '@angular/forms';
 import {SidebarDynamicMenuService} from '@ngx-k/components/sidebar';
 
 @Component({
 	selector: 'app-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss']
+	templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit, AfterViewInit {
 	title = 'docs';
-	isRtl = new FormControl(false);
 
-	constructor(private renderer: Renderer2, private sidebarDynamicMenuService: SidebarDynamicMenuService) {
+	constructor(
+		private sidebarDynamicMenuService: SidebarDynamicMenuService,
+	) {
 	}
 
 	ngOnInit(): void {
-		this.isRtl.valueChanges.subscribe(value => {
-			this.renderer.setAttribute(document.body, 'dir', value ? 'rtl' : 'ltr');
-		});
 	}
 
-	addGroup(groupId: string, title: string): void {
-		this.sidebarDynamicMenuService.addGroup('main-sidebar',
-			{
-				title,
-				groupId,
-			},
-		);
-	}
-
-	removeGroup(groupId: string): void {
-		this.sidebarDynamicMenuService.removeGroup('main-sidebar', groupId);
-	}
-
-	addItem(groupId: string, itemId: string, label: string): void {
-		this.sidebarDynamicMenuService.addItem('main-sidebar', groupId, {
-			itemId,
-			label,
-			type: 'single',
-			routerLink: '/somewhere',
-			iconClass: 'mdi mdi-account'
-		});
-	}
-
-	removeItem(groupId: string, itemId: string): void {
-		this.sidebarDynamicMenuService.removeItem('main-sidebar', groupId, itemId);
-	}
 
 	ngAfterViewInit(): void {
 		this.sidebarDynamicMenuService.setMenu('main-sidebar', [
+			{
+				groupId: 'form-builder', title: 'form builder', items: [
+					{routerLink: '/form-builder', label: 'simple form builder', itemId: '', type: 'single', iconClass: 'mdi mdi-account'}
+				]
+			},
 			{
 				groupId: 'management',
 				title: 'Management',

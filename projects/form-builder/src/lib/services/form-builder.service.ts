@@ -1,9 +1,7 @@
-import {ComponentFactoryResolver, Injectable, Injector, ViewContainerRef} from '@angular/core';
-import {IComponent} from '../classes/icomponent';
-import {ComponentCollection} from '../classes/component-collection/component-collection';
-import {ComponentDescriptorCollection} from '../classes/component-descriptor-collection/component-descriptor-collection';
-import {IElementComponent} from '../classes/i-element-component';
+import {ComponentFactoryResolver, ComponentRef, Injectable, InjectionToken, Injector, StaticProvider, Type, ViewContainerRef} from '@angular/core';
+import {ComponentCollection, ComponentConfig, ComponentDescriptorCollection, IComponent} from '../classes';
 import {FormGroup} from '@angular/forms';
+import {ToastInjector} from "ngx-toastr";
 
 @Injectable({
 	providedIn: 'root'
@@ -23,15 +21,33 @@ export class FormBuilderService {
 		componentFactoryResolver: ComponentFactoryResolver,
 		injector: Injector
 	): void {
-		const componentName = this.componentDescriptorCollection.resolve(component);
-		const componentClass = this.componentCollection.find(componentName);
-
-		const componentFactory = componentFactoryResolver.resolveComponentFactory<IElementComponent>(componentClass);
-		const componentRef = componentFactory.create(injector);
-
-		componentRef.instance.parentFormGroup = formGroup;
-		componentRef.instance.componentData = component;
+		const componentRef = this.resolve(component, formGroup, componentFactoryResolver, injector);
 
 		viewContainerRef.insert(componentRef.hostView);
 	}
+
+	public resolve(
+		component: IComponent,
+		formGroup: FormGroup,
+		componentFactoryResolver: ComponentFactoryResolver,
+		injector: Injector
+	): ComponentRef<any> {
+		const componentName = this.componentDescriptorCollection.resolve(component);
+		const componentClass = this.componentCollection.find(componentName);
+
+		const componentFactory = componentFactoryResolver.resolveComponentFactory<any>(componentClass);
+
+		const config: ComponentConfig = {
+			data: component,
+			form: formGroup
+		};
+
+		const providers: StaticProvider[] = [
+			{provide: COMPONENT_DATA, useValue: config},
+		];
+
+		return componentFactory.create(Injector.create({providers, parent: injector}));
+	}
 }
+
+export const COMPONENT_DATA = new InjectionToken<ComponentConfig>('k_component_data');

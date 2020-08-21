@@ -9,12 +9,16 @@
 @import "~@ngx-k/components/navbar/scss/navbar";
 @include k-navbar();
 
+@import "~bootstrap-v4-rtl/scss/modal";
 @import "~@ngx-k/components/alert/scss/alert";
 @import "~@ngx-k/components/badge/scss/badge";
 @import "~@ngx-k/components/button/scss/button";
 @import "~@ngx-k/components/card/scss/card";
 @import "~@ngx-k/components/form/scss/form";
 @import "~@ngx-k/components/table/scss/table";
+
+@import "../../../../ngx-k/projects/components/form/scss/file-input";
+@include k-file-input();
 
 body {
 	background-color: #FBFCFE;

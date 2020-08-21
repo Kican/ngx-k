@@ -1,31 +1,24 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {IEditTextComponent, IElementComponent} from '@ngx-k/form-builder';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {Component, Injector, OnInit} from '@angular/core';
+import {IEditTextComponent, ComponentBase} from '@ngx-k/form-builder';
+import {FormControl, Validators} from '@angular/forms';
 
 @Component({
 	selector: 'k-input-text',
 	templateUrl: './input-text.component.html',
 	styleUrls: ['./input-text.component.scss']
 })
-export class InputTextComponent implements OnInit, IElementComponent {
-	@Input()
-	componentData: IEditTextComponent;
-
-	@Input()
-	parentFormGroup: FormGroup;
-
+export class InputTextComponent extends ComponentBase<IEditTextComponent> implements OnInit {
 	control: FormControl;
+	data: IEditTextComponent;
 
-	constructor() {
-		this.control = new FormControl('', Validators.required);
+	constructor(inject: Injector) {
+		super(inject);
+		this.data = this.config.data;
+		this.control = new FormControl('');
+		this.setControlValidators(this.control, this.config.data.validators);
 	}
 
 	ngOnInit(): void {
-		this.parentFormGroup.addControl(this.toLowerCamelCase(this.componentData.name), this.control);
+		this.config.form.addControl(this.toLowerCamelCase(this.config.data.name), this.control);
 	}
-
-	toLowerCamelCase(text: string): string {
-		return text.substring(0, 1).toLowerCase() + text.substring(1);
-	}
-
 }
