@@ -26,7 +26,7 @@ export class SimpleFormBuilderPageComponent implements OnInit {
 				name: 'salam',
 				orientation: 'vertical',
 				children: [
-					{name: 'title', type: 'TextFieldComponent', title: 'title'},
+					{name: 'title', type: 'TextFieldComponent', title: 'title', validators: [{name: 'required'}, {name: 'minlength', length: 5}]},
 					{name: 'count', type: 'NumberFieldComponent', title: 'count'},
 					{
 						type: 'LinearLayoutComponent',

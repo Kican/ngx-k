@@ -1,4 +1,4 @@
-import {ILayoutComponent} from '../../ilayout-component';
+import {ILayoutComponent} from './ilayout-component';
 
 export interface ILinearLayoutComponent extends ILayoutComponent {
 	orientation: LinearLayoutOrientation;
