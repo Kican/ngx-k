@@ -27,7 +27,7 @@ export class SimpleFormBuilderPageComponent implements OnInit {
 				orientation: 'vertical',
 				children: [
 					{name: 'title', type: 'TextFieldComponent', title: 'title', validators: [{name: 'required'}, {name: 'minlength', length: 5}]},
-					{name: 'count', type: 'NumberFieldComponent', title: 'count'},
+					{name: 'count', type: 'NumberFieldComponent', title: 'count', validators: [{name: 'required'}, {name: 'min', value: 5}, {name: 'max', value: 10}]},
 					{
 						type: 'LinearLayoutComponent',
 						name: 'chetori',

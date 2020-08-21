@@ -2,9 +2,9 @@ import {IValidator} from './ivalidator';
 import {AbstractControl, Validators} from '@angular/forms';
 
 export class RequiredValidator implements IValidator {
-	name = 'validator';
+	name = 'required';
 
-	validator(control: AbstractControl): { [key: string]: any } | null {
+	validator(data, control: AbstractControl): { [p: string]: any } | null {
 		return Validators.required;
 	}
 }

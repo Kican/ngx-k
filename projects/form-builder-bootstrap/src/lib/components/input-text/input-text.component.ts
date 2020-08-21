@@ -14,7 +14,8 @@ export class InputTextComponent extends ComponentBase<IEditTextComponent> implem
 	constructor(inject: Injector) {
 		super(inject);
 		this.data = this.config.data;
-		this.control = new FormControl('', Validators.required);
+		this.control = new FormControl('');
+		this.setControlValidators(this.control, this.config.data.validators);
 	}
 
 	ngOnInit(): void {
