@@ -1,6 +1,6 @@
 import {Component, Injector, OnInit} from '@angular/core';
 import {IEditTextComponent, ComponentBase} from '@ngx-k/form-builder';
-import {FormControl, Validators} from '@angular/forms';
+import {FormControl} from '@angular/forms';
 
 @Component({
 	selector: 'k-input-text',

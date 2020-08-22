@@ -1,4 +1,4 @@
-import {ILayoutComponent} from './layout/ilayout-component';
+import {ILayoutComponent} from './layouts/ilayout-component';
 import {ComponentBase} from './component-base';
 import {ComponentFactoryResolver, Injector, OnInit, Type} from '@angular/core';
 import {FormBuilderService} from '../../services/form-builder.service';

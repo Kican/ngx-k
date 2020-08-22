@@ -5,31 +5,51 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="wip: validator init">
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators/email-validator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators/max-length-validator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators/max-validator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators/min-validator.ts" afterDir="false" />
+    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="wip: select - multi-select">
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/classes/data-table-config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/classes/dt-data-source.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-button-container/data-table-button-container.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-button-container/data-table-button-container.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-button-container/data-table-button-container.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-button-container/data-table-button-container.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-count/data-table-count.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-count/data-table-count.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-count/data-table-count.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-count/data-table-count.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-pagination/data-table-pagination.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-pagination/data-table-pagination.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-pagination/data-table-pagination.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-pagination/data-table-pagination.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-search/data-table-search.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-search/data-table-search.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-search/data-table-search.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/_partials/data-table-search/data-table-search.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/data-table-container/data-table-container.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/data-table-container/data-table-container.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/data-table-container/data-table-container.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/data-table-container/data-table-container.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/data-table/data-table.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/data-table/data-table.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/data-table/data-table.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/components/data-table/data-table.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/data-table.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/directives/dt-sortable.directive.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/directives/dt-sortable.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/interfaces/filter-group-item.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/models/data-table-options.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/models/sortable.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/data-table/src/public-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/components-bootstrap/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components-bootstrap/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/components/_form-builder/simple-form-builder-page/simple-form-builder-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/components/_form-builder/simple-form-builder-page/simple-form-builder-page.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-number/input-number.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-number/input-number.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-text/input-text.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/input-text/input-text.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/tslint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/form-builder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/component-base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/component-base.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/elements/iedit-text-component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/elements/iedit-text-component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators/ivalidator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators/ivalidator.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators/min-length-validator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators/min-length-validator.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators/required-validator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators/required-validator.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/services/FormValidator/form-validator.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/services/FormValidator/form-validator.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/tslint.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +86,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/form-builder/src/lib/classes/validators" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/components/data-table/src" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -78,19 +98,19 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\data-table\src" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\data-table" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\components\layout" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\validators" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\toast" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder-bootstrap\src\lib\components\elements" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\descriptors\elements" />
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\components\elements" />
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\components" />
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\components\layout" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\src\lib\services" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\src\lib" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\validators" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\toast" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\dialog\src" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\common\src\common" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
@@ -150,7 +170,9 @@
       <workItem from="1597991799894" duration="5484000" />
       <workItem from="1598002585571" duration="3832000" />
       <workItem from="1598031893113" duration="1587000" />
-      <workItem from="1598039384536" duration="5302000" />
+      <workItem from="1598039384536" duration="5537000" />
+      <workItem from="1598056418263" duration="15000" />
+      <workItem from="1598090438123" duration="10853000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -404,23 +426,45 @@
       <option name="project" value="LOCAL" />
       <updated>1598037820637</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="wip: validator fix">
+      <created>1598047425106</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1598047425106</updated>
+    </task>
+    <task id="LOCAL-00038" summary="wip: select - multi-select">
+      <created>1598099106347</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1598099106347</updated>
+    </task>
+    <task id="LOCAL-00039" summary="wip: select - multi-select">
+      <created>1598099131542</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1598099131542</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
     <option name="additionalRoots">
       <list>
+        <option value="$PROJECT_DIR$/dist/components-bootstrap" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/data-table" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/form-builder" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/core" />
-        <option value="$PROJECT_DIR$/dist/components-bootstrap" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/users-manager" />
+        <option value="$PROJECT_DIR$/dist/components" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/entity-manager" />
-        <option value="$PROJECT_DIR$/dist/core" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/auth" />
         <option value="$PROJECT_DIR$/dist/auth" />
         <option value="$PROJECT_DIR$/../Kpanel/dist/dashboard" />
+        <option value="$PROJECT_DIR$/dist/core" />
       </list>
     </option>
   </component>
@@ -468,8 +512,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="sidebar implementation" />
-    <MESSAGE value="remove unnecessary files from alert module" />
     <MESSAGE value="fix sidebar styling" />
     <MESSAGE value="implement form library" />
     <MESSAGE value="more contrast for dropdown items hovers" />
@@ -493,7 +535,9 @@
     <MESSAGE value="form-builder" />
     <MESSAGE value="fix form-builder reactive form" />
     <MESSAGE value="wip: validator init" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: validator init" />
+    <MESSAGE value="wip: validator fix" />
+    <MESSAGE value="wip: select - multi-select" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip: select - multi-select" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser" timestamp="1598046502895">
@@ -517,37 +561,37 @@
     </state>
     <state x="151" y="65" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597929285409" />
     <state x="183" y="133" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596453514560" />
-    <state width="1899" height="215" key="GridCell.Tab.0.bottom" timestamp="1598047155876">
+    <state width="1899" height="215" key="GridCell.Tab.0.bottom" timestamp="1598114004157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="340" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
+    <state width="1899" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598114004157" />
     <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927370867" />
-    <state width="1899" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598047155876" />
+    <state width="1899" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575920" />
     <state width="2539" height="249" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305778" />
-    <state width="1899" height="215" key="GridCell.Tab.0.center" timestamp="1598047155876">
+    <state width="1899" height="215" key="GridCell.Tab.0.center" timestamp="1598114004157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="340" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987698" />
+    <state width="1899" height="215" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598114004157" />
     <state width="1419" height="215" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927370867" />
-    <state width="1899" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598047155876" />
+    <state width="1899" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575919" />
     <state width="2539" height="249" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305776" />
-    <state width="1899" height="215" key="GridCell.Tab.0.left" timestamp="1598047155876">
+    <state width="1899" height="215" key="GridCell.Tab.0.left" timestamp="1598114004157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="340" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987698" />
+    <state width="1899" height="215" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598114004157" />
     <state width="1419" height="215" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927370866" />
-    <state width="1899" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598047155876" />
+    <state width="1899" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575919" />
     <state width="2539" height="249" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305775" />
-    <state width="1899" height="215" key="GridCell.Tab.0.right" timestamp="1598047155876">
+    <state width="1899" height="215" key="GridCell.Tab.0.right" timestamp="1598114004157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="340" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987698" />
+    <state width="1899" height="215" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598114004157" />
     <state width="1419" height="215" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927370867" />
-    <state width="1899" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598047155876" />
+    <state width="1899" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575919" />
     <state width="2539" height="249" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305777" />
     <state width="1899" height="340" key="GridCell.Tab.1.bottom" timestamp="1597971987699">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -614,12 +658,12 @@
     </state>
     <state x="849" y="458" key="VCS.ChangelistChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146929098" />
     <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1598040179558">
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1598099132878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597957942716" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598099132878" />
     <state x="2310" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597639842764" />
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598040179558" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598047426536" />
     <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040087294" />
     <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596367756439">
       <screen x="0" y="0" width="2560" height="1440" />
@@ -633,11 +677,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="668" y="208" width="583" height="624" key="find.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597149466130" />
-    <state x="929" y="361" width="435" height="298" key="org.angular.cli.generate" timestamp="1598046793715">
+    <state x="723" y="369" width="435" height="298" key="org.angular.cli.generate" timestamp="1598113836053">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="665" y="332" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1594446665389" />
-    <state x="929" y="361" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597948101129" />
+    <state x="723" y="369" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598113836053" />
     <state x="2386" y="428" width="348" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927355004" />
     <state x="929" y="361" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040@0.0.1920.1040" timestamp="1598046793715" />
     <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1594404843801" />

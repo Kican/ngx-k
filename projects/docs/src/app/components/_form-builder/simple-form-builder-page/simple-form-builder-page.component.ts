@@ -47,6 +47,8 @@ export class SimpleFormBuilderPageComponent implements OnInit {
 							{name: 'khoroji1', type: 'TextFieldComponent', title: 'your data'}
 						]
 					},
+					{name: 'select1', type: 'DropDownComponent', title: 'select one:', items: [{id: 1, title: 'option 1'}, {id: 2, title: 'option 2'}]},
+					{name: 'select-multi', type: 'DropDownComponent', title: 'select multi:', isMulti: true, items: [{id: 1, title: 'option 1'}, {id: 2, title: 'option 2'}]}
 				]
 			};
 		}, 0);

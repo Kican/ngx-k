@@ -1,6 +1,5 @@
-import {IComponent} from "../icomponent";
+import {IElementComponent} from '../ielement-component';
 
-export interface IEditTextComponent extends IComponent {
-	title: string;
-	validators: [{ name: string }];
+export interface IEditTextComponent extends IElementComponent {
+
 }
