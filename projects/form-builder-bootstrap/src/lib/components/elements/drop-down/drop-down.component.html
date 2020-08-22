@@ -1,0 +1,7 @@
+<div class="form-group">
+	<label for="{{config.data.name}}">{{config.data.title}}</label>
+
+	<select [formControl]="control" class="form-control" id="{{config.data.name}}" [attr.multiple]="config.data.isMulti" >
+		<option *ngFor="let item of config.data.items" [ngValue]="item.id">{{item.title}}</option>
+	</select>
+</div>

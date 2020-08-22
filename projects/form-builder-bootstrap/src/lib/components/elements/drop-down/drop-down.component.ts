@@ -1,13 +1,13 @@
 import {Component, Injector, OnInit} from '@angular/core';
+import {IDropDownComponent, ComponentBase} from '@ngx-k/form-builder';
 import {FormControl} from '@angular/forms';
-import {IEditTextComponent, ComponentBase} from '@ngx-k/form-builder';
 
 @Component({
-	selector: 'k-input-number',
-	templateUrl: './input-number.component.html',
-	styleUrls: ['./input-number.component.scss']
+	selector: 'lib-drop-down',
+	templateUrl: './drop-down.component.html',
+	styleUrls: ['./drop-down.component.scss']
 })
-export class InputNumberComponent extends ComponentBase<IEditTextComponent> implements OnInit {
+export class DropDownComponent extends ComponentBase<IDropDownComponent> implements OnInit {
 	control: FormControl;
 
 	constructor(injector: Injector) {
@@ -18,10 +18,6 @@ export class InputNumberComponent extends ComponentBase<IEditTextComponent> impl
 
 	ngOnInit(): void {
 		this.config.form.addControl(this.toLowerCamelCase(this.config.data.name), this.control);
-	}
-
-	toLowerCamelCase(text: string): string {
-		return text.substring(0, 1).toLowerCase() + text.substring(1);
 	}
 
 }

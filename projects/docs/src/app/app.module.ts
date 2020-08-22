@@ -19,12 +19,14 @@ import {DashboardPageComponent} from './components/dashboard-page/dashboard-page
 import {HttpClientModule} from '@angular/common/http';
 import {KFormBuilderModule} from '@ngx-k/form-builder';
 import {KFormBuilderBootstrapModule} from '@ngx-k/form-builder-bootstrap';
+import { DropDownFormBuilderPageComponent } from './components/_form-builder/drop-down-form-builder-page/drop-down-form-builder-page.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		SimpleFormBuilderPageComponent,
 		DashboardPageComponent,
+		DropDownFormBuilderPageComponent,
 	],
 	imports: [
 		BrowserModule,
