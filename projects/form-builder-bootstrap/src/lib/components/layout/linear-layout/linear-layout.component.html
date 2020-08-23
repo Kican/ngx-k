@@ -1,5 +1,5 @@
 <ng-template #content></ng-template>
-<ng-container *ngIf="data.orientation == 'horizontal'">
+<ng-container *ngIf="data.orientation.toLowerCase() == 'horizontal'">
 	<div class="form-row">
 		<div *ngFor="let cmp of components" class="col">
 			<ng-container [ngComponentOutlet]="cmp.component" [ngComponentOutletInjector]="cmp.injector"></ng-container>

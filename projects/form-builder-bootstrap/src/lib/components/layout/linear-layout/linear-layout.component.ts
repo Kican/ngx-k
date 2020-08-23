@@ -20,7 +20,7 @@ export class LinearLayoutComponent extends LayoutComponentBase<ILinearLayoutComp
 	data: ILinearLayoutComponent;
 
 	ngOnInit(): void {
-		if (this.data.orientation == 'vertical') {
+		if (this.data.orientation.toLowerCase() == 'vertical') {
 			for (const child of this.data.children) {
 				this.formBuilder.render(child, this.config.form, this.dynamicInsert, this.componentFactoryResolver, this.injector);
 			}
