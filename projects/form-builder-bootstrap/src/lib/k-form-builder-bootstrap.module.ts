@@ -5,7 +5,8 @@ import {LinearLayoutComponent} from './components/layout/linear-layout/linear-la
 import {KFormBuilderModule, ComponentCollection} from '@ngx-k/form-builder';
 import {BootstrapComponentCollection} from './bootstrap-component-collection/bootstrap-component-collection';
 import {ReactiveFormsModule} from '@angular/forms';
-import { DropDownComponent } from './components/elements/drop-down/drop-down.component';
+import {DropDownComponent} from './components/elements/drop-down/drop-down.component';
+import {NgSelectModule} from '@ng-select/ng-select';
 
 @NgModule({
 	declarations: [
@@ -16,7 +17,11 @@ import { DropDownComponent } from './components/elements/drop-down/drop-down.com
 	],
 	imports: [
 		KFormBuilderModule,
-		ReactiveFormsModule
+		ReactiveFormsModule,
+		NgSelectModule
+	],
+	exports: [
+		NgSelectModule
 	],
 	providers: [
 		{provide: ComponentCollection, useClass: BootstrapComponentCollection},
