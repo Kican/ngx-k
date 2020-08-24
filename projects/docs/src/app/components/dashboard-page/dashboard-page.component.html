@@ -11,7 +11,7 @@
 			</k-card-header>
 			<k-card-body>
 				<form ngForm #form=ngForm>
-					<k-form-group [id]="'groupName'">
+					<k-form-group [id]="'groupName'" [assignValidStyle]="false">
 						<label kFormLabel>Group Name</label>
 						<input type="text" kFormInput ngModel name="groupName" required minlength="6">
 					</k-form-group>

@@ -3,7 +3,7 @@ import {
 	ChangeDetectionStrategy,
 	Component, ContentChild,
 	ElementRef,
-	HostBinding, Input,
+	HostBinding, Inject, Input,
 	OnInit,
 	Renderer2,
 } from '@angular/core';
@@ -12,6 +12,7 @@ import {FormInputDirective} from '../../directives/form-input/form-input.directi
 import {NgControl} from '@angular/forms';
 import {distinctUntilChanged, filter, map, tap} from 'rxjs/operators';
 import {fromEvent, merge, Observable} from 'rxjs';
+import {CUSTOM_ERROR_MESSAGES, CustomErrorMessageFormatter, CustomErrorMessageFormatters} from '../../models/custom-error-messages.token';
 
 @Component({
 	selector: 'k-form-group',
@@ -20,6 +21,11 @@ import {fromEvent, merge, Observable} from 'rxjs';
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FormGroupComponent implements OnInit, AfterContentInit {
+
+	@HostBinding('class')
+	get classList(): string {
+		return 'form-group';
+	}
 
 	@Input()
 	id: string;
@@ -38,19 +44,19 @@ export class FormGroupComponent implements OnInit, AfterContentInit {
 	constructor(
 		private el: ElementRef,
 		private renderer: Renderer2,
+		@Inject(CUSTOM_ERROR_MESSAGES) private errorMessages: CustomErrorMessageFormatters
 	) {
-	}
-
-	ngOnInit(): void {
-	}
-
-	@HostBinding('class')
-	get classList(): string {
-		return 'form-group';
 	}
 
 	get isTouchedAndDirty(): boolean {
 		return this.formControl?.dirty && this.formControl?.touched;
+	}
+
+	get labelContent(): string {
+		return this.label.nativeElement.innerHTML;
+	}
+
+	ngOnInit(): void {
 	}
 
 	ngAfterContentInit(): void {
@@ -69,7 +75,7 @@ export class FormGroupComponent implements OnInit, AfterContentInit {
 			this.formControl.valueChanges,
 		).pipe(
 			filter(() => this.isTouchedAndDirty),
-			map(() => this.formControl.errors),
+			map(() => this.mapErrors(this.formControl.errors)),
 			distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)),
 			tap(() => {
 				this.assignProperClasses();
@@ -77,12 +83,30 @@ export class FormGroupComponent implements OnInit, AfterContentInit {
 		);
 	}
 
+	private mapErrors(errors: { [key: string]: any }): any {
+		if (!errors)
+			return null;
+
+		const errorObject = {};
+		Object.entries(errors).forEach(([key, error]) => {
+			const formatter = this.findFormatter(key);
+			errorObject[key] = formatter ? formatter.format(this.labelContent, error) : key;
+		});
+
+		return errorObject;
+	}
+
+	private findFormatter(key: string): CustomErrorMessageFormatter | null {
+		const formatter = this.errorMessages.find(f => f.error === key);
+		return formatter ? formatter : null;
+	}
+
 	private assignProperClasses(): void {
 		this.renderer.addClass(this.el.nativeElement, 'was-validated');
 		if (this.formControl.valid) {
 			this.renderer.addClass(this.input.nativeElement, 'is-valid');
 			this.renderer.removeClass(this.input.nativeElement, 'is-invalid');
-		} else {
+		} else if (this.formControl.invalid) {
 			this.renderer.addClass(this.input.nativeElement, 'is-invalid');
 			this.renderer.removeClass(this.input.nativeElement, 'is-valid');
 		}
