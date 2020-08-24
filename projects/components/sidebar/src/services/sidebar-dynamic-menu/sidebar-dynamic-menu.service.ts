@@ -36,9 +36,11 @@ export class SidebarDynamicMenuService {
 		return group.items;
 	}
 
-	registerSidebar(sidebarId: string): void {
+	addSidebarIfNotExist(sidebarId: string): void {
+		if (this.sidebar(sidebarId))
+			return;
+
 		this._sidebarMenus.push({sidebarId, menus: []});
-		this.sidebarMenus.next(this._sidebarMenus);
 	}
 
 	getMenus$(sidebarId: string): Observable<SidebarGroup[]> {
@@ -49,12 +51,14 @@ export class SidebarDynamicMenuService {
 	}
 
 	setMenu(sidebarId: string, menus: SidebarGroup[]): void {
+		this.addSidebarIfNotExist(sidebarId);
 		const sidebar = this.sidebar(sidebarId);
 		sidebar.menus = menus;
 		this.updateMenus();
 	}
 
 	addGroup(sidebarId: string, group: SidebarGroup): void {
+		this.addSidebarIfNotExist(sidebarId);
 		const sidebarMenu = this.sidebarGroups(sidebarId);
 		sidebarMenu.push(group.items ? group : {...group, items: []});
 		this.updateMenus();

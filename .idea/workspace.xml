@@ -5,7 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="replace ngx-bootstrap with ng-bootstrap">
+    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="fix ng-bootstrap dialog">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs-update.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/package.json" afterDir="false" />
@@ -94,7 +94,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -445,17 +445,10 @@
     <option name="version" value="3" />
     <option name="additionalRoots">
       <list>
-        <option value="$PROJECT_DIR$/dist/components-bootstrap" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/users-manager" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/dashboard" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/auth" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/core" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/data-table" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/entity-manager" />
-        <option value="$PROJECT_DIR$/dist/components" />
         <option value="$PROJECT_DIR$/dist/auth" />
         <option value="$PROJECT_DIR$/dist/core" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/form-builder" />
+        <option value="$PROJECT_DIR$/dist/components-bootstrap" />
+        <option value="$PROJECT_DIR$/dist/components" />
       </list>
     </option>
   </component>
@@ -543,10 +536,10 @@
     </state>
     <state x="698" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594404337137" />
     <state x="931" y="374" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1595924557607" />
-    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1597040085377">
+    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1598261749682">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040085377" />
+    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1598261749682" />
     <state x="151" y="65" width="1536" height="860" key="DiffContextDialog" timestamp="1597929285409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

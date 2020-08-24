@@ -10,6 +10,7 @@ import {
 } from '@angular/core';
 import {FormLabelDirective} from '../../directives/form-label/form-label.directive';
 import {FormInputDirective} from '../../directives/form-input/form-input.directive';
+import {AbstractControl, NgControl} from "@angular/forms";
 
 @Component({
 	selector: 'k-form-group',
@@ -28,6 +29,9 @@ export class FormGroupComponent implements OnInit, AfterContentInit {
 	@ContentChild(FormInputDirective, {read: ElementRef})
 	input: ElementRef<any>;
 
+	@ContentChild(FormInputDirective, {read: NgControl})
+	formControl: AbstractControl;
+
 	constructor(private renderer: Renderer2) {
 	}
 
@@ -40,8 +44,9 @@ export class FormGroupComponent implements OnInit, AfterContentInit {
 	}
 
 	ngAfterContentInit(): void {
-		this.renderer.setAttribute(this.label.nativeElement, 'for', this.id);
-		this.renderer.setAttribute(this.input.nativeElement, 'id', this.id);
+		console.log(this.formControl);
+		this.renderer.setAttribute(this.label?.nativeElement, 'for', this.id);
+		this.renderer.setAttribute(this.input?.nativeElement, 'id', this.id);
 	}
 
 }
