@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {SidebarGroup} from '../../models/sidebar-group.model';
 import {BehaviorSubject, Observable} from 'rxjs';
-import {map} from 'rxjs/operators';
+import {filter, map} from 'rxjs/operators';
 import {SidebarItem} from '../../models/sidebar-item.model';
 
 export interface SidebarMenu {
@@ -46,6 +46,7 @@ export class SidebarDynamicMenuService {
 	getMenus$(sidebarId: string): Observable<SidebarGroup[]> {
 		return this.sidebarMenus.asObservable()
 			.pipe(
+				filter(value => !!this.sidebar(sidebarId)),
 				map(items => items.find(x => x.sidebarId === sidebarId).menus)
 			);
 	}

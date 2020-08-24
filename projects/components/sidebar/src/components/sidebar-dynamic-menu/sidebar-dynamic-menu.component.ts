@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {SidebarDynamicMenuService} from '../../services/sidebar-dynamic-menu/sidebar-dynamic-menu.service';
 import {Observable} from 'rxjs';
 import {SidebarGroup} from '../../models/sidebar-group.model';

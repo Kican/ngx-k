@@ -9,7 +9,7 @@ import {KAlertModule} from '@ngx-k/components/alert';
 import {KBadgeModule} from '@ngx-k/components/badge';
 import {KCardModule} from '@ngx-k/components/card';
 import {KSidebarModule, SidebarMode, SidebarStatus} from '@ngx-k/components/sidebar';
-import {KFormModule} from '@ngx-k/components/form';
+import {KFormModule} from '../../../components/form/src/k-form.module';
 import {KNavbarModule} from '@ngx-k/components/navbar';
 import {KTableModule} from '@ngx-k/components/table';
 import {KBootstrapDialogModule} from '@ngx-k/components-bootstrap/dialog';

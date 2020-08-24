@@ -13,7 +13,7 @@
 				<form ngForm #form=ngForm>
 					<k-form-group [id]="'groupName'">
 						<label kFormLabel>Group Name</label>
-						<input type="text" kFormInput ngModel name="groupName">
+						<input type="text" kFormInput ngModel name="groupName" required minlength="6">
 					</k-form-group>
 
 					<k-form-group [id]="'groupId'">
