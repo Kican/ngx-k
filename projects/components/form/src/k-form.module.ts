@@ -6,6 +6,7 @@ import {FormHintDirective} from './directives/form-hint/form-hint.directive';
 import {CommonModule} from '@angular/common';
 import {FileInputModule} from './modules/file-input/file-input.module';
 import {FormErrorsComponent} from './components/form-errors/form-errors.component';
+import {FormDirective} from './directives/form/form.directive';
 
 @NgModule({
 	declarations: [
@@ -14,13 +15,15 @@ import {FormErrorsComponent} from './components/form-errors/form-errors.componen
 		FormInputDirective,
 		FormHintDirective,
 		FormErrorsComponent,
+		FormDirective,
 	],
 	exports: [
 		FormGroupComponent,
 		FormLabelDirective,
 		FormInputDirective,
 		FormHintDirective,
-		FileInputModule
+		FileInputModule,
+		FormDirective
 	],
 	imports: [
 		CommonModule,

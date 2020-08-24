@@ -7,15 +7,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="fix ng-bootstrap dialog">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs-update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components-bootstrap/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components-bootstrap/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/layout/linear-layout/linear-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/layout/linear-layout/linear-layout.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/layout/linear-layout/linear-layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/components/layout/linear-layout/linear-layout.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/form/src/components/form-group/form-group.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/form/src/components/form-group/form-group.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/form/src/k-form.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/form/src/k-form.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/form/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/form/src/public-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/components/dashboard-page/dashboard-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/components/dashboard-page/dashboard-page.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/form-builder-bootstrap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/components-bootstrap/toast" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -65,21 +60,78 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder-bootstrap\src\lib\components\elements" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\descriptors\elements" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\components\elements" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\components" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\components\layout" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\src\lib\services" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\src\lib" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\toast\src\models" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\toast\src\services" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\toast\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder-bootstrap" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\data-table\src" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\data-table" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\components\layout" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\validators" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\toast" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\dialog\src" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\common\src\common" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\core\common\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (auth)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/auth/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/auth" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests (components-bootstrap)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/components-bootstrap/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/components-bootstrap" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests (components)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/components/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/components" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests (core)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/core/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/core" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests (docs)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/docs/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/docs" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests (form-builder-bootstrap)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/form-builder-bootstrap/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/form-builder-bootstrap" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests (form-builder)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/form-builder/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/form-builder" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (docs)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/projects/docs/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
@@ -94,7 +146,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -131,18 +183,7 @@
       <workItem from="1597825337803" duration="5935000" />
       <workItem from="1597932810981" duration="6563000" />
       <workItem from="1597947308401" duration="7526000" />
-      <workItem from="1597957890707" duration="6261000" />
-      <workItem from="1597968289473" duration="3668000" />
-      <workItem from="1597991799894" duration="5484000" />
-      <workItem from="1598002585571" duration="3832000" />
-      <workItem from="1598031893113" duration="1587000" />
-      <workItem from="1598039384536" duration="5537000" />
-      <workItem from="1598056418263" duration="15000" />
-      <workItem from="1598090438123" duration="13131000" />
-      <workItem from="1598138097785" duration="5091000" />
-      <workItem from="1598180709910" duration="7000" />
-      <workItem from="1598185764240" duration="26000" />
-      <workItem from="1598190327578" duration="4642000" />
+      <workItem from="1598284588516" duration="3168000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -368,77 +409,7 @@
       <option name="project" value="LOCAL" />
       <updated>1597928564759</updated>
     </task>
-    <task id="LOCAL-00033" summary="form-builder">
-      <created>1597957940943</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1597957940943</updated>
-    </task>
-    <task id="LOCAL-00034" summary="form-builder">
-      <created>1597994524347</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1597994524347</updated>
-    </task>
-    <task id="LOCAL-00035" summary="fix form-builder reactive form">
-      <created>1597995271072</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1597995271072</updated>
-    </task>
-    <task id="LOCAL-00036" summary="wip: validator init">
-      <created>1598037820637</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1598037820637</updated>
-    </task>
-    <task id="LOCAL-00037" summary="wip: validator fix">
-      <created>1598047425106</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1598047425106</updated>
-    </task>
-    <task id="LOCAL-00038" summary="wip: select - multi-select">
-      <created>1598099106347</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1598099106347</updated>
-    </task>
-    <task id="LOCAL-00039" summary="wip: select - multi-select">
-      <created>1598099131542</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1598099131542</updated>
-    </task>
-    <task id="LOCAL-00040" summary="add data-table">
-      <created>1598114767228</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1598114767228</updated>
-    </task>
-    <task id="LOCAL-00041" summary="replace select with ng-select&#10;fix form-builder change-detect bug">
-      <created>1598141022256</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1598141022256</updated>
-    </task>
-    <task id="LOCAL-00042" summary="replace ngx-bootstrap with ng-bootstrap">
-      <created>1598142867934</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1598142867934</updated>
-    </task>
-    <option name="localTasksCounter" value="43" />
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,8 +417,8 @@
     <option name="additionalRoots">
       <list>
         <option value="$PROJECT_DIR$/dist/auth" />
-        <option value="$PROJECT_DIR$/dist/core" />
         <option value="$PROJECT_DIR$/dist/components-bootstrap" />
+        <option value="$PROJECT_DIR$/dist/core" />
         <option value="$PROJECT_DIR$/dist/components" />
       </list>
     </option>
@@ -496,6 +467,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="alert directives" />
+    <MESSAGE value="move methods from ctor to ngOnInit" />
+    <MESSAGE value="card implementation" />
+    <MESSAGE value="sidebar implementation" />
+    <MESSAGE value="remove unnecessary files from alert module" />
+    <MESSAGE value="fix sidebar styling" />
+    <MESSAGE value="implement form library" />
+    <MESSAGE value="more contrast for dropdown items hovers" />
     <MESSAGE value="more contrast for dropdown items hover" />
     <MESSAGE value="implement navbar library ~&#10;- fix sidebar issues&#10;- add status getter in sidebar" />
     <MESSAGE value="some styling on card and inputs" />
@@ -513,118 +492,57 @@
     <MESSAGE value="fix ng-bootstrap dialog" />
     <MESSAGE value="add toast" />
     <MESSAGE value="change doc project struct" />
-    <MESSAGE value="form-builder" />
-    <MESSAGE value="fix form-builder reactive form" />
-    <MESSAGE value="wip: validator init" />
-    <MESSAGE value="wip: validator fix" />
-    <MESSAGE value="wip: select - multi-select" />
-    <MESSAGE value="add data-table" />
-    <MESSAGE value="replace select with ng-select&#10;fix form-builder change-detect bug" />
-    <MESSAGE value="replace ngx-bootstrap with ng-bootstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="replace ngx-bootstrap with ng-bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="change doc project struct" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser" timestamp="1598046502895">
+    <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser" timestamp="1597949550494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597949550494" />
     <state x="2535" y="439" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597524955809" />
-    <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598046502895" />
     <state x="1093" y="443" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596977811356" />
     <state x="931" y="374" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595924557607">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="698" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594404337137" />
     <state x="931" y="374" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1595924557607" />
-    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1598261749682">
+    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1597040085377">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1598261749682" />
+    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040085377" />
     <state x="151" y="65" width="1536" height="860" key="DiffContextDialog" timestamp="1597929285409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="151" y="65" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597929285409" />
     <state x="183" y="133" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596453514560" />
-    <state width="1899" height="448" key="GridCell.Tab.0.bottom" timestamp="1598202563568">
+    <state width="1899" height="215" key="GridCell.Tab.0.bottom" timestamp="1597957303878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="448" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598202563568" />
-    <state width="1419" height="167" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598194299229" />
-    <state width="1899" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575920" />
+    <state width="1899" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597957303878" />
+    <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927370867" />
     <state width="2539" height="249" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305778" />
-    <state width="1899" height="448" key="GridCell.Tab.0.center" timestamp="1598202563568">
+    <state width="1899" height="215" key="GridCell.Tab.0.center" timestamp="1597957303878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="448" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598202563568" />
-    <state width="1419" height="167" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598194299228" />
-    <state width="1899" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575919" />
+    <state width="1899" height="215" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597957303878" />
+    <state width="1419" height="215" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927370867" />
     <state width="2539" height="249" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305776" />
-    <state width="1899" height="448" key="GridCell.Tab.0.left" timestamp="1598202563568">
+    <state width="1899" height="215" key="GridCell.Tab.0.left" timestamp="1597957303878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="448" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598202563568" />
-    <state width="1419" height="167" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598194299228" />
-    <state width="1899" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575919" />
+    <state width="1899" height="215" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597957303878" />
+    <state width="1419" height="215" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927370866" />
     <state width="2539" height="249" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305775" />
-    <state width="1899" height="448" key="GridCell.Tab.0.right" timestamp="1598202563568">
+    <state width="1899" height="215" key="GridCell.Tab.0.right" timestamp="1597957303878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="448" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598202563568" />
-    <state width="1419" height="167" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598194299228" />
-    <state width="1899" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575919" />
+    <state width="1899" height="215" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597957303878" />
+    <state width="1419" height="215" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927370867" />
     <state width="2539" height="249" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305777" />
-    <state width="1899" height="340" key="GridCell.Tab.1.bottom" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.1.center" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.1.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.1.left" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.1.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.1.right" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.1.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.2.bottom" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.2.center" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.2.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.2.left" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.2.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.2.right" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.2.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.3.bottom" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.3.center" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.3.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.3.left" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.3.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.3.right" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.3.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
     <state x="184" y="86" key="MergeDialog" timestamp="1597928718795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -642,12 +560,11 @@
     </state>
     <state x="849" y="458" key="VCS.ChangelistChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146929098" />
     <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1598142869284">
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1597928574605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598142869284" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597928574605" />
     <state x="2310" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597639842764" />
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598047426536" />
     <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040087294" />
     <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596367756439">
       <screen x="0" y="0" width="2560" height="1440" />
@@ -657,24 +574,29 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1070" y="637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596002175235" />
-    <state x="668" y="208" width="583" height="624" key="find.popup" timestamp="1598139516724">
+    <state x="668" y="208" width="583" height="624" key="find.popup" timestamp="1597149466130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="208" width="583" height="624" key="find.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598139516724" />
-    <state x="723" y="369" width="435" height="298" key="org.angular.cli.generate" timestamp="1598113836053">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="668" y="208" width="583" height="624" key="find.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597149466130" />
+    <state x="929" y="362" width="435" height="298" key="org.angular.cli.generate" timestamp="1598287039145">
+      <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="665" y="332" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1594446665389" />
-    <state x="723" y="369" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598113836053" />
+    <state x="929" y="361" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597948101129" />
     <state x="2386" y="428" width="348" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597927355004" />
-    <state x="929" y="361" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040@0.0.1920.1040" timestamp="1598046793715" />
+    <state x="929" y="362" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1043@0.0.1920.1043" timestamp="1598287039145" />
     <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1594404843801" />
     <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1597044132992" />
-    <state x="709" y="239" width="672" height="489" key="search.everywhere.popup" timestamp="1597934295090">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="709" y="240" width="672" height="491" key="search.everywhere.popup" timestamp="1598287207243">
+      <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="709" y="239" width="672" height="489" key="search.everywhere.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597934295090" />
     <state x="2452" y="372" width="672" height="405" key="search.everywhere.popup/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597164004134" />
+    <state x="709" y="240" width="672" height="491" key="search.everywhere.popup/0.0.1920.1043@0.0.1920.1043" timestamp="1598287207243" />
     <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1597061607243" />
+    <state x="685" y="334" width="544" height="377" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1598285918165">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state x="685" y="334" width="544" height="377" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1598285918165" />
   </component>
 </project>

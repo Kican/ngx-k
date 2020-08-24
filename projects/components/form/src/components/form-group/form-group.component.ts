@@ -1,12 +1,4 @@
-import {
-	AfterContentInit,
-	ChangeDetectionStrategy,
-	Component, ContentChild,
-	ElementRef,
-	HostBinding, Inject, Input,
-	OnInit,
-	Renderer2,
-} from '@angular/core';
+import {AfterContentInit, ChangeDetectionStrategy, Component, ContentChild, ElementRef, HostBinding, Inject, Input, OnInit, Renderer2,} from '@angular/core';
 import {FormLabelDirective} from '../../directives/form-label/form-label.directive';
 import {FormInputDirective} from '../../directives/form-input/form-input.directive';
 import {NgControl} from '@angular/forms';
@@ -71,9 +63,17 @@ export class FormGroupComponent implements OnInit, AfterContentInit {
 
 	private listeningChangesAndSetErrors(): void {
 		this.errors = merge(
-			fromEvent(this.input.nativeElement, 'blur'),
+			fromEvent(this.input.nativeElement, 'blur').pipe(tap(() => {
+				if (this.formControl.pristine) this.formControl.control.markAsUntouched();
+			})),
 			this.formControl.valueChanges,
 		).pipe(
+			tap(() => {
+				if (this.formControl.valid)
+					this.renderer.addClass(this.input.nativeElement, 'is-valid');
+				else
+					this.renderer.removeClass(this.input.nativeElement, 'is-valid');
+			}),
 			filter(() => this.isTouchedAndDirty),
 			map(() => this.mapErrors(this.formControl.errors)),
 			distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)),
