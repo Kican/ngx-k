@@ -5,19 +5,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="replace ngx-bootstrap with ng-bootstrap">
-      <change afterPath="$PROJECT_DIR$/projects/core/src/lib/services/window-scroll.service.ts" afterDir="false" />
+    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="window-size.service.ts &amp; window-scroll.service.ts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs-update.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/auth/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/components-bootstrap/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components-bootstrap/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components-bootstrap/src/lib/k-components-bootstrap.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components-bootstrap/src/lib/k-components-bootstrap.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/core/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/src/public-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/core/src/services/window-size/window-size.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/core/src/services/window-size/window.size.service.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/core/common/src/common/app-validators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/common/src/common/app-validators.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/core/src/lib/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/src/lib/services/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/core/src/lib/services/scroll.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/core/src/lib/services/window-size.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/src/lib/services/window-size.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/form-builder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/package.json" afterDir="false" />
     </list>
@@ -84,6 +82,63 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (auth)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/auth/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/auth" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests (components-bootstrap)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/components-bootstrap/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/components-bootstrap" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests (components)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/components/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/components" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests (core)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/core/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/core" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests (docs)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/docs/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/docs" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests (form-builder-bootstrap)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/form-builder-bootstrap/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/form-builder-bootstrap" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests (form-builder)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/projects/form-builder/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$/projects/form-builder" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (docs)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/projects/docs/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
@@ -148,7 +203,9 @@
       <workItem from="1598185764240" duration="26000" />
       <workItem from="1598190327578" duration="4665000" />
       <workItem from="1598261438424" duration="675000" />
-      <workItem from="1598346517668" duration="2429000" />
+      <workItem from="1598346517668" duration="2595000" />
+      <workItem from="1598349217111" duration="36000" />
+      <workItem from="1598349590441" duration="1320000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -451,7 +508,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598202911503</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="window-size.service.ts &amp; window-scroll.service.ts">
+      <created>1598348994996</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1598348994996</updated>
+    </task>
+    <task id="LOCAL-00045" summary="window-size.service.ts &amp; window-scroll.service.ts">
+      <created>1598349230646</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1598349230646</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,16 +530,9 @@
     <option name="additionalRoots">
       <list>
         <option value="$PROJECT_DIR$/dist/components-bootstrap" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/auth" />
         <option value="$PROJECT_DIR$/dist/components" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/data-table" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/users-manager" />
         <option value="$PROJECT_DIR$/dist/core" />
         <option value="$PROJECT_DIR$/dist/auth" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/core" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/dashboard" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/entity-manager" />
-        <option value="$PROJECT_DIR$/../Kpanel/dist/form-builder" />
       </list>
     </option>
   </component>
@@ -516,7 +580,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="more contrast for dropdown items hover" />
     <MESSAGE value="implement navbar library ~&#10;- fix sidebar issues&#10;- add status getter in sidebar" />
     <MESSAGE value="some styling on card and inputs" />
     <MESSAGE value="add table library" />
@@ -541,7 +604,8 @@
     <MESSAGE value="add data-table" />
     <MESSAGE value="replace select with ng-select&#10;fix form-builder change-detect bug" />
     <MESSAGE value="replace ngx-bootstrap with ng-bootstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="replace ngx-bootstrap with ng-bootstrap" />
+    <MESSAGE value="window-size.service.ts &amp; window-scroll.service.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="window-size.service.ts &amp; window-scroll.service.ts" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser" timestamp="1598046502895">
@@ -560,10 +624,11 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040085377" />
-    <state x="151" y="65" width="1536" height="860" key="DiffContextDialog" timestamp="1597929285409">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2033" y="228" width="1152" height="712" key="DiffContextDialog" timestamp="1598352263132">
+      <screen x="1920" y="174" width="1440" height="860" />
     </state>
     <state x="151" y="65" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597929285409" />
+    <state x="2033" y="228" width="1152" height="712" key="DiffContextDialog/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598352263132" />
     <state x="183" y="133" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596453514560" />
     <state width="1899" height="250" key="GridCell.Tab.0.bottom" timestamp="1598202925537">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -645,14 +710,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="340" key="GridCell.Tab.3.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state x="184" y="86" key="MergeDialog" timestamp="1597928718795">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1920" y="174" key="MergeDialog" timestamp="1598349019237">
+      <screen x="1920" y="174" width="1440" height="860" />
     </state>
     <state x="184" y="86" key="MergeDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597928718795" />
-    <state x="128" y="272" key="MultipleFileMergeDialog" timestamp="1597928721558">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1920" y="174" key="MergeDialog/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598349019237" />
+    <state x="2016" y="399" key="MultipleFileMergeDialog" timestamp="1598349022636">
+      <screen x="1920" y="174" width="1440" height="860" />
     </state>
     <state x="128" y="272" key="MultipleFileMergeDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597928721558" />
+    <state x="2016" y="399" key="MultipleFileMergeDialog/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598349022636" />
     <state x="773" y="139" key="RollbackChangesDialog" timestamp="1597146856769">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -662,13 +729,17 @@
     </state>
     <state x="849" y="458" key="VCS.ChangelistChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146929098" />
     <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="2310" y="339" key="Vcs.Push.Dialog.v2" timestamp="1598348960983">
+    <state x="2310" y="339" key="Vcs.Push.Dialog.v2" timestamp="1598349231846">
       <screen x="1920" y="174" width="1440" height="860" />
     </state>
     <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598202912935" />
-    <state x="2310" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598348960983" />
+    <state x="2310" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598349231846" />
     <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598047426536" />
     <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040087294" />
+    <state x="2012" y="266" width="1256" height="676" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1598352263132">
+      <screen x="1920" y="174" width="1440" height="860" />
+    </state>
+    <state x="2012" y="266" width="1256" height="676" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598352263132" />
     <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596367756439">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
