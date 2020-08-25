@@ -12,7 +12,7 @@ export class AppValidators {
 	}
 
 	static equal(...controls: string[]): ValidatorFn {
-			return null;
+		return null;
 
 	}
 
@@ -45,4 +45,26 @@ export class AppValidators {
 		}
 	}
 
+	public static strongPassword(control: AbstractControl): { [key: string]: any } {
+		const hasNumber = /\d/.test(control.value);
+		const hasUpper = /[A-Z]/.test(control.value);
+		const hasLower = /[a-z]/.test(control.value);
+		const hasChr = /[A-z]/.test(control.value);
+		const valid = hasNumber && hasChr;
+		if (!valid) {
+			// return what´s not valid
+			return {strongPassword: true};
+		}
+		return null;
+	}
+
+	public static persianOnly(control: AbstractControl): { [key: string]: any } {
+		const isPersian = control.value !== null && control.value.length && control.value.match('^[\u0600-\u06FF\\s0-9 ]+$') !== null;
+		return isPersian ? null : {isPersian: {value: control.value}};
+	}
+
+	public static numberOnly(control: AbstractControl): { [key: string]: any } {
+		const isNumber = control.value !== null && control.value.length && control.value.match('[^0-9]+') !== null;
+		return isNumber ? {isNumber: {value: control.value}} : null;
+	}
 }

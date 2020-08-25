@@ -1,14 +1,17 @@
 import {NgModule} from '@angular/core';
 import {KBootstrapDialogModule} from '@ngx-k/components-bootstrap/dialog';
+import {KBootstrapToastModule} from '@ngx-k/components-bootstrap/toast';
 
 
 @NgModule({
 	declarations: [],
 	imports: [
-		KBootstrapDialogModule
+		KBootstrapDialogModule,
+		KBootstrapToastModule
 	],
 	exports: [
-		KBootstrapDialogModule
+		KBootstrapDialogModule,
+		KBootstrapToastModule
 	]
 })
 export class KComponentsBootstrapModule {
