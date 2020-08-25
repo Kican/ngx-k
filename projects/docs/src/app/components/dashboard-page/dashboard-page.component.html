@@ -10,16 +10,17 @@
 				<h6 class="mb-0">Menu Group</h6>
 			</k-card-header>
 			<k-card-body>
-				<form ngForm #form=ngForm>
+				<form ngForm #form=ngForm kForm (validSubmit)="log('valid submit')">
 					<k-form-group [id]="'groupName'">
 						<label kFormLabel>Group Name</label>
-						<input type="text" kFormInput ngModel name="groupName">
+						<input type="text" kFormInput ngModel name="groupName" required minlength="6">
 					</k-form-group>
 
 					<k-form-group [id]="'groupId'">
 						<label kFormLabel>Group Id</label>
 						<input type="text" kFormInput ngModel name="groupId">
 					</k-form-group>
+					<button kButton [color]="'primary'" type="submit">Submit</button>
 				</form>
 			</k-card-body>
 			<k-card-footer>

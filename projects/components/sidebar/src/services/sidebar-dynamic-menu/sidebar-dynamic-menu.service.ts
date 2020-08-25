@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {SidebarGroup} from '../../models/sidebar-group.model';
 import {BehaviorSubject, Observable} from 'rxjs';
-import {map} from 'rxjs/operators';
+import {filter, map} from 'rxjs/operators';
 import {SidebarItem} from '../../models/sidebar-item.model';
 
 export interface SidebarMenu {
@@ -36,25 +36,30 @@ export class SidebarDynamicMenuService {
 		return group.items;
 	}
 
-	registerSidebar(sidebarId: string): void {
+	addSidebarIfNotExist(sidebarId: string): void {
+		if (this.sidebar(sidebarId))
+			return;
+
 		this._sidebarMenus.push({sidebarId, menus: []});
-		this.sidebarMenus.next(this._sidebarMenus);
 	}
 
 	getMenus$(sidebarId: string): Observable<SidebarGroup[]> {
 		return this.sidebarMenus.asObservable()
 			.pipe(
+				filter(value => !!this.sidebar(sidebarId)),
 				map(items => items.find(x => x.sidebarId === sidebarId).menus)
 			);
 	}
 
 	setMenu(sidebarId: string, menus: SidebarGroup[]): void {
+		this.addSidebarIfNotExist(sidebarId);
 		const sidebar = this.sidebar(sidebarId);
 		sidebar.menus = menus;
 		this.updateMenus();
 	}
 
 	addGroup(sidebarId: string, group: SidebarGroup): void {
+		this.addSidebarIfNotExist(sidebarId);
 		const sidebarMenu = this.sidebarGroups(sidebarId);
 		sidebarMenu.push(group.items ? group : {...group, items: []});
 		this.updateMenus();

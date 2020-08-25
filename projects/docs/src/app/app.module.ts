@@ -9,7 +9,7 @@ import {KAlertModule} from '@ngx-k/components/alert';
 import {KBadgeModule} from '@ngx-k/components/badge';
 import {KCardModule} from '@ngx-k/components/card';
 import {KSidebarModule, SidebarMode, SidebarStatus} from '@ngx-k/components/sidebar';
-import {KFormModule} from '@ngx-k/components/form';
+import {KFormModule} from '../../../components/form/src/k-form.module';
 import {KNavbarModule} from '@ngx-k/components/navbar';
 import {KTableModule} from '@ngx-k/components/table';
 import {KBootstrapDialogModule} from '@ngx-k/components-bootstrap/dialog';
@@ -19,7 +19,19 @@ import {DashboardPageComponent} from './components/dashboard-page/dashboard-page
 import {HttpClientModule} from '@angular/common/http';
 import {KFormBuilderModule} from '@ngx-k/form-builder';
 import {KFormBuilderBootstrapModule} from '@ngx-k/form-builder-bootstrap';
-import { DropDownFormBuilderPageComponent } from './components/_form-builder/drop-down-form-builder-page/drop-down-form-builder-page.component';
+import {DropDownFormBuilderPageComponent} from './components/_form-builder/drop-down-form-builder-page/drop-down-form-builder-page.component';
+import {CUSTOM_ERROR_MESSAGES, CustomErrorMessageFormatters} from '../../../components/form/src/models/custom-error-messages.token';
+
+export const errorMessages: CustomErrorMessageFormatters = [
+	{
+		error: 'required',
+		format: (label: string, error: any) => `${label} is required`
+	},
+	{
+		error: 'minlength',
+		format: (label: string, error: any) => `${label} must be at least ${error.requiredLength} character`
+	}
+];
 
 @NgModule({
 	declarations: [
@@ -52,7 +64,7 @@ import { DropDownFormBuilderPageComponent } from './components/_form-builder/dro
 		NgbModalModule,
 		KBootstrapDialogModule,
 	],
-	providers: [],
+	providers: [{provide: CUSTOM_ERROR_MESSAGES, useValue: errorMessages}],
 	bootstrap: [AppComponent]
 })
 export class AppModule {
