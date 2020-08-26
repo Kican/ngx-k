@@ -21,6 +21,7 @@ import {KFormBuilderModule} from '@ngx-k/form-builder';
 import {KFormBuilderBootstrapModule} from '@ngx-k/form-builder-bootstrap';
 import {DropDownFormBuilderPageComponent} from './components/_form-builder/drop-down-form-builder-page/drop-down-form-builder-page.component';
 import {CUSTOM_ERROR_MESSAGES, CustomErrorMessageFormatters} from '../../../components/form/src/models/custom-error-messages.token';
+import {KBootstrapButtonModule} from '@ngx-k/components-bootstrap/button';
 
 export const errorMessages: CustomErrorMessageFormatters = [
 	{
@@ -62,6 +63,7 @@ export const errorMessages: CustomErrorMessageFormatters = [
 		KNavbarModule,
 		KTableModule,
 		NgbModalModule,
+		KBootstrapButtonModule,
 		KBootstrapDialogModule,
 	],
 	providers: [{provide: CUSTOM_ERROR_MESSAGES, useValue: errorMessages}],
