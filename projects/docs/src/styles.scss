@@ -4,6 +4,7 @@
 @import "~@ngx-k/components/core/scss/src/essentionals";
 
 @import "~@ngx-k/components/sidebar/scss/sidebar";
+
 @include k-sidebar();
 
 @import "~@ngx-k/components/navbar/scss/navbar";
@@ -12,12 +13,12 @@
 @import "~bootstrap-v4-rtl/scss/modal";
 @import "~@ngx-k/components/alert/scss/alert";
 @import "~@ngx-k/components/badge/scss/badge";
-@import "~@ngx-k/components/button/scss/button";
+@import "~@ngx-k/components-bootstrap/button/scss/button";
 @import "~@ngx-k/components/card/scss/card";
 @import "~@ngx-k/components/form/scss/form";
 @import "~@ngx-k/components/table/scss/table";
 
-@import "../../../../ngx-k/projects/components/form/scss/file-input";
+@import "~@ngx-k/components/form/scss/file-input";
 @include k-file-input();
 
 body {
@@ -27,3 +28,5 @@ body {
 		text-align: right;
 	}
 }
+
+@import "~@ngx-k/form-builder-bootstrap/scss/styles";

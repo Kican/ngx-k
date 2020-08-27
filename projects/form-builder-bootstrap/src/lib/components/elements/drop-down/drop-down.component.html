@@ -1,7 +1,4 @@
-<div class="form-group">
+<div class="form-group bootstrap-theme">
 	<label for="{{config.data.name}}">{{config.data.title}}</label>
-
-	<select [formControl]="control" class="form-control" id="{{config.data.name}}" [attr.multiple]="config.data.isMulti" >
-		<option *ngFor="let item of config.data.items" [ngValue]="item.id">{{item.title}}</option>
-	</select>
+	<ng-select [formControl]="control" id="{{config.data.name}}" bindLabel="title" bindValue="id" [items]="config.data.items" [multiple]="config.data.isMulti"></ng-select>
 </div>

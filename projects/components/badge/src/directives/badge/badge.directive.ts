@@ -2,7 +2,7 @@ import {Directive, HostBinding, Input} from '@angular/core';
 import {ColorType} from '@ngx-k/components/core/models';
 
 @Directive({
-	selector: '[kBadge]'
+	selector: '[k-badge]'
 })
 export class BadgeDirective {
 

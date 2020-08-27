@@ -1,26 +1,27 @@
-import {Injectable} from '@angular/core';
-import {BehaviorSubject} from 'rxjs';
+import {Inject, Injectable, PLATFORM_ID} from '@angular/core';
+import {BehaviorSubject, Observable} from 'rxjs';
+import {isPlatformBrowser} from '@angular/common';
+import {shareReplay} from 'rxjs/operators';
 
 @Injectable({
 	providedIn: 'root'
 })
 export class WindowSizeService {
-	smallScreenWidth = 1100;
-	private _windowSize = window.innerWidth;
-	windowSizeChange$ = new BehaviorSubject<number>(window.innerWidth);
+	private windowSize: BehaviorSubject<WindowSize>;
+	public windowSize$: Observable<WindowSize>;
 
-	constructor() {
-		window.onresize = () => {
-			this._windowSize = window.innerWidth;
-			this.windowSizeChange$.next(this._windowSize);
-		};
+	constructor(@Inject(PLATFORM_ID) private platformId: any) {
+		if (isPlatformBrowser(this.platformId)) {
+			this.windowSize = new BehaviorSubject<WindowSize>({width: window.innerWidth, height: window.innerHeight});
+			this.windowSize$ = this.windowSize.asObservable().pipe(shareReplay(1));
+			window.onresize = () => {
+				this.windowSize.next({width: window.innerWidth, height: window.innerHeight});
+			};
+		}
 	}
+}
 
-	get windowSize(): number {
-		return this._windowSize;
-	}
-
-	get isSmallScreen(): boolean {
-		return this.windowSize < this.smallScreenWidth;
-	}
+export interface WindowSize {
+	width: number;
+	height: number;
 }

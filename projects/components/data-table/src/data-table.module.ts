@@ -7,11 +7,10 @@ import {DataTablePaginationComponent} from './components/_partials/data-table-pa
 import {DtSortableDirective} from './directives/dt-sortable.directive';
 import {DataTableSearchComponent} from './components/_partials/data-table-search/data-table-search.component';
 import {CdkTableModule} from '@angular/cdk/table';
-import {PaginationModule} from 'ngx-bootstrap/pagination';
 import {DataTableContainerComponent} from './components/data-table-container/data-table-container.component';
 import {KCoreModule} from '@ngx-k/core';
+import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 
-export const paginationModule = PaginationModule.forRoot();
 
 @NgModule({
 	declarations: [
@@ -26,7 +25,7 @@ export const paginationModule = PaginationModule.forRoot();
 	imports: [
 		KCoreModule,
 		CdkTableModule,
-		paginationModule
+		NgbPaginationModule
 	],
 	exports: [
 		DataTableContainerComponent,
@@ -34,7 +33,7 @@ export const paginationModule = PaginationModule.forRoot();
 		DataTableComponent,
 		DtSortableDirective,
 		CdkTableModule,
-		PaginationModule
+		NgbPaginationModule
 	],
 })
 export class DataTableModule {

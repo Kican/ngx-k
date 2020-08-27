@@ -4,7 +4,7 @@
 		<form [formGroup]="form">
 			<k-form-builder [component]="formData" [form]="form"></k-form-builder>
 			<hr/>
-			<button [disabled]="!form.valid" class="btn btn-sm btn-danger" (click)="showData()">show data</button>
+			<button [disabled]="!form.valid" k-button color="danger"  size="sm" (click)="showData()">show data</button>
 		</form>
 	</div>
 </div>

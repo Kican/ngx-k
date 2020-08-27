@@ -5,11 +5,11 @@ import {
 	OnInit,
 	ViewChild,
 	ViewContainerRef,
-	SimpleChanges
+	SimpleChanges, ChangeDetectorRef
 } from '@angular/core';
 import {IComponent} from '../../classes';
 import {FormBuilderService} from '../../services/form-builder.service';
-import {FormGroup} from '@angular/forms';
+import {FormBuilder, FormGroup} from '@angular/forms';
 
 @Component({
 	selector: 'k-form-builder',
@@ -29,14 +29,18 @@ export class FormBuilderComponent implements OnInit, OnChanges {
 
 	constructor(
 		private formBuilder: FormBuilderService,
+		private cdRef: ChangeDetectorRef,
 		private componentFactoryResolver: ComponentFactoryResolver,
 		private injector: Injector
 	) {
 	}
 
 	ngOnChanges(changes: SimpleChanges): void {
-		if (this.dynamicInsert != null)
+		if (this.dynamicInsert != null) {
+			this.dynamicInsert.clear();
 			this.formBuilder.render(this.component, this.form, this.dynamicInsert, this.componentFactoryResolver, this.injector);
+			this.cdRef.detectChanges();
+		}
 	}
 
 	ngOnInit(): void {
