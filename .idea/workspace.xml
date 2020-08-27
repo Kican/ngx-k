@@ -5,26 +5,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="window-size.service.ts &amp; window-scroll.service.ts">
-      <change afterPath="$PROJECT_DIR$/projects/components-bootstrap/button/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components-bootstrap/button/src/k-bootstrap-button.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components-bootstrap/button/src/public-api.ts" afterDir="false" />
+    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="k-button k-bootstrap-button.module.ts">
+      <change afterPath="$PROJECT_DIR$/projects/components-bootstrap/tabset/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components-bootstrap/tabset/scss/button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components-bootstrap/tabset/src/k-bootstrap-tab-set.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components-bootstrap/tabset/src/public-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/tabset/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/tabset/src/ngx-k-tab-set.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/components/tabset/src/public-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components-bootstrap/ng-package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components-bootstrap/ng-package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components-bootstrap/src/lib/k-components-bootstrap.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components-bootstrap/src/lib/k-components-bootstrap.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components-bootstrap/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components-bootstrap/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/badge/src/directives/badge/badge.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/badge/src/directives/badge/badge.directive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/button/scss/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components-bootstrap/button/scss/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/button/src/directives/button/button.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/button/src/directives/button/button.directive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/core/src/k-components-core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/core/src/k-components-core.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/form/src/components/form-errors/form-errors.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/form/src/components/form-errors/form-errors.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar/sidebar.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/sidebar/src/services/sidebar/sidebar.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/components/_form-builder/simple-form-builder-page/simple-form-builder-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/components/_form-builder/simple-form-builder-page/simple-form-builder-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/app/components/dashboard-page/dashboard-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/app/components/dashboard-page/dashboard-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/docs/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/docs/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/components-bootstrap/button" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/components-bootstrap" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -73,19 +62,19 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\button" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder-bootstrap" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\data-table\src" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\data-table" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\components\layout" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\button" />
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\button\src" />
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder-bootstrap\src\lib\components\elements" />
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\descriptors\elements" />
       <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\classes\components\elements" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\tabset" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\button" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder-bootstrap" />
+      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\data-table\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
@@ -213,7 +202,9 @@
       <workItem from="1598346517668" duration="2595000" />
       <workItem from="1598349217111" duration="36000" />
       <workItem from="1598349590441" duration="1320000" />
-      <workItem from="1598409864464" duration="4371000" />
+      <workItem from="1598409864464" duration="4621000" />
+      <workItem from="1598439632561" duration="9000" />
+      <workItem from="1598514493489" duration="995000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -530,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598349230646</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="k-button k-bootstrap-button.module.ts">
+      <created>1598422204906</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1598422204906</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +586,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="implement navbar library ~&#10;- fix sidebar issues&#10;- add status getter in sidebar" />
     <MESSAGE value="some styling on card and inputs" />
     <MESSAGE value="add table library" />
     <MESSAGE value="wip: add auth module" />
@@ -613,7 +610,8 @@
     <MESSAGE value="replace select with ng-select&#10;fix form-builder change-detect bug" />
     <MESSAGE value="replace ngx-bootstrap with ng-bootstrap" />
     <MESSAGE value="window-size.service.ts &amp; window-scroll.service.ts" />
-    <option name="LAST_COMMIT_MESSAGE" value="window-size.service.ts &amp; window-scroll.service.ts" />
+    <MESSAGE value="k-button k-bootstrap-button.module.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="k-button k-bootstrap-button.module.ts" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser" timestamp="1598046502895">
@@ -638,35 +636,35 @@
     <state x="151" y="65" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597929285409" />
     <state x="2033" y="228" width="1152" height="712" key="DiffContextDialog/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598352263132" />
     <state x="183" y="133" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596453514560" />
-    <state width="1899" height="249" key="GridCell.Tab.0.bottom" timestamp="1598422090874">
+    <state width="1899" height="249" key="GridCell.Tab.0.bottom" timestamp="1598422383352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422090874" />
+    <state width="1899" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422383352" />
     <state width="1419" height="167" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598194299229" />
     <state width="1899" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575920" />
     <state width="2539" height="249" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305778" />
-    <state width="1899" height="249" key="GridCell.Tab.0.center" timestamp="1598422090874">
+    <state width="1899" height="249" key="GridCell.Tab.0.center" timestamp="1598422383352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="249" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422090874" />
+    <state width="1899" height="249" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422383352" />
     <state width="1419" height="167" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598194299228" />
     <state width="1899" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575919" />
     <state width="2539" height="249" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305776" />
-    <state width="1899" height="249" key="GridCell.Tab.0.left" timestamp="1598422090874">
+    <state width="1899" height="249" key="GridCell.Tab.0.left" timestamp="1598422383352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="249" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422090874" />
+    <state width="1899" height="249" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422383352" />
     <state width="1419" height="167" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598194299228" />
     <state width="1899" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575919" />
     <state width="2539" height="249" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305775" />
-    <state width="1899" height="249" key="GridCell.Tab.0.right" timestamp="1598422090874">
+    <state width="1899" height="249" key="GridCell.Tab.0.right" timestamp="1598422383352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1513" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="249" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422090874" />
+    <state width="1899" height="249" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422383352" />
     <state width="1419" height="167" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598194299228" />
     <state width="1899" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575919" />
     <state width="2539" height="249" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305777" />
@@ -737,10 +735,10 @@
     </state>
     <state x="849" y="458" key="VCS.ChangelistChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146929098" />
     <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="2310" y="339" key="Vcs.Push.Dialog.v2" timestamp="1598349231846">
-      <screen x="1920" y="174" width="1440" height="860" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1598422206422">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598202912935" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422206422" />
     <state x="2310" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598349231846" />
     <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598047426536" />
     <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040087294" />
@@ -752,21 +750,21 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596367756439" />
-    <state x="803" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598379201180">
+    <state x="803" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598514499517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="803" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598379201180" />
+    <state x="803" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598514499517" />
     <state x="2522" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598348963381" />
     <state x="1070" y="637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596002175235" />
     <state x="668" y="208" width="583" height="624" key="find.popup" timestamp="1598139516724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="668" y="208" width="583" height="624" key="find.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598139516724" />
-    <state x="723" y="369" width="435" height="298" key="org.angular.cli.generate" timestamp="1598419612763">
+    <state x="723" y="369" width="435" height="298" key="org.angular.cli.generate" timestamp="1598515305423">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="665" y="332" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1594446665389" />
-    <state x="723" y="369" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598419612763" />
+    <state x="723" y="369" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598515305423" />
     <state x="2386" y="428" width="348" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598347169372" />
     <state x="929" y="361" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040@0.0.1920.1040" timestamp="1598046793715" />
     <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1594404843801" />
