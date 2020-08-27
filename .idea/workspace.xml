@@ -1,81 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand />
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="wip: add k-tab-set">
-      <change afterPath="$PROJECT_DIR$/projects/components/select/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/select/src/kselect.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/select/src/provider/http-select-data-provider.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/select/src/provider/http-select-data-provider.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/select/src/provider/select-data-provider.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/select/src/provider/select-data-provider.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/components/select/src/public-api.ts" afterDir="false" />
+    <list default="true" id="db40cc8b-cb05-4dbe-8493-88e0534f2e29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar-brand/navbar-brand.directive.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar-brand/navbar-brand.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar-nav-item/navbar-nav-item.directive.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar-nav-item/navbar-nav-item.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar-nav-link/navbar-nav-link.directive.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar-nav-link/navbar-nav-link.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar-nav/navbar-nav.directive.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar-nav/navbar-nav.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar/navbar.directive.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/directives/navbar/navbar.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/k-navbar.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/models/navbar-position.type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/navbar/src/public-api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/select/src/directive/kselect/kselect.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/select/src/directive/kselect/kselect.directive.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/select/src/provider/select-data-provider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/select/src/provider/select-data-provider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="SCSS File" />
-        <option value="package.json" />
-        <option value="TypeScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1eVPscCY6bwcEk3qgQhM8vgSTgR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1ghLZwhyjBuwjLYWyQ8wfbhfT06" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/components/select" />
-    <property name="list.type.of.created.stylesheet" value="SCSS" />
-    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\select" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\tabset" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\button" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder-bootstrap" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components\select\src" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\button" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\components-bootstrap\button\src" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder-bootstrap\src\lib\components\elements" />
-      <recent name="C:\Users\moein\Desktop\ngx-k\projects\form-builder\src\lib\descriptors\elements" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="ts.external.directory.path" value="C:\Users\moein\Desktop\ngx-k\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Tests (auth)" type="JavaScriptTestRunnerKarma">
@@ -150,394 +118,16 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="" />
-      <created>1594403995172</created>
+      <changelist id="db40cc8b-cb05-4dbe-8493-88e0534f2e29" name="Default Changelist" comment="" />
+      <created>1598561939582</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594403995172</updated>
-      <workItem from="1594404001075" duration="3203000" />
-      <workItem from="1594412866483" duration="725000" />
-      <workItem from="1594446429855" duration="567000" />
-      <workItem from="1595923509058" duration="747000" />
-      <workItem from="1595924350931" duration="10226000" />
-      <workItem from="1596002172252" duration="9859000" />
-      <workItem from="1596261704417" duration="6193000" />
-      <workItem from="1596270927808" duration="4602000" />
-      <workItem from="1596286914030" duration="749000" />
-      <workItem from="1596348170374" duration="14327000" />
-      <workItem from="1597043391768" duration="2158000" />
-      <workItem from="1597185663376" duration="20000" />
-      <workItem from="1597222790259" duration="1954000" />
-      <workItem from="1597239466175" duration="3000" />
-      <workItem from="1597240341679" duration="2402000" />
-      <workItem from="1597308853317" duration="2552000" />
-      <workItem from="1597389561636" duration="8236000" />
-      <workItem from="1597416229951" duration="1702000" />
-      <workItem from="1597420859076" duration="453000" />
-      <workItem from="1597422642358" duration="1187000" />
-      <workItem from="1597467334762" duration="32000" />
-      <workItem from="1597521794212" duration="4840000" />
-      <workItem from="1597820593295" duration="910000" />
-      <workItem from="1597825337803" duration="5935000" />
-      <workItem from="1597932810981" duration="6563000" />
-      <workItem from="1597947308401" duration="7526000" />
-      <workItem from="1597957890707" duration="6261000" />
-      <workItem from="1597968289473" duration="3668000" />
-      <workItem from="1597991799894" duration="5484000" />
-      <workItem from="1598002585571" duration="3832000" />
-      <workItem from="1598031893113" duration="1587000" />
-      <workItem from="1598039384536" duration="5537000" />
-      <workItem from="1598056418263" duration="15000" />
-      <workItem from="1598090438123" duration="13131000" />
-      <workItem from="1598138097785" duration="5091000" />
-      <workItem from="1598180709910" duration="7000" />
-      <workItem from="1598185764240" duration="26000" />
-      <workItem from="1598190327578" duration="4665000" />
-      <workItem from="1598261438424" duration="675000" />
-      <workItem from="1598346517668" duration="2595000" />
-      <workItem from="1598349217111" duration="36000" />
-      <workItem from="1598349590441" duration="1320000" />
-      <workItem from="1598409864464" duration="4621000" />
-      <workItem from="1598439632561" duration="9000" />
-      <workItem from="1598514493489" duration="2027000" />
-      <workItem from="1598521072820" duration="15000" />
-      <workItem from="1598536695560" duration="1783000" />
+      <updated>1598561939582</updated>
+      <workItem from="1598561941043" duration="251000" />
+      <workItem from="1598562248398" duration="1284000" />
     </task>
-    <task id="LOCAL-00001" summary="clean entire solution">
-      <created>1594404061296</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1594404061296</updated>
-    </task>
-    <task id="LOCAL-00002" summary="initialize new project">
-      <created>1594404203408</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1594404203408</updated>
-    </task>
-    <task id="LOCAL-00003" summary="create components library">
-      <created>1594404398815</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1594404398815</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fix button module ~&#10;- use directive instead component for button&#10;- create some global types for size and color&#10;- set paths in tsconfig for models to have shorter import statements">
-      <created>1595926703365</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1595926703365</updated>
-    </task>
-    <task id="LOCAL-00005" summary="try to use ng-packagr as library builder but we need some work . .">
-      <created>1595938397974</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1595938397975</updated>
-    </task>
-    <task id="LOCAL-00006" summary="reimport button module with shorter path">
-      <created>1596003802260</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1596003802260</updated>
-    </task>
-    <task id="LOCAL-00007" summary="set role attribute when directive assigned to other tags">
-      <created>1596005128565</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1596005128565</updated>
-    </task>
-    <task id="LOCAL-00008" summary="alert directives">
-      <created>1596015557046</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1596015557046</updated>
-    </task>
-    <task id="LOCAL-00009" summary="move methods from ctor to ngOnInit">
-      <created>1596262224926</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1596262224926</updated>
-    </task>
-    <task id="LOCAL-00010" summary="card implementation">
-      <created>1596267620606</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1596267620606</updated>
-    </task>
-    <task id="LOCAL-00011" summary="sidebar implementation">
-      <created>1596280778368</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1596280778368</updated>
-    </task>
-    <task id="LOCAL-00012" summary="remove unnecessary files from alert module">
-      <created>1596287182182</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1596287182182</updated>
-    </task>
-    <task id="LOCAL-00013" summary="fix sidebar styling">
-      <created>1596437706619</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1596437706619</updated>
-    </task>
-    <task id="LOCAL-00014" summary="implement form library">
-      <created>1596452488654</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1596452488654</updated>
-    </task>
-    <task id="LOCAL-00015" summary="more contrast for dropdown items hover">
-      <created>1596453535550</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1596453535550</updated>
-    </task>
-    <task id="LOCAL-00016" summary="implement navbar library ~&#10;- fix sidebar issues&#10;- add status getter in sidebar">
-      <created>1596460194541</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1596460194541</updated>
-    </task>
-    <task id="LOCAL-00017" summary="some styling on card and inputs">
-      <created>1597037928050</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1597037928050</updated>
-    </task>
-    <task id="LOCAL-00018" summary="add table library">
-      <created>1597040085570</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1597040085570</updated>
-    </task>
-    <task id="LOCAL-00019" summary="wip: add auth module">
-      <created>1597138864511</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1597138864511</updated>
-    </task>
-    <task id="LOCAL-00020" summary="change component struct">
-      <created>1597147879608</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1597147879608</updated>
-    </task>
-    <task id="LOCAL-00021" summary="change component struct">
-      <created>1597147973043</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1597147973043</updated>
-    </task>
-    <task id="LOCAL-00022" summary="fix guard export in public-api.ts">
-      <created>1597149237562</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1597149237562</updated>
-    </task>
-    <task id="LOCAL-00023" summary="add toast &amp; dialog modules">
-      <created>1597161179112</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1597161179112</updated>
-    </task>
-    <task id="LOCAL-00024" summary="add common module">
-      <created>1597162983923</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1597162983923</updated>
-    </task>
-    <task id="LOCAL-00025" summary="change prefix names">
-      <created>1597185282299</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1597185282299</updated>
-    </task>
-    <task id="LOCAL-00026" summary="add bootstrap components">
-      <created>1597309102318</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1597309102318</updated>
-    </task>
-    <task id="LOCAL-00027" summary="fix import">
-      <created>1597310206228</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1597310206228</updated>
-    </task>
-    <task id="LOCAL-00028" summary="1">
-      <created>1597389751789</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1597389751789</updated>
-    </task>
-    <task id="LOCAL-00029" summary="ng-bootstrap dialog">
-      <created>1597395473605</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1597395473605</updated>
-    </task>
-    <task id="LOCAL-00030" summary="fix ng-bootstrap dialog">
-      <created>1597418268228</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1597418268228</updated>
-    </task>
-    <task id="LOCAL-00031" summary="add toast">
-      <created>1597639841260</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1597639841260</updated>
-    </task>
-    <task id="LOCAL-00032" summary="change doc project struct">
-      <created>1597928564759</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1597928564759</updated>
-    </task>
-    <task id="LOCAL-00033" summary="form-builder">
-      <created>1597957940943</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1597957940943</updated>
-    </task>
-    <task id="LOCAL-00034" summary="form-builder">
-      <created>1597994524347</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1597994524347</updated>
-    </task>
-    <task id="LOCAL-00035" summary="fix form-builder reactive form">
-      <created>1597995271072</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1597995271072</updated>
-    </task>
-    <task id="LOCAL-00036" summary="wip: validator init">
-      <created>1598037820637</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1598037820637</updated>
-    </task>
-    <task id="LOCAL-00037" summary="wip: validator fix">
-      <created>1598047425106</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1598047425106</updated>
-    </task>
-    <task id="LOCAL-00038" summary="wip: select - multi-select">
-      <created>1598099106347</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1598099106347</updated>
-    </task>
-    <task id="LOCAL-00039" summary="wip: select - multi-select">
-      <created>1598099131542</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1598099131542</updated>
-    </task>
-    <task id="LOCAL-00040" summary="add data-table">
-      <created>1598114767228</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1598114767228</updated>
-    </task>
-    <task id="LOCAL-00041" summary="replace select with ng-select&#10;fix form-builder change-detect bug">
-      <created>1598141022256</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1598141022256</updated>
-    </task>
-    <task id="LOCAL-00042" summary="replace ngx-bootstrap with ng-bootstrap">
-      <created>1598142867934</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1598142867934</updated>
-    </task>
-    <task id="LOCAL-00043" summary="replace ngx-bootstrap with ng-bootstrap">
-      <created>1598202911503</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1598202911503</updated>
-    </task>
-    <task id="LOCAL-00044" summary="window-size.service.ts &amp; window-scroll.service.ts">
-      <created>1598348994996</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1598348994996</updated>
-    </task>
-    <task id="LOCAL-00045" summary="window-size.service.ts &amp; window-scroll.service.ts">
-      <created>1598349230646</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1598349230646</updated>
-    </task>
-    <task id="LOCAL-00046" summary="k-button k-bootstrap-button.module.ts">
-      <created>1598422204906</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1598422204906</updated>
-    </task>
-    <task id="LOCAL-00047" summary="wip: add k-tab-set">
-      <created>1598515716388</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1598515716388</updated>
-    </task>
-    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,244 +135,29 @@
     <option name="additionalRoots">
       <list>
         <option value="$PROJECT_DIR$/dist/components" />
-        <option value="$PROJECT_DIR$/dist/components-bootstrap" />
-        <option value="$PROJECT_DIR$/dist/core" />
-        <option value="$PROJECT_DIR$/dist/auth" />
       </list>
     </option>
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="1">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="structure">
-                    <value>
-                      <list>
-                        <option value="dir:C:/Users/moein/Desktop/ngx-k/projects/components" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="1" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add table library" />
-    <MESSAGE value="wip: add auth module" />
-    <MESSAGE value="change component struct" />
-    <MESSAGE value="fix guard export in public-api.ts" />
-    <MESSAGE value="add toast &amp; dialog modules" />
-    <MESSAGE value="add common module" />
-    <MESSAGE value="change prefix names" />
-    <MESSAGE value="add bootstrap components" />
-    <MESSAGE value="fix import" />
-    <MESSAGE value="1" />
-    <MESSAGE value="ng-bootstrap dialog" />
-    <MESSAGE value="fix ng-bootstrap dialog" />
-    <MESSAGE value="add toast" />
-    <MESSAGE value="change doc project struct" />
-    <MESSAGE value="form-builder" />
-    <MESSAGE value="fix form-builder reactive form" />
-    <MESSAGE value="wip: validator init" />
-    <MESSAGE value="wip: validator fix" />
-    <MESSAGE value="wip: select - multi-select" />
-    <MESSAGE value="add data-table" />
-    <MESSAGE value="replace select with ng-select&#10;fix form-builder change-detect bug" />
-    <MESSAGE value="replace ngx-bootstrap with ng-bootstrap" />
-    <MESSAGE value="window-size.service.ts &amp; window-scroll.service.ts" />
-    <MESSAGE value="k-button k-bootstrap-button.module.ts" />
-    <MESSAGE value="wip: add k-tab-set" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: add k-tab-set" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser" timestamp="1598046502895">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="203" key="GridCell.Tab.0.bottom" timestamp="1598562194494">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597949550494" />
-    <state x="2535" y="439" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597524955809" />
-    <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598046502895" />
-    <state x="1093" y="443" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596977811356" />
-    <state x="931" y="374" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595924557607">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1515" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598562194494" />
+    <state width="1515" height="203" key="GridCell.Tab.0.center" timestamp="1598562194494">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="698" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594404337137" />
-    <state x="931" y="374" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1595924557607" />
-    <state x="701" y="207" key="CommitChangelistDialog2" timestamp="1597040085377">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1515" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598562194494" />
+    <state width="1515" height="203" key="GridCell.Tab.0.left" timestamp="1598562194494">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="701" y="207" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040085377" />
-    <state x="2033" y="228" width="1152" height="712" key="DiffContextDialog" timestamp="1598352263132">
-      <screen x="1920" y="174" width="1440" height="860" />
+    <state width="1515" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598562194494" />
+    <state width="1515" height="203" key="GridCell.Tab.0.right" timestamp="1598562194494">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="151" y="65" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597929285409" />
-    <state x="2033" y="228" width="1152" height="712" key="DiffContextDialog/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598352263132" />
-    <state x="183" y="133" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596453514560" />
-    <state width="1899" height="249" key="GridCell.Tab.0.bottom" timestamp="1598422383352">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598562194494" />
+    <state x="632" y="298" width="350" height="298" key="org.angular.cli.generate" timestamp="1598563040237">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1513" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422383352" />
-    <state width="1419" height="167" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598194299229" />
-    <state width="1899" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575920" />
-    <state width="2539" height="249" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305778" />
-    <state width="1899" height="249" key="GridCell.Tab.0.center" timestamp="1598422383352">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1513" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="249" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422383352" />
-    <state width="1419" height="167" key="GridCell.Tab.0.center/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598194299228" />
-    <state width="1899" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575919" />
-    <state width="2539" height="249" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305776" />
-    <state width="1899" height="249" key="GridCell.Tab.0.left" timestamp="1598422383352">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1513" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="249" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422383352" />
-    <state width="1419" height="167" key="GridCell.Tab.0.left/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598194299228" />
-    <state width="1899" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575919" />
-    <state width="2539" height="249" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305775" />
-    <state width="1899" height="249" key="GridCell.Tab.0.right" timestamp="1598422383352">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1513" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594413701322" />
-    <state width="1899" height="249" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598422383352" />
-    <state width="1419" height="167" key="GridCell.Tab.0.right/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598194299228" />
-    <state width="1899" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598047575919" />
-    <state width="2539" height="249" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1597045305777" />
-    <state width="1899" height="340" key="GridCell.Tab.1.bottom" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.1.center" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.1.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.1.left" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.1.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.1.right" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.1.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.2.bottom" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.2.center" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.2.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.2.left" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.2.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.2.right" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.2.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.3.bottom" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.3.center" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.3.center/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.3.left" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.3.left/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state width="1899" height="340" key="GridCell.Tab.3.right" timestamp="1597971987699">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="340" key="GridCell.Tab.3.right/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597971987699" />
-    <state x="1920" y="174" key="MergeDialog" timestamp="1598349019237">
-      <screen x="1920" y="174" width="1440" height="860" />
-    </state>
-    <state x="184" y="86" key="MergeDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597928718795" />
-    <state x="1920" y="174" key="MergeDialog/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598349019237" />
-    <state x="2016" y="399" key="MultipleFileMergeDialog" timestamp="1598349022636">
-      <screen x="1920" y="174" width="1440" height="860" />
-    </state>
-    <state x="128" y="272" key="MultipleFileMergeDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597928721558" />
-    <state x="2016" y="399" key="MultipleFileMergeDialog/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598349022636" />
-    <state x="773" y="139" key="RollbackChangesDialog" timestamp="1597146856769">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="773" y="139" key="RollbackChangesDialog/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146856769" />
-    <state x="849" y="458" key="VCS.ChangelistChooser" timestamp="1597146929098">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="849" y="458" key="VCS.ChangelistChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146929098" />
-    <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1598515719721">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598515719721" />
-    <state x="2310" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598349231846" />
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598047426536" />
-    <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040087294" />
-    <state x="2012" y="266" width="1256" height="676" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1598352263132">
-      <screen x="1920" y="174" width="1440" height="860" />
-    </state>
-    <state x="2012" y="266" width="1256" height="676" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598352263132" />
-    <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596367756439">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="847" y="333" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596367756439" />
-    <state x="803" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598514499517">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="803" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598514499517" />
-    <state x="2522" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598348963381" />
-    <state x="1070" y="637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596002175235" />
-    <state x="668" y="208" width="583" height="624" key="find.popup" timestamp="1598139516724">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="668" y="208" width="583" height="624" key="find.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598139516724" />
-    <state x="723" y="369" width="435" height="298" key="org.angular.cli.generate" timestamp="1598541253870">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="665" y="332" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1594446665389" />
-    <state x="723" y="369" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598541253870" />
-    <state x="2386" y="428" width="348" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598347169372" />
-    <state x="929" y="361" width="435" height="298" key="org.angular.cli.generate/0.0.1920.1040@0.0.1920.1040" timestamp="1598046793715" />
-    <state x="831" y="421" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1044@0.0.1920.1044" timestamp="1594404843801" />
-    <state x="1108" y="580" width="580" height="300" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1597044132992" />
-    <state x="709" y="239" width="672" height="489" key="search.everywhere.popup" timestamp="1597934295090">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="709" y="239" width="672" height="489" key="search.everywhere.popup/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597934295090" />
-    <state x="2452" y="372" width="672" height="405" key="search.everywhere.popup/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1597164004134" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1597061607243" />
+    <state x="632" y="298" width="350" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1598563040237" />
   </component>
 </project>
