@@ -5,7 +5,7 @@
 		"ng": "ng",
 		"start": "ng serve",
 		"build": "ng build",
-		"publish": "node libs-update.js && node libs-publish.js --install --publish",
+		"publish": "node libs-update.js && node libs-publish.js --publish",
 		"test": "ng test",
 		"lint": "ng lint",
 		"e2e": "ng e2e"
@@ -34,7 +34,7 @@
 		"@ng-select/ng-select": "^5.0.1"
 	},
 	"optionalDependencies": {
-		"@ngx-k/core": "file:dist/core",
+		"@ngx-k/core": "file:projects/core",
 		"@ngx-k/auth": "file:dist/auth",
 		"@ngx-k/components": "file:dist/components",
 		"@ngx-k/components-bootstrap": "file:dist/components-bootstrap",
