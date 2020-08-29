@@ -34,11 +34,11 @@
 		"@ng-select/ng-select": "^5.0.1"
 	},
 	"optionalDependencies": {
-		"@ngx-k/core": "file:projects/core",
-		"@ngx-k/auth": "file:dist/auth",
+		"@ngx-k/core": "file:dist/core",
 		"@ngx-k/components": "file:dist/components",
-		"@ngx-k/components-bootstrap": "file:dist/components-bootstrap",
+		"@ngx-k/auth": "file:dist/auth",
 		"@ngx-k/form-builder": "file:dist/form-builder",
+		"@ngx-k/components-bootstrap": "file:dist/components-bootstrap",
 		"@ngx-k/form-builder-bootstrap": "file:dist/form-builder-bootstrap"
 	},
 	"devDependencies": {
