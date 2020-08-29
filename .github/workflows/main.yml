@@ -16,9 +16,6 @@ jobs:
         with:
             node-version: '12'
             registry-url: 'https://registry.npmjs.org'
-      - name: test
-        run: |
-          echo ${{ matrix.libs }}.scss
       - name: install deps
         run: npm install
       - name: publish to npm
