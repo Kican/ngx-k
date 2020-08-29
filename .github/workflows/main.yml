@@ -9,12 +9,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        libs: [core,components,auth,form-builder,components-bootstrap,form-builder-bootstrap]
     steps:
       - uses: actions/checkout@main
       - uses: actions/setup-node@v1
         with:
             node-version: '12'
             registry-url: 'https://registry.npmjs.org'
+      - name: test
+        run: |
+          echo ${{ matrix.libs }}.scss
       - name: install deps
         run: npm install
       - name: publish to npm
