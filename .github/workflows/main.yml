@@ -17,7 +17,7 @@ jobs:
             node-version: '12'
             registry-url: 'https://registry.npmjs.org'
       - name: install angular cli
-        run: npm install -g @angular/cli@10.0.6
+        run: sudo npm install -g @angular/cli@10.0.6
       - name: install deps
         run: npm install
       - name: build packages
