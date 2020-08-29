@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="db40cc8b-cb05-4dbe-8493-88e0534f2e29" name="Default Changelist" comment="select value data-provider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-publish.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs-publish.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +135,7 @@
       <updated>1598561939582</updated>
       <workItem from="1598561941043" duration="251000" />
       <workItem from="1598562248398" duration="2404000" />
-      <workItem from="1598728132135" duration="2307000" />
+      <workItem from="1598728132135" duration="4594000" />
     </task>
     <task id="LOCAL-00001" summary="select value data-provider">
       <created>1598563643292</created>
@@ -143,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598563643292</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="select value data-provider">
+      <created>1598730612029</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598730612029</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,10 +200,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="594" y="31" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1598563611376" />
-    <state x="361" y="127" key="Vcs.Push.Dialog.v2" timestamp="1598563651618">
+    <state x="361" y="127" key="Vcs.Push.Dialog.v2" timestamp="1598730619410">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="127" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598563651618" />
+    <state x="361" y="127" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598730619410" />
+    <state x="587" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598730415071">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="587" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1598730415071" />
     <state x="632" y="298" width="350" height="298" key="org.angular.cli.generate" timestamp="1598563040237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
