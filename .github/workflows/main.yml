@@ -20,8 +20,14 @@ jobs:
         run: npm install -g @angular/cli
       - name: install deps
         run: npm install
-      - name: publish to npm
+      - name: build packages
         run: for f in $libs; do ng build --project $f --prod && npm i && npm publish dist/$f --access public ; done
+        env:
+          libs: core components auth form-builder components-bootstrap form-builder-bootstrap
+      - name: install optional deps
+        run: npm i
+      - name: build packages
+        run: for f in $libs; do npm publish dist/$f --access public ; done
         env:
           libs: core components auth form-builder components-bootstrap form-builder-bootstrap
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
