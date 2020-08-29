@@ -14,4 +14,11 @@ jobs:
       - uses: actions/setup-node@v1
         with:
             node-version: '12'
+      - name: install deps
       - run: npm install
+      - name: publish to nuget
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
+      - name: dist dir
+      - run: ls -l
