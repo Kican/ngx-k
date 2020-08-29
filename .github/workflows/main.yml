@@ -16,9 +16,13 @@ jobs:
             node-version: '12'
       - name: install deps
         run: npm install
+      - name: install angular cli
+        run: npm install -g @angular/cli
+      - name: angular compile
+        run: ngcc
       - name: publish to npm
         run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
       - name: dist dir
-        run: ls -l
+        run: cd dist && ls -l
