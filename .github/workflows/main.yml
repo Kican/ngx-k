@@ -21,6 +21,15 @@ jobs:
       - name: install deps
         run: npm install
       - name: build packages
-        run: npm run publish
+        run: for f in $libs; do sudo ng build --project $f --prod && sudo mkdir -p node_modules/@ngx-k/$f && sudo npm i ; done
         env:
+          libs: core components auth form-builder components-bootstrap form-builder-bootstrap
+      - name: install optional deps
+        run: npm i
+      - name: build packages
+        run: for f in $libs; do npm publish dist/$f --access public ; done
+        env:
+          libs: core components auth form-builder components-bootstrap form-builder-bootstrap
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
+      - name: dist dir
+        run: cd dist && ls -l
