@@ -16,8 +16,8 @@ jobs:
             node-version: '12'
       - name: install deps
         run: npm install
-      - name: publish to nuget
-        run: npm publish
+      - name: publish to npm
+        run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
       - name: dist dir
