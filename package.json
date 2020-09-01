@@ -4,7 +4,7 @@
 	"scripts": {
 		"ng": "ng",
 		"start": "ng serve",
-		"build": "ng build",
+		"build": "npm run build:lib",
 		"build:lib": "run-s build:lib:core build:lib:components build:lib:components-bootstrap build:lib:auth build:lib:form-builder build:lib:form-builder-bootstrap",
 		"build:lib:core": "ng build core --prod",
 		"build:lib:components": "ng build components --prod",
@@ -12,7 +12,7 @@
 		"build:lib:auth": "ng build auth --prod",
 		"build:lib:form-builder": "ng build form-builder --prod",
 		"build:lib:form-builder-bootstrap": "ng build form-builder-bootstrap --prod",
-		"publish": "node libs-update.js && node libs-publish.js --install --publish",
+		"publish": "semantic-release",
 		"test": "ng test",
 		"lint": "ng lint",
 		"e2e": "ng e2e"

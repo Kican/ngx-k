@@ -5,41 +5,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="wip: add k-tab-set">
-      <change afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/config/component-data.ts" afterDir="false" />
+    <list default="true" id="6f07b3c4-fb87-4b68-9057-99a2a76ecee6" name="Default Changelist" comment="some changes">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/data-table/src/data-table.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/data-table/src/data-table.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/src/lib/k-components.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/src/lib/k-components.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/components/tsconfig.lib.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/components/tsconfig.lib.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/core/src/lib/k-core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/src/lib/k-core.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/core/tsconfig.lib.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/core/tsconfig.lib.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/k-form-builder-bootstrap.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder-bootstrap/src/lib/k-form-builder-bootstrap.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/component-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/config/component-config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/component-descriptor-collection/component-descriptor-collection.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/component-descriptor-collection/component-descriptor-collection.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/component-base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/_components/component-base.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/elements/i-drop-down-component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/_components/elements/i-drop-down-component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/elements/iedit-text-component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/_components/elements/iedit-text-component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/elements/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/_components/elements/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/icomponent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/_components/icomponent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/ielement-component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/_components/ielement-component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/_components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/layout-component-base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/_components/layout-component-base.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/layouts/ilayout-component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/_components/layouts/ilayout-component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/layouts/ilinear-layout-component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/_components/layouts/ilinear-layout-component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/components/layouts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/_components/layouts/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/i-component-descriptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/i-component-descriptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/classes/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/components/form-builder/form-builder.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/components/form-builder/form-builder.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/elements/drop-down/drop-down-descriptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/elements/drop-down/drop-down-descriptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/elements/input-number/input-number-descriptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/elements/input-number/input-number-descriptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/elements/input-text/input-text-descriptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/elements/input-text/input-text-descriptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/layouts/linear/linear-layout-descriptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/descriptors/layouts/linear/linear-layout-descriptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/lib/services/form-builder.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/lib/services/form-builder.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/form-builder/src/projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/form-builder/src/projects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.base.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +203,7 @@
       <workItem from="1598521072820" duration="15000" />
       <workItem from="1598536695560" duration="1783000" />
       <workItem from="1598945956837" duration="3145000" />
-      <workItem from="1598949222991" duration="3951000" />
+      <workItem from="1598949222991" duration="4681000" />
     </task>
     <task id="LOCAL-00001" summary="clean entire solution">
       <created>1594404061296</created>
@@ -565,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598515716388</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="some changes">
+      <created>1598953475669</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1598953475669</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,6 +551,7 @@
         <option value="$PROJECT_DIR$/dist/components-bootstrap" />
         <option value="$PROJECT_DIR$/dist/components" />
         <option value="$PROJECT_DIR$/dist/auth" />
+        <option value="$PROJECT_DIR$/dist/form-builder" />
         <option value="$PROJECT_DIR$/dist/core" />
       </list>
     </option>
@@ -623,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add table library" />
     <MESSAGE value="wip: add auth module" />
     <MESSAGE value="change component struct" />
     <MESSAGE value="fix guard export in public-api.ts" />
@@ -648,7 +624,8 @@
     <MESSAGE value="window-size.service.ts &amp; window-scroll.service.ts" />
     <MESSAGE value="k-button k-bootstrap-button.module.ts" />
     <MESSAGE value="wip: add k-tab-set" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: add k-tab-set" />
+    <MESSAGE value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="320" key="#com.intellij.ide.util.MemberChooser" timestamp="1598046502895">
@@ -772,12 +749,12 @@
     </state>
     <state x="849" y="458" key="VCS.ChangelistChooser/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1597146929098" />
     <state x="1132" y="634" key="VCS.ChangelistChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596004239845" />
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1598515719721">
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1598953486389">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@0.0.1920.1040" timestamp="1598515719721" />
     <state x="2310" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.174.1440.860@1920.174.1440.860" timestamp="1598349231846" />
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598047426536" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598953486389" />
     <state x="880" y="456" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1597040087294" />
     <state x="2012" y="266" width="1256" height="676" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1598352263132">
       <screen x="1920" y="174" width="1440" height="860" />

@@ -1,35 +1,29 @@
 name: Angular
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    push:
+        branches: [ master ]
+    pull_request:
+        branches: [ master ]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@main
-      - uses: actions/setup-node@v1
-        with:
-            node-version: '12'
-            registry-url: 'https://registry.npmjs.org'
-      - name: install angular cli
-        run: sudo npm install -g @angular/cli@10.0.6
-      - name: install deps
-        run: npm install
-      - name: build packages
-        run: for f in $libs; do sudo ng build --project $f --prod && sudo mkdir -p node_modules/@ngx-k/$f && sudo npm i ; done
-        env:
-          libs: core components auth form-builder components-bootstrap form-builder-bootstrap
-      - name: install optional deps
-        run: npm i
-      - name: build packages
-        run: for f in $libs; do npm publish dist/$f --access public ; done
-        env:
-          libs: core components auth form-builder components-bootstrap form-builder-bootstrap
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
-      - name: dist dir
-        run: cd dist && ls -l
+        steps:
+            -   uses: actions/checkout@main
+            -   uses: actions/setup-node@v1
+                with:
+                    node-version: '12'
+                    registry-url: 'https://registry.npmjs.org'
+            -   name: install angular cli
+                run: sudo npm install -g @angular/cli@10.0.6
+            -   name: install deps
+                run: npm ci
+            -   name: build packages
+                run: npm run build
+
+            -   name: Publish
+                env:
+                    NPM_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
+                run: npm run publish
