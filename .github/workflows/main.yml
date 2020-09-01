@@ -21,4 +21,4 @@ jobs:
       - name: install deps
         run: npm install
       - name: build packages
-        run: node libs-publish.jjs
+        run: node libs-publish.js
