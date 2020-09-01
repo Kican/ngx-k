@@ -12,7 +12,7 @@
 		"build:lib:auth": "ng build auth --prod",
 		"build:lib:form-builder": "ng build form-builder --prod",
 		"build:lib:form-builder-bootstrap": "ng build form-builder-bootstrap --prod",
-		"publish": "semantic-release",
+		"publish": "npm publish dist/core --access public && npm publish dist/auth --access public && npm publish dist/components --access public && npm publish dist/components-bootstrap --access public && npm publish dist/form-builder --access public && npm publish dist/form-builder-bootstrap --access public ",
 		"test": "ng test",
 		"lint": "ng lint",
 		"e2e": "ng e2e"
