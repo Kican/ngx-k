@@ -2,8 +2,8 @@ import {IComponentDescriptor} from '../i-component-descriptor';
 import {InputNumberDescriptor} from '../../descriptors/elements/input-number/input-number-descriptor';
 import {InputTextDescriptor} from '../../descriptors/elements/input-text/input-text-descriptor';
 import {LinearLayoutDescriptor} from '../../descriptors/layouts/linear/linear-layout-descriptor';
-import {IComponent} from '..';
 import {DropDownDescriptor} from '../../descriptors/elements/drop-down/drop-down-descriptor';
+import {IComponent} from '../../_components';
 
 export class ComponentDescriptorCollection {
 	private descriptors: IComponentDescriptor[] = [];

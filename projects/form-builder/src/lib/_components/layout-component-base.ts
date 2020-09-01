@@ -1,7 +1,7 @@
 import {ILayoutComponent} from './layouts/ilayout-component';
 import {ComponentBase} from './component-base';
 import {ComponentFactoryResolver, Injector, OnInit, Type} from '@angular/core';
-import {FormBuilderService} from '../../services/form-builder.service';
+import {FormBuilderService} from '../services/form-builder.service';
 
 export abstract class LayoutComponentBase<T extends ILayoutComponent = ILayoutComponent> extends ComponentBase<T> implements OnInit {
 	protected componentFactoryResolver: ComponentFactoryResolver;

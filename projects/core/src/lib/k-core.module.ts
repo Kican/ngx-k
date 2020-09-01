@@ -1,14 +1,17 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import {TranslateModule} from '@ngx-translate/core';
 
-
+export const translateModule = TranslateModule.forRoot();
 @NgModule({
 	declarations: [],
 	imports: [
-		CommonModule
+		CommonModule,
+		translateModule
 	],
 	exports: [
-		CommonModule
+		CommonModule,
+		TranslateModule
 	]
 })
 export class KCoreModule {

@@ -1,7 +1,9 @@
-import {ComponentFactoryResolver, ComponentRef, Injectable, InjectionToken, Injector, StaticProvider, Type, ViewContainerRef} from '@angular/core';
-import {ComponentCollection, ComponentConfig, ComponentDescriptorCollection, IComponent} from '../classes';
+import {ComponentFactoryResolver, ComponentRef, Injectable, Injector, StaticProvider, ViewContainerRef} from '@angular/core';
 import {FormGroup} from '@angular/forms';
-import {ToastInjector} from "ngx-toastr";
+import {ComponentCollection, ComponentDescriptorCollection} from '../classes';
+import {ComponentConfig} from '../config/component-config';
+import {COMPONENT_DATA} from '../config/component-data';
+import {IComponent} from '../_components';
 
 @Injectable({
 	providedIn: 'root'
@@ -49,5 +51,3 @@ export class FormBuilderService {
 		return componentFactory.create(Injector.create({providers, parent: injector}));
 	}
 }
-
-export const COMPONENT_DATA = new InjectionToken<ComponentConfig>('k_component_data');

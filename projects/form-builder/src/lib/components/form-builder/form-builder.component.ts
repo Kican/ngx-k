@@ -7,9 +7,9 @@ import {
 	ViewContainerRef,
 	SimpleChanges, ChangeDetectorRef
 } from '@angular/core';
-import {IComponent} from '../../classes';
 import {FormBuilderService} from '../../services/form-builder.service';
 import {FormBuilder, FormGroup} from '@angular/forms';
+import {IComponent} from '../../_components';
 
 @Component({
 	selector: 'k-form-builder',

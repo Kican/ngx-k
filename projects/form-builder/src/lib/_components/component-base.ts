@@ -1,9 +1,9 @@
 import {IComponent} from './icomponent';
 import {Injector} from '@angular/core';
-import {COMPONENT_DATA} from '../../services/form-builder.service';
-import {ComponentConfig} from '../component-config';
-import {FormValidatorService} from '../../services/FormValidator/form-validator.service';
-import {FormControl} from "@angular/forms";
+import {ComponentConfig} from '../config/component-config';
+import {FormValidatorService} from '../services/FormValidator/form-validator.service';
+import {FormControl} from '@angular/forms';
+import {COMPONENT_DATA} from '../config/component-data';
 
 export abstract class ComponentBase<T = IComponent> {
 	config: ComponentConfig<T>;

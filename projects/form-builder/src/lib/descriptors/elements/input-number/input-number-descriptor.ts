@@ -1,5 +1,5 @@
 import {IComponentDescriptor} from "../../../classes/i-component-descriptor";
-import {IComponent} from "../../../classes/components/icomponent";
+import {IComponent} from "../../../_components/icomponent";
 
 export class InputNumberDescriptor  implements IComponentDescriptor {
 	isOwner(component: IComponent): string | null {
