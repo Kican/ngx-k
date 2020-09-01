@@ -21,7 +21,8 @@ import {NgSelectModule} from '@ng-select/ng-select';
 		NgSelectModule
 	],
 	exports: [
-		NgSelectModule
+		NgSelectModule,
+		KFormBuilderModule
 	],
 	providers: [
 		{provide: ComponentCollection, useClass: BootstrapComponentCollection},

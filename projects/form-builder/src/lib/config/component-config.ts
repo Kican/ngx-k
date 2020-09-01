@@ -1,5 +1,5 @@
-import {IComponent} from './components/icomponent';
 import {FormGroup} from '@angular/forms';
+import {IComponent} from '../_components';
 
 export class ComponentConfig<T = IComponent> {
 	data: T;

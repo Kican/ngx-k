@@ -2,10 +2,6 @@
 {
 	"extends": "../../tsconfig.base.json",
 	"compilerOptions": {
-		"baseUrl": "src",
-		"paths": {
-			"@models/*": ["lib/models/*"]
-		},
 		"outDir": "../../out-tsc/lib",
 		"target": "es2015",
 		"declaration": true,
@@ -19,6 +15,8 @@
 	"angularCompilerOptions": {
 		"skipTemplateCodegen": true,
 		"strictMetadataEmit": true,
+		"fullTemplateTypeCheck": true,
+		"strictInjectionParameters": true,
 		"enableResourceInlining": true
 	},
 	"exclude": [

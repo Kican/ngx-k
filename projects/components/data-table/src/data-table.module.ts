@@ -10,6 +10,7 @@ import {CdkTableModule} from '@angular/cdk/table';
 import {DataTableContainerComponent} from './components/data-table-container/data-table-container.component';
 import {KCoreModule} from '@ngx-k/core';
 import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -25,6 +26,8 @@ import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 	imports: [
 		KCoreModule,
 		CdkTableModule,
+		ReactiveFormsModule,
+		FormsModule,
 		NgbPaginationModule
 	],
 	exports: [
