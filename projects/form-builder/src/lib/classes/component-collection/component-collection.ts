@@ -1,4 +1,4 @@
-export abstract class ComponentCollection {
+export class ComponentCollection {
 	public components: { [name: string]: any; } = {};
 
 
