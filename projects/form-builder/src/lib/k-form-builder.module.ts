@@ -13,12 +13,11 @@ import {ReactiveFormsModule} from '@angular/forms';
 		ReactiveFormsModule
 	],
 	exports: [
-		CommonModule,
 		ReactiveFormsModule,
 		FormBuilderComponent
 	],
 	providers: [
-		{provide: ComponentDescriptorCollection, useClass: ComponentDescriptorCollection},
+		{provide: ComponentDescriptorCollection}
 	]
 })
 export class KFormBuilderModule {
