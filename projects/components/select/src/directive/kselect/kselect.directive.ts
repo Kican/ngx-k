@@ -1,5 +1,5 @@
 import {Directive, EventEmitter, Input, Output} from '@angular/core';
-import {SelectDataProvider} from '../../provider/select-data-provider';
+import {SelectDataProvider} from '../../provider/select-data-provider/select-data-provider';
 
 @Directive({
 	selector: '[k-select]'

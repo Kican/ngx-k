@@ -1,4 +1,4 @@
-import {SelectDataProvider} from './select-data-provider';
+import {SelectDataProvider} from '../select-data-provider/select-data-provider';
 import {of} from 'rxjs';
 
 export abstract class ValueSelectDataProvider<TData> extends SelectDataProvider<TData> {

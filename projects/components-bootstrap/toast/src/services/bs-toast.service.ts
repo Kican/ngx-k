@@ -1,46 +1,59 @@
-import {Injectable} from '@angular/core';
-import {ToastConfig, ToastPosition, ToastRef, ToastService} from '@ngx-k/components/toast';
+import {Inject, Injectable} from '@angular/core';
+import {TOAST_CONFIG, GlobalToastConfig, ToastConfig, ToastPosition, ToastRef, ToastService} from '@ngx-k/components/toast';
 import {ToastrService} from 'ngx-toastr';
 
 @Injectable({
 	providedIn: 'root'
 })
 export class BsToastService extends ToastService {
-	constructor(private toastrService: ToastrService) {
+	constructor(
+		private toastrService: ToastrService,
+		@Inject(TOAST_CONFIG) private config: GlobalToastConfig
+	) {
 		super();
 	}
 
-	error(option: ToastConfig): ToastRef {
-		const ref = this.toastrService.error(option.message, option.title, {
-			positionClass: this.getPositionClass(option.position)
+	error(option: Partial<ToastConfig>): ToastRef {
+		const config = {...this.config.error, ...option};
+
+		const ref = this.toastrService.error(config.message, config.title, {
+			positionClass: this.getPositionClass(config.position)
 		});
 		return undefined;
 	}
 
-	success(option: ToastConfig): ToastRef {
-		const ref = this.toastrService.success(option.message, option.title, {
-			positionClass: this.getPositionClass(option.position)
+	info(option: Partial<ToastConfig>): ToastRef {
+		const config = {...this.config.info, ...option};
+
+		const ref = this.toastrService.info(config.message, config.title, {
+			positionClass: this.getPositionClass(config.position)
 		});
 		return undefined;
 	}
 
-	warning(option: ToastConfig): ToastRef {
-		const ref = this.toastrService.warning(option.message, option.title, {
-			positionClass: this.getPositionClass(option.position)
+
+	success(option: Partial<ToastConfig>): ToastRef {
+		const config = {...this.config.success, ...option};
+
+		const ref = this.toastrService.success(config.message, config.title, {
+			positionClass: this.getPositionClass(config.position)
 		});
 		return undefined;
 	}
 
-	info(option: ToastConfig): ToastRef {
-		const ref = this.toastrService.info(option.message, option.title, {
-			positionClass: this.getPositionClass(option.position)
+	warning(option: Partial<ToastConfig>): ToastRef {
+		const config = {...this.config.warning, ...option};
+
+		const ref = this.toastrService.warning(config.message, config.title, {
+			positionClass: this.getPositionClass(config.position)
 		});
 		return undefined;
 	}
 
-	openComponent(component: any, option: ToastConfig): ToastRef {
-		const ref = this.toastrService.error(option.message, option.title, {
-			positionClass: this.getPositionClass(option.position)
+	openComponent(component: any, option: Partial<ToastConfig>): ToastRef {
+		const config = {...this.config.default, ...option};
+		const ref = this.toastrService.error(config.message, config.title, {
+			positionClass: this.getPositionClass(config.position)
 		});
 		return undefined;
 	}
