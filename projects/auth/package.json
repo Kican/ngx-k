@@ -1,6 +1,6 @@
 {
     "name": "@ngx-k/auth",
-    "version": "0.0.21",
+    "version": "0.0.22",
     "peerDependencies": {
         "@angular/common": "^10.1.0",
         "@angular/core": "^10.1.0",

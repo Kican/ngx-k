@@ -1,4 +1,4 @@
-import {SelectDataProvider} from './select-data-provider';
+import {SelectDataProvider} from '../select-data-provider/select-data-provider';
 import {HttpClient} from '@angular/common/http';
 import {debounceTime} from 'rxjs/operators';
 

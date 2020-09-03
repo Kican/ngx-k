@@ -6,13 +6,13 @@ import {ToastRef} from '../models/toast-ref';
 	providedIn: 'root'
 })
 export abstract class ToastService {
-	abstract success(option: ToastConfig): ToastRef;
+	abstract success(option: Partial<ToastConfig>): ToastRef;
 
-	abstract error(option: ToastConfig): ToastRef;
+	abstract error(option: Partial<ToastConfig>): ToastRef;
 
-	abstract info(option: ToastConfig): ToastRef;
+	abstract info(option: Partial<ToastConfig>): ToastRef;
 
-	abstract warning(option: ToastConfig): ToastRef;
+	abstract warning(option: Partial<ToastConfig>): ToastRef;
 
-	abstract openComponent(component: any, option: ToastConfig): ToastRef;
+	abstract openComponent(component: any, option: Partial<ToastConfig>): ToastRef;
 }

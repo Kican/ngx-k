@@ -3,7 +3,7 @@ import {InjectionToken} from '@angular/core';
 import {SidebarMode} from './sidebar-mode.enum';
 
 export interface SidebarConfig {
-	closeOnBackdropClick?: boolean;
+	closeOnBackdropClick?: boolean ;
 	initialState?: SidebarStatus;
 	mode?: SidebarMode;
 	hasBackdrop?: boolean;
