@@ -1,44 +1,37 @@
-/*
-  This is a "Solution Style" tsconfig.json file, and is used by editors and TypeScript’s language server to improve development experience.
-  It is not intended to be used to perform a compilation.
-
-  To learn more about this file see: https://angular.io/config/solution-tsconfig.
-*/
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./projects/components/tsconfig.lib.json"
-    },
-    {
-      "path": "./projects/components/tsconfig.spec.json"
-    },
-    {
-      "path": "./projects/docs/tsconfig.app.json"
-    },
-    {
-      "path": "./projects/docs/tsconfig.spec.json"
-    },
-    {
-      "path": "./projects/docs/e2e/tsconfig.json"
-    },
-    {
-      "path": "./projects/auth/tsconfig.lib.json"
-    },
-    {
-      "path": "./projects/auth/tsconfig.spec.json"
-    },
-    {
-      "path": "./projects/core/tsconfig.lib.json"
-    },
-    {
-      "path": "./projects/core/tsconfig.spec.json"
-    },
-    {
-      "path": "./projects/components-bootstrap/tsconfig.lib.json"
-    },
-    {
-      "path": "./projects/components-bootstrap/tsconfig.spec.json"
-    }
-]
+	"compileOnSave": false,
+	"compilerOptions": {
+		"baseUrl": "./",
+		"outDir": "./dist/out-tsc",
+		"sourceMap": true,
+		"declaration": false,
+		"downlevelIteration": true,
+		"experimentalDecorators": true,
+		"moduleResolution": "node",
+		"importHelpers": true,
+		"target": "es2015",
+		"module": "es2020",
+		"typeRoots": [
+			"node_modules/@types"
+		],
+		"lib": [
+			"es2018",
+			"dom"
+		],
+		"paths": {
+			"@ngx-k/core": ["dist/core"],
+			"@ngx-k/core/*": ["dist/core/*"],
+			"@ngx-k/components": ["dist/components"],
+			"@ngx-k/components/*": ["dist/components/*"],
+			"@ngx-k/components-bootstrap": ["dist/components-bootstrap"],
+			"@ngx-k/components-bootstrap/*": ["dist/components-bootstrap/*"],
+			"@ngx-k/form-builder": ["dist/form-builder"],
+			"@ngx-k/form-builder-bootstrap": ["dist/form-builder-bootstrap"],
+			"@ngx-k/auth": ["dist/auth"]
+		}
+	},
+	"angularCompilerOptions": {
+		"fullTemplateTypeCheck": true,
+		"strictInjectionParameters": true
+	}
 }

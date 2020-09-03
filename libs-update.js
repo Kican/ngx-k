@@ -18,11 +18,11 @@ const versions = [
 	},
 	{
 		packages: ["@angular/cdk"],
-		version: "^10.1.2"
+		version: "^10.2.0"
 	},
 	{
 		packages: ["@angular/common", "@angular/core", "@angular/animations", "@angular/router", "@angular/forms"],
-		version: "^10.0.9"
+		version: "^10.1.0"
 	}
 ]
 

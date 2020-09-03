@@ -5,10 +5,10 @@
     "author": "Kican Contributers",
     "repository": "https://github.com/Kican/ngx-k",
     "peerDependencies": {
-        "@angular/common": "^10.0.9",
-        "@angular/core": "^10.0.9",
+        "@angular/common": "^10.1.0",
+        "@angular/core": "^10.1.0",
         "@ngx-k/core": "^0.0.19",
-        "bootstrap-v4-rtl": "^4.4.1-2",
+        "bootstrap-v4-rtl": "^4.5.2-1",
         "@ng-bootstrap/ng-bootstrap": "^7.0.0"
     },
     "dependencies": {

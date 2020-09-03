@@ -2,8 +2,8 @@
     "name": "@ngx-k/core",
     "version": "0.0.21",
     "peerDependencies": {
-        "@angular/common": "^10.0.9",
-        "@angular/core": "^10.0.9"
+        "@angular/common": "^10.1.0",
+        "@angular/core": "^10.1.0"
     },
     "dependencies": {
         "tslib": "^2.0.0"
