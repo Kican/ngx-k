@@ -33,7 +33,7 @@ export class DataTablePaginationComponent implements OnInit {
 			: '';
 	}
 
-	pageChanged($event) {
+	pageChanged($event): void {
 		this.valueChanges.next($event);
 	}
 

@@ -7,3 +7,4 @@ export * from './common/app-validators';
 export * from './common/url-utils';
 export * from './classes/paged-result';
 export * from './classes/filter-base';
+export * from './pipe/date/date.pipe';
