@@ -4,7 +4,7 @@ import jalaliday from 'jalaliday';
 import {DOCUMENT} from '@angular/common';
 
 @Pipe({
-	name: 'k-date'
+	name: 'kDate'
 })
 export class DatePipe implements PipeTransform {
 	constructor(@Inject(DOCUMENT) public document: Document) {
