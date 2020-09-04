@@ -1,10 +1,14 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {DatePipe} from './pipe/date/date.pipe';
 
 
 @NgModule({
-	declarations: [],
-	imports: [
+	declarations: [
+		DatePipe
+	],
+	imports: [],
+	exports: [
+		DatePipe
 	]
 })
 export class KCoreCommonModule {

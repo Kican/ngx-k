@@ -5,5 +5,7 @@
 		}
 	},
 	"peerDependencies": {
+		"dayjs": "^1.8.35",
+		"jalaliday": "^2.3.0"
 	}
 }

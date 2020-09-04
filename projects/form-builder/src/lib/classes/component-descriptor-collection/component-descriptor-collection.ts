@@ -24,6 +24,6 @@ export class ComponentDescriptorCollection {
 				return componentName;
 		}
 		if (componentName == null)
-			throw new Error('handler not found for component');
+			throw new Error(`handler not found for component [${component.type}]`);
 	}
 }
