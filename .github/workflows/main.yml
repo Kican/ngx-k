@@ -15,14 +15,24 @@ jobs:
             -   uses: actions/setup-node@v1
                 with:
                     node-version: '12'
+                    registry-url: 'https://registry.npmjs.org'
+                    scope: '@ngx-k'
 
             -   name: install deps
-                run: npm ci
+                run: npm i
 
             -   name: build packages
                 run: npm run build
 
-            -   name: Publish
-                env:
-                    NPM_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
+            -   name: Publish NPM
                 run: npm run publish
+                env:
+                    NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_KEY }}
+            -   uses: actions/setup-node@v1
+                with:
+                    registry-url: 'https://npm.pkg.github.com'
+                    node-version: '12'
+                    scope: '@ngx-k'
+            -   run: npm run publish
+                env:
+                    NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

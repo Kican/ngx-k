@@ -7,6 +7,14 @@ export interface ToastConfig {
 	position: ToastPosition;
 }
 
+export interface GlobalToastConfig {
+	default: Partial<ToastConfig>;
+	success: Partial<ToastConfig>;
+	error: Partial<ToastConfig>;
+	info: Partial<ToastConfig>;
+	warning: Partial<ToastConfig>;
+}
+
 export const DefaultToastConfig: ToastConfig = {
 	action: '',
 	message: '',
@@ -20,14 +28,6 @@ export const DefaultGlobalToastConfig: GlobalToastConfig = {
 	success: DefaultToastConfig,
 	warning: DefaultToastConfig
 };
-
-export interface GlobalToastConfig {
-	default: ToastConfig;
-	success: Partial<ToastConfig>;
-	error: Partial<ToastConfig>;
-	info: Partial<ToastConfig>;
-	warning: Partial<ToastConfig>;
-}
 
 export const TOAST_CONFIG = new InjectionToken<GlobalToastConfig>('ToastConfig');
 
