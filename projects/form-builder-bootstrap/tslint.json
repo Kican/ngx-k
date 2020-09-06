@@ -4,14 +4,16 @@
 		"directive-selector": [
 			true,
 			"attribute",
-			"lib",
-			"camelCase"
+			"k-",
+			"camelCase",
+			"kebab-case"
 		],
 		"component-selector": [
 			true,
 			"element",
-			"lib",
-			"kebab-case"
+			"k-",
+			"kebab-case",
+			"camelCase"
 		]
 	}
 }

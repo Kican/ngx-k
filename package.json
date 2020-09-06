@@ -48,7 +48,8 @@
 		"@auth0/angular-jwt": "^5.0.1",
 		"@ng-select/ng-select": "^5.0.1",
 		"dayjs": "^1.8.35",
-		"jalaliday": "^2.3.0"
+		"jalaliday": "^2.3.0",
+		"ng-persian-datepicker": "^2.3.6"
 	},
 	"devDependencies": {
 		"@angular-devkit/build-angular": "~0.1001.0",
