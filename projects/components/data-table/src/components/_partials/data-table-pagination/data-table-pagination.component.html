@@ -9,11 +9,11 @@
 			boundaryLinks="true"
 			[(page)]="currentPage">
 
-			<ng-template ngbPaginationFirst>󰘁</ng-template>
-			<ng-template ngbPaginationLast>󰘀</ng-template>
-			<ng-template ngbPaginationPrevious>󰅂</ng-template>
-			<ng-template ngbPaginationNext>󰅁</ng-template>
-			<ng-template ngbPaginationEllipsis>...</ng-template>
+			<ng-template ngbPaginationFirst><i class="mdi mdi-page-first"></i></ng-template>
+			<ng-template ngbPaginationLast><i class="mdi mdi-page-last"></i></ng-template>
+			<ng-template ngbPaginationPrevious><i class="mdi-chevron-left"></i></ng-template>
+			<ng-template ngbPaginationNext><i class="mdi mdi-chevron-right"></i></ng-template>
+			<ng-template ngbPaginationEllipsis><i class="mdi mdi-unfold-more-vertical"></i></ng-template>
 			<ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
 		</ngb-pagination>
 	</div>

@@ -7,6 +7,9 @@ import {DropDownComponent} from './components/elements/drop-down/drop-down.compo
 import {NgSelectModule} from '@ng-select/ng-select';
 import {CommonModule} from '@angular/common';
 import {ComponentCollection, KFormBuilderModule} from '@ngx-k/form-builder';
+import {DateTimeComponent} from './components/elements/date-time/date-time.component';
+import { InputHiddenComponent } from './components/elements/input-hidden/input-hidden.component';
+import {NgPersianDatepickerModule} from 'ng-persian-datepicker';
 
 @NgModule({
 	declarations: [
@@ -14,11 +17,14 @@ import {ComponentCollection, KFormBuilderModule} from '@ngx-k/form-builder';
 		InputNumberComponent,
 		LinearLayoutComponent,
 		DropDownComponent,
+		DateTimeComponent,
+		InputHiddenComponent,
 	],
 	imports: [
 		KFormBuilderModule,
 		NgSelectModule,
-		CommonModule
+		CommonModule,
+		NgPersianDatepickerModule
 	],
 	exports: [
 		NgSelectModule,
