@@ -7,11 +7,12 @@ export class HttpSelectDataProvider<TData extends ITitleEntity = ITitleEntity> e
 	constructor(private httpClient: HttpClient, private url: string) {
 		super();
 		this.typeHead$.subscribe(value => {
-			this.items$ = httpClient.get<PagedResult<ITitleEntity>>(url + `q=${value}`)
+			this.items$ = httpClient.get<PagedResult<ITitleEntity>>(url + `?q=${value}`)
 				.pipe(
 					debounceTime(500),
 					map(x => x.items as TData[])
 				);
 		});
+		this.typeHead$.next('');
 	}
 }
