@@ -3,7 +3,7 @@ import {FormGroup} from '@angular/forms';
 import {ComponentConfig} from '../config/component-config';
 import {COMPONENT_DATA} from '../config/component-data';
 import {ComponentCollection} from '../classes/component-collection/component-collection';
-import {COMPONENTS_DESCRIPTOR, ComponentsDescriptor} from '../classes/component-descriptor-collection/components-descriptor';
+import {COMPONENTS_DESCRIPTOR, ComponentsDescriptor} from '../classes/components-descriptor/components-descriptor';
 import {IComponent} from '../_components/icomponent';
 
 @Injectable({
@@ -34,8 +34,6 @@ export class FormBuilderService {
 		componentFactoryResolver: ComponentFactoryResolver,
 		injector: Injector
 	): ComponentRef<any> {
-		console.log(this.componentCollection);
-		console.log(this.componentsDescriptor);
 		const componentName = this.componentsDescriptor.resolve(component);
 		const componentClass = this.componentCollection.find(componentName);
 

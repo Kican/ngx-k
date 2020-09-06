@@ -10,7 +10,7 @@ export * from './lib/services/form-builder.service';
 
 export * from './lib/classes/i-component-descriptor';
 export * from './lib/classes/component-collection/component-collection';
-export * from './lib/classes/component-descriptor-collection/components-descriptor';
+export * from './lib/classes/components-descriptor/components-descriptor';
 export * from './lib/classes/validators';
 
 export * from './lib/_components/component-base';

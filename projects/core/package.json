@@ -1,6 +1,6 @@
 {
     "name": "@ngx-k/core",
-    "version": "0.0.36",
+    "version": "0.0.37",
     "peerDependencies": {
         "@angular/common": "^10.1.0",
         "@angular/core": "^10.1.0"

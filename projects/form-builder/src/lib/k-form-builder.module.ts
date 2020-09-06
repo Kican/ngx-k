@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormBuilderComponent} from './components/form-builder/form-builder.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import {COMPONENTS_DESCRIPTOR, ComponentsDescriptor} from './classes/component-descriptor-collection/components-descriptor';
+import {COMPONENTS_DESCRIPTOR, ComponentsDescriptor} from './classes/components-descriptor/components-descriptor';
 
 @NgModule({
 	declarations: [
