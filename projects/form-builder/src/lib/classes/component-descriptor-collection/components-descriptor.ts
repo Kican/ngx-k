@@ -3,10 +3,13 @@ import {InputNumberDescriptor} from '../../descriptors/elements/input-number/inp
 import {InputTextDescriptor} from '../../descriptors/elements/input-text/input-text-descriptor';
 import {LinearLayoutDescriptor} from '../../descriptors/layouts/linear/linear-layout-descriptor';
 import {DropDownDescriptor} from '../../descriptors/elements/drop-down/drop-down-descriptor';
-import {IComponent} from '../../_components';
 import {InputDateTimeDescriptor} from '../../descriptors/elements/input-date-time/input-date-time-descriptor';
+import {InjectionToken} from '@angular/core';
+import {IComponent} from '../../_components/icomponent';
 
-export class ComponentDescriptorCollection {
+export const COMPONENTS_DESCRIPTOR = new InjectionToken<ComponentsDescriptor>('components_descriptor');
+
+export class ComponentsDescriptor {
 	protected descriptors: IComponentDescriptor[] = [];
 
 	constructor() {

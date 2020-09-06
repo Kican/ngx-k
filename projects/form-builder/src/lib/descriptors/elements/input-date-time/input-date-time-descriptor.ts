@@ -1,5 +1,5 @@
-import {IComponentDescriptor} from '../../../classes';
-import {IComponent} from '../../../_components';
+import {IComponentDescriptor} from '../../../classes/i-component-descriptor';
+import {IComponent} from '../../../_components/icomponent';
 
 export class InputDateTimeDescriptor implements IComponentDescriptor{
 	isOwner(component: IComponent): string | null {

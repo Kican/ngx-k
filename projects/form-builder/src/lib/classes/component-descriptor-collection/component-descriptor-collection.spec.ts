@@ -1,7 +1,7 @@
-import { ComponentDescriptorCollection } from './component-descriptor-collection';
+import { ComponentsDescriptor } from './components-descriptor';
 
 describe('ComponentDescriptorCollection', () => {
   it('should create an instance', () => {
-    expect(new ComponentDescriptorCollection()).toBeTruthy();
+    expect(new ComponentsDescriptor()).toBeTruthy();
   });
 });

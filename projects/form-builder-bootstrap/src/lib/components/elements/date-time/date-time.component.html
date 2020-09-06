@@ -1,6 +1,6 @@
 <div class="form-group">
 	<label for="id-{{config.data.name}}">{{config.data.title}}</label>
-	<input type="text" #date_picker class="form-control" [formControl]="control" />
+	<input type="text" #date_picker class="form-control" />
 	<ng-persian-datepicker [timeShowSecond]="false" [dateInitValue]="false"
 						   [dateOnSelect]="onDateSelect"
 						   id="id-{{config.data.name}}"
