@@ -7,7 +7,7 @@ import {IComponent} from '../../_components';
 import {InputDateTimeDescriptor} from '../../descriptors/elements/input-date-time/input-date-time-descriptor';
 
 export class ComponentDescriptorCollection {
-	private descriptors: IComponentDescriptor[] = [];
+	protected descriptors: IComponentDescriptor[] = [];
 
 	constructor() {
 		this.descriptors.push(new InputNumberDescriptor());
