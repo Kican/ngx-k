@@ -51,7 +51,7 @@ export abstract class DtDataSource<T> extends DataSource<T> {
 		}
 	}
 
-	abstract loadData();
+	abstract loadData(): void;
 }
 
 export class HttpDtDataSource<T> extends DtDataSource<T> {
@@ -59,7 +59,7 @@ export class HttpDtDataSource<T> extends DtDataSource<T> {
 		super(filterForm);
 	}
 
-	loadData() {
+	loadData(): void {
 		this.loadingSubject.next(true);
 		this.service.list(this.filters).pipe(
 			catchError(() => of([])),

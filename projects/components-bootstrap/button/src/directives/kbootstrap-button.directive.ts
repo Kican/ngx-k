@@ -2,7 +2,7 @@ import {Directive, HostBinding} from '@angular/core';
 import {ButtonDirective} from '@ngx-k/components/button';
 
 @Directive({
-	selector: 'k-button'
+	selector: 'k-button,[k-button]'
 })
 export class KBootstrapButtonDirective {
 

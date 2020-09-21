@@ -1,25 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@mdi/font/css/materialdesignicons.min.css";
 
-@import "~@ngx-k/components/core/scss/src/essentionals";
+//@import "~@ngx-k/components/core/scss/src/essentionals";
+//
+//@import "~@ngx-k/components/sidebar/scss/sidebar";
 
-@import "~@ngx-k/components/sidebar/scss/sidebar";
-
-@include k-sidebar();
-
-@import "~@ngx-k/components/navbar/scss/navbar";
-@include k-navbar();
-
-@import "~bootstrap-v4-rtl/scss/modal";
-@import "~@ngx-k/components/alert/scss/alert";
-@import "~@ngx-k/components/badge/scss/badge";
-@import "~@ngx-k/components-bootstrap/button/scss/button";
-@import "~@ngx-k/components/card/scss/card";
-@import "~@ngx-k/components/form/scss/form";
-@import "~@ngx-k/components/table/scss/table";
-
-@import "~@ngx-k/components/form/scss/file-input";
-@include k-file-input();
+//@include k-sidebar();
+//
+//@import "~@ngx-k/components/navbar/scss/navbar";
+//@include k-navbar();
+//
+//@import "~bootstrap-v4-rtl/scss/modal";
+//@import "~@ngx-k/components/alert/scss/alert";
+//@import "~@ngx-k/components/badge/scss/badge";
+//@import "~@ngx-k/components-bootstrap/button/scss/button";
+//@import "~@ngx-k/components/card/scss/card";
+//@import "~@ngx-k/components/form/scss/form";
+//@import "~@ngx-k/components/table/scss/table";
+//
+//@import "~@ngx-k/components/form/scss/file-input";
+//@include k-file-input();
 
 body {
 	background-color: #FBFCFE;
@@ -29,4 +29,4 @@ body {
 	}
 }
 
-@import "~@ngx-k/form-builder-bootstrap/scss/styles";
+//@import "~@ngx-k/form-builder-bootstrap/scss/styles";
