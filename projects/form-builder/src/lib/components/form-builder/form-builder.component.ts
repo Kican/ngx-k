@@ -8,8 +8,8 @@ import {
 	SimpleChanges, ChangeDetectorRef
 } from '@angular/core';
 import {FormBuilderService} from '../../services/form-builder.service';
-import {FormBuilder, FormGroup} from '@angular/forms';
-import {IComponent} from '../../_components';
+import {FormGroup} from '@angular/forms';
+import {IComponent} from '../../_components/icomponent';
 
 @Component({
 	selector: 'k-form-builder',

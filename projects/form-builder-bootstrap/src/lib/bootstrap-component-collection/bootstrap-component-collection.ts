@@ -5,6 +5,7 @@ import {LinearLayoutComponent} from '../components/layout/linear-layout/linear-l
 import {DropDownComponent} from '../components/elements/drop-down/drop-down.component';
 import {DateTimeComponent} from '../components/elements/date-time/date-time.component';
 import {InputHiddenComponent} from '../components/elements/input-hidden/input-hidden.component';
+import {SelectComponent} from '../components/elements/select/select.component';
 
 export class BootstrapComponentCollection extends ComponentCollection {
 
@@ -12,6 +13,7 @@ export class BootstrapComponentCollection extends ComponentCollection {
 		super();
 		this.components['input-number'] = InputNumberComponent;
 		this.components['input-hidden'] = InputHiddenComponent;
+		this.components['select'] = SelectComponent;
 		this.components['input-date-time'] = DateTimeComponent;
 		this.components['drop-down'] = DropDownComponent;
 		this.components['input-text'] = InputTextComponent;

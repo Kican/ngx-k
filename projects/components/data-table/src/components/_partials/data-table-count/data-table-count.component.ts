@@ -12,6 +12,8 @@ export class DataTableCountComponent implements OnInit {
 
 	count = new FormControl([8]);
 
+	items: number[] = [8, 16, 32];
+
 	constructor() {
 	}
 
@@ -19,6 +21,8 @@ export class DataTableCountComponent implements OnInit {
 		this.count.valueChanges.subscribe(value => {
 			this.valueChange.emit(value);
 		});
+
+		this.count.patchValue(this.items[0]);
 	}
 
 }

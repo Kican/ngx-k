@@ -18,12 +18,12 @@ export class DataTablePaginationComponent implements OnInit {
 	@Output()
 	valueChanges = new EventEmitter<number>();
 
-	currentPage: number;
+	currentPage: number = 1;
 
 	constructor() {
 	}
 
-	get paginationDescription() {
+	get paginationDescription(): string {
 		const start = ((this.currentPage - 1) * this.itemPerPage + 1);
 		return this.currentItems ?
 			`نمایش $start تا $end از $total رکورد`
@@ -38,5 +38,6 @@ export class DataTablePaginationComponent implements OnInit {
 	}
 
 	ngOnInit(): void {
+		this.valueChanges.next(1);
 	}
 }

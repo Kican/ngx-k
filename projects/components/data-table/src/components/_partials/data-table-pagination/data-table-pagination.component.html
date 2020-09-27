@@ -5,15 +5,15 @@
 			[pageSize]="itemPerPage"
 			(pageChange)="pageChanged($event)"
 			[rotate]="true"
-			[maxSize]="3"
+			[maxSize]="4"
+			[ellipses]="false"
 			boundaryLinks="true"
 			[(page)]="currentPage">
 
 			<ng-template ngbPaginationFirst><i class="mdi mdi-page-first"></i></ng-template>
 			<ng-template ngbPaginationLast><i class="mdi mdi-page-last"></i></ng-template>
-			<ng-template ngbPaginationPrevious><i class="mdi-chevron-left"></i></ng-template>
+			<ng-template ngbPaginationPrevious><i class="mdi mdi-chevron-left"></i></ng-template>
 			<ng-template ngbPaginationNext><i class="mdi mdi-chevron-right"></i></ng-template>
-			<ng-template ngbPaginationEllipsis><i class="mdi mdi-unfold-more-vertical"></i></ng-template>
 			<ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
 		</ngb-pagination>
 	</div>

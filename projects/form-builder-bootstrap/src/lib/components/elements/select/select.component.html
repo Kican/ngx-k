@@ -1,0 +1,4 @@
+<div class="form-group bootstrap-theme">
+	<label for="{{config.data.name}}">{{config.data.title}}</label>
+	<ng-select [formControl]="control" [typeahead]="dataProvider.typeHead$" [items]="dataProvider.items$ | async" id="{{config.data.name}}" bindLabel="title" bindValue="id"></ng-select>
+</div>

@@ -21,6 +21,11 @@ export class AppComponent implements OnInit, AfterViewInit {
 				]
 			},
 			{
+				groupId: 'table', title: 'form builder', items: [
+					{routerLink: '/data-table', label: 'data table', itemId: '', type: 'single', iconClass: 'mdi mdi-account'}
+				]
+			},
+			{
 				groupId: 'management',
 				title: 'Management',
 				items: [

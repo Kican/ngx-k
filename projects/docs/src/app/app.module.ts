@@ -22,6 +22,9 @@ import {KFormBuilderBootstrapModule} from '@ngx-k/form-builder-bootstrap';
 import {DropDownFormBuilderPageComponent} from './components/_form-builder/drop-down-form-builder-page/drop-down-form-builder-page.component';
 import {CUSTOM_ERROR_MESSAGES, CustomErrorMessageFormatters} from '../../../components/form/src/models/custom-error-messages.token';
 import {KBootstrapButtonModule} from '@ngx-k/components-bootstrap/button';
+import {DataTablePageComponent} from './components/data-table-page/data-table-page.component';
+import {DataTableConfig, DataTableModule} from '@ngx-k/components/data-table';
+import {KCoreCommonModule} from '@ngx-k/core/common';
 
 export const errorMessages: CustomErrorMessageFormatters = [
 	{
@@ -40,6 +43,7 @@ export const errorMessages: CustomErrorMessageFormatters = [
 		SimpleFormBuilderPageComponent,
 		DashboardPageComponent,
 		DropDownFormBuilderPageComponent,
+		DataTablePageComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -51,6 +55,7 @@ export const errorMessages: CustomErrorMessageFormatters = [
 		KAlertModule,
 		KBadgeModule,
 		KCardModule,
+		DataTableModule,
 		KSidebarModule.forRoot({
 			initialState: SidebarStatus.Opened,
 			hasBackdrop: false,
@@ -65,8 +70,12 @@ export const errorMessages: CustomErrorMessageFormatters = [
 		NgbModalModule,
 		KBootstrapButtonModule,
 		KBootstrapDialogModule,
+		KCoreCommonModule,
 	],
-	providers: [{provide: CUSTOM_ERROR_MESSAGES, useValue: errorMessages}],
+	providers: [
+		{provide: DataTableConfig, useClass: DataTableConfig},
+		{provide: CUSTOM_ERROR_MESSAGES, useValue: errorMessages}
+	],
 	bootstrap: [AppComponent]
 })
 export class AppModule {
