@@ -1,12 +1,12 @@
 {
     "name": "@ngx-k/components-bootstrap",
-    "version": "0.0.40",
+    "version": "0.0.41",
     "peerDependencies": {
         "@angular/common": "^10.1.3",
         "@angular/core": "^10.1.3",
         "@angular/cdk": "^10.2.2",
         "@ng-bootstrap/ng-bootstrap": "^7.0.0",
-        "@ngx-k/components": "^0.0.40"
+        "@ngx-k/components": "^0.0.41"
     },
     "dependencies": {
         "tslib": "^2.0.0"
