@@ -54,8 +54,8 @@ export class DataTableComponent implements OnInit, AfterViewInit {
 		this.dataSource.loadData();
 	}
 
-	pageChange($event) {
-		this.dataSource.filters['page'] = $event.page;
+	pageChange(page) {
+		this.dataSource.filters['page'] = page;
 		this.dataSource.loadData();
 	}
 

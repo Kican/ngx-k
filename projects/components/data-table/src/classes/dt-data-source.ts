@@ -15,7 +15,7 @@ export abstract class DtDataSource<T> extends DataSource<T> {
 	public loading$ = this.loadingSubject.asObservable();
 
 	sub: Subscription;
-	filters = {};
+	filters: any = {};
 
 	protected constructor(private filterForm?: FormGroup) {
 		super();
@@ -52,6 +52,29 @@ export abstract class DtDataSource<T> extends DataSource<T> {
 	}
 
 	abstract loadData(): void;
+}
+
+export class ItemsDataSource<T> extends DtDataSource<T> {
+	constructor(private items: T[], filterForm?: FormGroup) {
+		super(filterForm);
+	}
+
+	loadData(): void {
+		this.loadingSubject.next(true);
+
+		this.totalCount = this.items.length;
+
+		console.log(this.filters);
+		const currentPage = this.paginate(this.filters.page, this.filters.count);
+		this.currentCount = currentPage.length;
+		this.data$.next(currentPage);
+
+		this.loadingSubject.next(false);
+	}
+
+	paginate(page: number, count: number): T[] {
+		return this.items.slice((page - 1) * count, page * count);
+	}
 }
 
 export class HttpDtDataSource<T> extends DtDataSource<T> {

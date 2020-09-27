@@ -38,5 +38,6 @@ export class DataTablePaginationComponent implements OnInit {
 	}
 
 	ngOnInit(): void {
+		this.valueChanges.next(1);
 	}
 }
