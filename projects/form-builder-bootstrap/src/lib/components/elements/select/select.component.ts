@@ -23,5 +23,6 @@ export class SelectComponent extends ComponentBase<ISelectComponent> implements 
 
 	ngOnInit(): void {
 		this.config.form.addControl(this.toLowerCamelCase(this.config.data.name), this.control);
+		this.dataProvider.typeHead$.next('');
 	}
 }
