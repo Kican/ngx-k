@@ -1,7 +1,7 @@
 import {Component, Directive, Input} from '@angular/core';
 import {ColorType, SizeType} from '@ngx-k/components/core/models';
 
-@Component({
+@Directive({
 	selector: 'button[k-button]',
 })
 export class ButtonDirective {
