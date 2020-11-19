@@ -9,6 +9,7 @@ import {
 	RequiredValidator
 } from '../../classes/validators';
 import {AbstractControl, ValidatorFn} from '@angular/forms';
+import {RangeLengthValidator} from '../../classes/validators/range-length-validator';
 
 @Injectable({
 	providedIn: 'root'
@@ -20,6 +21,7 @@ export class FormValidatorService {
 		this.validators['required'] = new RequiredValidator();
 		this.validators['minlength'] = new MinLengthValidator();
 		this.validators['maxlength'] = new MaxLengthValidator();
+		this.validators['rangelength'] = new RangeLengthValidator();
 		this.validators['max'] = new MaxValidator();
 		this.validators['min'] = new MinValidator();
 		this.validators['email'] = new EmailValidator();
